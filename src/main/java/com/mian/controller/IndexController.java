@@ -11,6 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class IndexController {
     @RequestMapping(value="/",method = RequestMethod.GET)
     public String index(){
-        return "你好用户这是面筋，你可以在这找工作,开发人员小熊和纳粹梁";
+        return "你好用户这是面筋，你可以在这找工作,开发人员小熊和纳粹梁，小梁是我儿子";
     }
 }
