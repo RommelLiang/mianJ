@@ -39,11 +39,21 @@ public class QQLoginController {
 
         Map<String, String> map = new HashMap<String, String>();
         map.put("url", "http://www.leveluplunch.com");
+        map.put("a", "http://www.leveluplunch.com");
+        map.put("ul", "http://www.leveluplunch.com");
+        map.put("ur", "http://www.leveluplunch.com");
         return map;
     }
     @RequestMapping("/jsptest")
-    public String test(ModelAndView modelAndView) {
+    public ModelAndView test() {
+        System.out.println("modelAndView");
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("jsp-spring-boot");
+        return modelAndView;
+    }
 
+    @RequestMapping("/strintest")
+    public String stringTest() {
         return "jsp-spring-boot";
     }
 }
