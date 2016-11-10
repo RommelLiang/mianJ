@@ -1,11 +1,10 @@
 package com.mian.controller;
 
+import com.mian.bean.WeChatBean;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.HashMap;
@@ -18,6 +17,7 @@ import java.util.Map;
  * On 2016/11/4.
  */
 @Controller
+@CrossOrigin
 public class QQLoginController {
     @Value("${application.message:Hello World}")
     private String message = "Hello World";
@@ -44,16 +44,18 @@ public class QQLoginController {
         map.put("ur", "http://www.leveluplunch.com");
         return map;
     }
-    @RequestMapping("/jsptest")
+   /* @RequestMapping("/jsptest")
     public ModelAndView test() {
         System.out.println("modelAndView");
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("jsp-spring-boot");
         return modelAndView;
-    }
+    }*/
 
-    @RequestMapping("/strintest")
-    public String stringTest() {
-        return "jsp-spring-boot";
+    @RequestMapping(value = "qqlogin",method = RequestMethod.POST)
+    public @ResponseBody String stringTest(@RequestBody WeChatBean weChatBean) {
+        System.out.println(weChatBean.getOpenId());
+        System.out.println(weChatBean.getAccessToken());
+        return "jsp";
     }
 }
