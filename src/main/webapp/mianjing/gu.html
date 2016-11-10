@@ -1,0 +1,3120 @@
+﻿
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="author" content="面精网">
+    <!-- begin 参考 layouts/head -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <meta name="csrf-param" content="authenticity_token" />
+
+<link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./img/i.png">
+    <meta property="wb:webmaster" content="7cb966ae2a9fafdb" />
+    
+    <!-- end 参考 layouts/head -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- 百度站长工具验证 -->
+    <!-- 百度站长工具验证 -->
+<!-- shixian.com -->
+<meta name="baidu-site-verification" content="DxH5nP0ijn" />
+
+<!-- www.shixian.com -->
+<meta name="baidu-site-verification" content="dCeYDC5bLB" />
+
+
+
+
+      <title>社会精英辅导求职预约平台</title>
+<meta name="description" content="面精网是互联网兼职人才推荐平台，提供一流的兼职工程师与设计师预约服务，有别于传统外包私活挣钱模式，我们有来自百度、阿里、腾讯、新浪、拉勾、知乎等知名互联网公司经验丰富的人才，如工程师、UIUX设计师、产品经理。" />
+
+<!-- <meta name="apple-itunes-app" content="app-id=949862651"> -->
+
+      <script src="js/programmers.js"></script>
+
+    
+    
+      <link rel="stylesheet" media="screen" href="css/programmers.css" />
+
+    <link rel="stylesheet" href="css/design.css">
+
+    
+
+  </head>
+    <body>
+
+    <div style="display: none">
+  <!-- 微信分享会取body里第一张大于等于300px的照片 -->  
+  <img src="img/logo-300.jpg" alt="面精网" />
+</div>
+
+
+<!-- Fixed navbar -->
+ <nav class="navbar navbar-default navbar-fixed-top navbar-white" style="height: 51px">
+   <div class="container">
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+
+         <a class="logo navbar-brand text-center" href="index.html">面精网</a>
+
+       </div>
+
+       <div id="navbar" class="collapse navbar-collapse">
+         <div class="empty-10"></div>
+         <div class="empty-10"></div>
+         <div class="empty-10"></div>
+         <div class="empty-10"></div>
+         <div class="empty-10"></div>
+
+           <ul class="nav navbar-nav">
+             <li class="bai"><!-- class="active"  style="margin-left: 30px;"-->
+               <a class="programmers-jobs-link" href="gu.html">求职顾问</a>
+             </li>
+
+             <li class="">
+               <a class="programmers-jobs-link" href="require_list.html">新人求助</a>
+             </li>
+           </ul>
+
+         <ul class="nav navbar-nav navbar-right" >
+             <li class="">
+               <a href="m_appointment.html">我的预约</a>
+             </li>
+
+             <li class="">
+               <a href="notice.html">
+                 通知
+                 <label class="label label-danger" style="margin-left: 6px;display: none;position: relative;top:-2px"></label>
+               </a>
+             </li>
+
+             <li class="dropdown">
+               <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" aria-haspopup="true" aria-expanded="false" title="个人主页" href="javascript:void(0);">
+                 <img class="tiny-avatar avatar" alt="路" src="img/tiny_5e620cedfe19524579ad8009ea25db2f.jpeg" />
+                 <span class="headerTinymanName">路 <b class="caret"></b></span>
+               </a>
+               <ul class="dropdown-menu">
+                 <!-- 未申请或申请还没有通过认证(前面已判断)，都是这个 -->
+
+
+                   <li class="">
+                      <a href="gperson.html">查看顾问信息</a>
+                    </li>
+
+                    <li class="divider"></li>
+
+                  <li class="">
+                    <a href="gperson_chg.html ">修改顾问信息</a>
+                  </li>
+                  <li class="">
+                    <a href="head_chg.html">修改头像昵称</a>
+                  </li>
+
+
+
+
+                 <li class="divider"></li>
+
+                  
+
+                 <li><a href="#" data-method="delete" rel="nofollow">退出</a></li>
+               </ul>
+             </li>
+         </ul>
+       </div><!--/.nav-collapse -->
+   </div>
+ </nav>
+
+
+
+<!-- Begin page content -->
+<div class="container">
+  
+<div class="empty-line"></div>
+
+
+
+
+
+ 
+
+
+
+
+<div class="header sub-header">
+  <div class="navbar-collapse mega-menu navbar-responsive-collapse">
+    <div class="">
+      <ul class="nav navbar-nav" style="background-color:#f2f2f2;">
+        <!-- 所在区域 -->
+        <li class="dropdown ">
+          <a href="javascript:void(0);" class="dropdown-toggle role-and-city" data-toggle="dropdown">
+             北京
+          </a>
+
+          <ul class="dropdown-menu">
+
+            
+<li class="dropdown-submenu ">
+  <a href="appoint_interface.html">北京</a>
+
+  <ul class="dropdown-menu">
+    <li>
+      <a href="#">全部</a>
+    </li>
+
+        <li class="">
+          <a href="#">
+            海淀
+</a>        </li>
+        <li class="">
+          <a href="#">
+            昌平
+</a>        </li>
+        <li class="">
+          <a href="#">
+            朝阳
+</a>        </li>
+        <li class="">
+          <a href="#">
+            东城
+</a>        </li>
+        <li class="">
+          <a href="#">
+            西城
+</a>        </li>
+        <li class="">
+          <a href="#">
+            石景山
+</a>        </li>
+        <li class="">
+          <a href="#">
+            通州
+</a>        </li>
+        <li class="">
+          <a href="#">
+            丰台
+</a>        </li>
+  </ul>
+</li>
+
+<li class="dropdown-submenu ">
+  <a href="#">上海</a>
+
+  <ul class="dropdown-menu">
+    <li>
+      <a href="#">全部</a>
+    </li>
+
+        <li class="">
+          <a href="#">
+            浦东
+</a>        </li>
+        <li class="">
+          <a href="#">
+            闵行
+</a>        </li>
+        <li class="">
+          <a href="#">
+            徐汇
+</a>        </li>
+        <li class="">
+          <a href="#">
+            长宁
+</a>        </li>
+        <li class="">
+          <a href="#">
+            普陀
+</a>        </li>
+        <li class="">
+          <a href="#">
+            静安
+</a>        </li>
+        <li class="">
+          <a href="#">
+            卢湾
+</a>        </li>
+        <li class="">
+          <a href="#">
+            黄浦
+</a>        </li>
+        <li class="">
+          <a href="#">
+            闸北
+</a>        </li>
+        <li class="">
+          <a href="#">
+            虹口
+</a>        </li>
+        <li class="">
+          <a href="#">
+            杨浦
+</a>        </li>
+  </ul>
+</li>
+
+<li class="dropdown-submenu ">
+  <a href="#">深圳</a>
+
+  <ul class="dropdown-menu">
+    <li>
+      <a href="#">全部</a>
+    </li>
+
+        <li class="">
+          <a href="#">
+            福田
+</a>        </li>
+        <li class="">
+          <a href="#">
+            罗湖
+</a>        </li>
+        <li class="">
+          <a href="#">
+            南山
+</a>        </li>
+        <li class="">
+          <a href="#">
+            宝安
+</a>        </li>
+        <li class="">
+          <a href="#">
+            龙岗
+</a>        </li>
+        <li class="">
+          <a href="#">
+            盐田
+</a>        </li>
+        <li class="">
+          <a href="#">
+            光明
+</a>        </li>
+        <li class="">
+          <a href="#">
+            龙华
+</a>        </li>
+  </ul>
+</li>
+
+<li class="dropdown-submenu ">
+  <a href="#">杭州</a>
+
+  <ul class="dropdown-menu">
+    <li>
+      <a href="#">全部</a>
+    </li>
+
+        <li class="">
+          <a href="#">
+            拱墅
+</a>        </li>
+        <li class="">
+          <a href="#">
+            西湖
+</a>        </li>
+        <li class="">
+          <a href="#">
+            上城
+</a>        </li>
+        <li class="">
+          <a href="#">
+            下城
+</a>        </li>
+        <li class="">
+          <a href="#">
+            江干
+</a>        </li>
+        <li class="">
+          <a href="#">
+            滨江
+</a>        </li>
+        <li class="">
+          <a href="#">
+            萧山
+</a>        </li>
+        <li class="">
+          <a href="#">
+            余杭
+</a>        </li>
+  </ul>
+</li>
+
+<li class="dropdown-submenu ">
+  <a href="#">广州</a>
+
+  <ul class="dropdown-menu">
+    <li>
+      <a href="#">全部</a>
+    </li>
+
+        <li class="">
+          <a href="#">
+            天河
+</a>        </li>
+        <li class="">
+          <a href="#">
+            海珠
+</a>        </li>
+        <li class="">
+          <a href="#">
+            越秀
+</a>        </li>
+        <li class="">
+          <a href="#">
+            白云
+</a>        </li>
+        <li class="">
+          <a href="#">
+            荔湾
+</a>        </li>
+        <li class="">
+          <a href="">
+            番禺
+</a>        </li>
+        <li class="">
+          <a href="#">
+            黄埔
+</a>        </li>
+        <li class="">
+          <a href="#">
+            花都
+</a>        </li>
+        <li class="">
+          <a href="#">
+            佛山
+</a>        </li>
+        <li class="">
+          <a href="#">
+            南沙
+</a>        </li>
+  </ul>
+</li>
+
+<li class="dropdown-submenu ">
+  <a href="#">成都</a>
+
+  <ul class="dropdown-menu">
+    <li>
+      <a href="#">全部</a>
+    </li>
+
+        <li class="">
+          <a href="#">
+            高新
+</a>        </li>
+        <li class="">
+          <a href="#">
+            武侯
+</a>        </li>
+        <li class="">
+          <a href="#">
+            青羊
+</a>        </li>
+        <li class="">
+          <a href="#">
+            金牛
+</a>        </li>
+        <li class="">
+          <a href="#">
+            锦江
+</a>        </li>
+        <li class="">
+          <a href="#">
+            成华
+</a>        </li>
+        <li class="">
+          <a href="#">
+            双流
+</a>        </li>
+        <li class="">
+          <a href="#">
+            温江
+</a>        </li>
+        <li class="">
+          <a href="#">
+            郫县
+</a>        </li>
+  </ul>
+</li>
+
+<li class="dropdown-submenu ">
+  <a href="#">南京</a>
+
+  <ul class="dropdown-menu">
+    <li>
+      <a href="#">全部</a>
+    </li>
+
+  </ul>
+</li>
+
+<li class="dropdown-submenu ">
+  <a href="#">西安</a>
+
+  <ul class="dropdown-menu">
+    <li>
+      <a href="#">全部</a>
+    </li>
+
+  </ul>
+</li>
+
+<li class="dropdown-submenu ">
+  <a href="#">湖北</a>
+
+  <ul class="dropdown-menu">
+    <li>
+      <a href="#">全部</a>
+    </li>
+
+  </ul>
+</li>
+
+<li class="dropdown-submenu ">
+  <a href="#">厦门</a>
+
+  <ul class="dropdown-menu">
+    <li>
+      <a href="#">全部</a>
+    </li>
+
+  </ul>
+</li>
+
+<li class="dropdown-submenu ">
+  <a href="#">山东</a>
+
+  <ul class="dropdown-menu">
+    <li>
+      <a href="#">全部</a>
+    </li>
+
+  </ul>
+</li>
+
+<li class="dropdown-submenu ">
+  <a href="#">苏州</a>
+
+  <ul class="dropdown-menu">
+    <li>
+      <a href="#">全部</a>
+    </li>
+
+  </ul>
+</li>
+
+<li class="dropdown-submenu ">
+  <a href="#">郑州</a>
+
+  <ul class="dropdown-menu">
+    <li>
+      <a href="#">全部</a>
+    </li>
+
+  </ul>
+</li>
+
+<li class="dropdown-submenu ">
+  <a href="#">福州</a>
+
+  <ul class="dropdown-menu">
+    <li>
+      <a href="#">全部</a>
+    </li>
+
+  </ul>
+</li>
+
+<li class="dropdown-submenu ">
+  <a href="#">长沙</a>
+
+  <ul class="dropdown-menu">
+    <li>
+      <a href="#">全部</a>
+    </li>
+
+  </ul>
+</li>
+
+<li class="dropdown-submenu ">
+  <a href="#">重庆</a>
+
+  <ul class="dropdown-menu">
+    <li>
+      <a href="#">全部</a>
+    </li>
+
+  </ul>
+</li>
+
+<li class="dropdown-submenu ">
+  <a href="#">天津</a>
+
+  <ul class="dropdown-menu">
+    <li>
+      <a href="#">全部</a>
+    </li>
+
+  </ul>
+</li>
+
+<li class="dropdown-submenu ">
+  <a href="#">宁波</a>
+
+  <ul class="dropdown-menu">
+    <li>
+      <a href="#">全部</a>
+    </li>
+
+  </ul>
+</li>
+
+<li class="dropdown-submenu ">
+  <a href="#">远程</a>
+
+  <ul class="dropdown-menu">
+    <li>
+      <a href="#">全部</a>
+    </li>
+
+  </ul>
+</li>
+
+<li class="dropdown-submenu ">
+  <a href="#">其它</a>
+
+  <ul class="dropdown-menu">
+    <li>
+      <a href="#">全部</a>
+    </li>
+
+  </ul>
+</li>
+
+          </ul>
+        </li>
+        <!-- End 所在区域 -->
+
+        <div class="empty-line visible-xs visible-sm"></div>
+
+        <div class="empty-10"></div>
+        <div class="empty-10"></div>
+  <div class="empty-10 hidden-xs hidden-sm"></div>  <div class="empty-10 hidden-xs hidden-sm"></div>
+        <!-- 顾问角色 -->
+        <li class="dropdown ">
+          <a href="javascript:void(0);" class="dropdown-toggle role-and-city" data-toggle="dropdown">
+            顾问角色
+          </a>
+          <ul class="dropdown-menu">
+
+            <li class=" ">
+  <a href="#">IT</a>
+    
+</li>
+
+<li class=" ">
+  <a href="#">四大</a>
+    
+</li>
+
+<li class=" ">
+  <a href="#">医疗</a>
+    
+</li>
+
+<li class=" ">
+  <a href="#">销售</a>
+    
+</li>
+
+
+
+            <li class="dropdown-submenu ">
+  <a href="#">快消</a>
+    
+
+
+             
+
+</li>
+
+
+            <li class=" ">
+  <a href="#">设计</a>
+    
+</li>
+
+<li class=" ">
+  <a href="#">国企、事业单位</a>
+    
+</li>
+
+
+
+
+          </ul>
+        </li>
+        
+ 
+        <!-- End 顾问角色 -->
+
+        <div class="empty-line visible-xs visible-sm"></div>
+
+        <div class="empty-10 hidden-xs hidden-sm"></div>
+        <div class="empty-10 hidden-xs hidden-sm"></div>
+
+        <li style="margin-top: -6px">
+         <form class="navbar-form navbar-left programmer-search-form sm-no-padding" action="/consultants/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+  <div class="input-group">
+    <input type="text" style="border:1px solid  #e83838;" name="query" id="query" placeholder="搜索求职顾问" class="form-control search-text-field" />
+
+    <span class="input-group-btn">
+      <button name="button" type="submit" class="btn btn-primary search-btn-default" ><a href="demand_serch.html">搜索 </a>
+        
+</button>    </span>
+  </div>
+</form>
+        </li>
+      </ul>
+
+      <div class="empty-line visible-xs visible-sm"></div>
+
+      <div class="empty-line visible-xs visible-sm"></div>
+
+      <ul class="nav navbar-nav pull-right">
+          <li>
+            <a class="btn btn-primary redesign-btn-primary" href="private.html">成为求职顾问</a>
+          </li>
+      </ul>
+    </div><!--/end container-->
+  </div>
+</div>
+
+<div class="empty-line"></div>
+<div class="empty-small-line"></div>
+
+<div class="">
+  <div class="">
+    <div class="clearfix"></div>
+
+    <ul class="city-region-list list-inline sort-right col-xs-12 col-sm-12 col-md-12 col-lg-5">
+      <div id="filters-container" class="cbp-l-filters-button sort-right">
+        <a class="cbp-filter-item cbp-filter-item-active" href="#">默认排序</a>
+
+
+        <a class="cbp-filter-item " href="#">
+          工作经验&nbsp;
+           <i class="fa fa-long-arrow-down un-active"></i>
+           <i class="fa fa-long-arrow-up un-active"></i>
+</a>
+        <a class="cbp-filter-item " href="#">
+          价格&nbsp;
+           <i class="fa fa-long-arrow-down un-active"></i>
+           <i class="fa fa-long-arrow-up un-active"></i>
+</a>
+        <div class="clearfix visible-xs hidden-sm"></div>
+        <div class="empty-line visible-xs hidden-sm"></div>
+
+
+        <a class="cbp-filter-item " href="#">
+          评价
+</a>
+      </div>
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+
+  <div class="empty-row visible-xs"></div>
+  <div class="empty-row visible-xs hidden-sm"></div>
+</div>
+
+<div class="clearfix"></div>
+<div class="empty-line"></div>
+
+  
+<div class="a-topic with-white-background-color col-md-12 xs-no-padding fix_flat programmer-card" itemscope itemtype="gperson.html">
+  <meta itemprop="name" content="江郎才无尽-a16b92d5-高级Android工程师">
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+
+  <div class="programmer-text programmer-text-index col-md-8 programmer-link sm-no-padding" uid="gperson.html">
+
+    <div class="username-and-base-info col-md-11 col-sm-11 xs-no-padding sm-no-padding-left">
+        <div class="topic-title-txt inline-block programmer-index-company">
+          美团
+        </div>
+
+      <div class="topic-title-txt inline-block middle-location programmer-index-title">高级Android工程师</div>
+
+      <div class="topic-title-txt inline-block">5年工作经验</div>
+    </div>
+
+    <div class="clearfix visible-xs"></div>
+
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+
+    <div class="col-md-1 pull-right xs-no-padding xs-pull-left">
+      <a class="topic-tutor-link" href="gperson.html">
+          <img class="tiny-avatar-radius"  src="img/tiny_f396e9dc3e3667e4a1aec629948c2c06.jpg" />
+</a>    </div>
+
+    <div class="clearfix"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="technical_experience col-md-12 no-padding-left xs-no-padding sm-no-padding" itemprop="description">
+      <p class="limit-line-4">
+        <strong>技术经验：</strong>
+        教育背景：硕士毕业于中科大。
+
+工作经验：360搜索做好搜App；美团外卖B端App等
+
+好搜（前身360搜索）2015年推出的独立品牌，包含网页、新闻、问答、视频、图片、音乐、地图、良医、雷电、购物等多项搜索产品。移动端目前主推Android，并基于移动的做搜索创新，个性化push推送，周边服务，摸字搜索等。
+个人担任：Push个性化通知栏悬浮窗，云控导航栏，首页卡片增删，手机卫士摇一摇推广插件，360浏览器、360桌面悬浮窗插件，商品编码扫描OCR识别，编译、渠道打包、渠道数据统计。
+
+惠拍拍：搜索内部地推人员获取商品信息的App客户端。
+开发主要内容：Viewpage + Fragment，HttpClient异步服务端数据交互，高德定位、地图等。
+
+U51、保险箱
+51信用卡最新的账户管理app，包含对信用卡、储蓄卡、虚拟账户（支付宝、财付通）、现金账户的账单记录、预算、账户信息等的管理。Http服务端数据请求、Json数据解析，自定义图表UI数据展现，客户端与服务端的数据同步（结构化数据、照片等）
+个人担任：账单线，未出帐，信用卡、储蓄卡等模块， 信用卡年费信息，数据导入，保险箱等功能模块。
+
+51轨迹
+51轨迹为记录人行为的APP软件，分情节故事链、轨迹故事链、图文故事链。涉及到LBS, Google地图、百度地图、计步器等，通过传感器的数据控制GPS的开启，自学习算法控制GPS关闭，GPS点去噪，异步线程获取数据库中GPS点，ContentProvider + SQLite数据存储，ViewPager + Fragment + ExpandListView展现故事情节链，Service+线程完成GPS点的获取、原始数据的处理、传感器数据的获取； WGS84、GCJ-02、baidu09坐标转换；Foursquare、GoogleMap、BaiduMap  POI点的获取。
+Android内容：异步线程、ContentProvider + SQLite， 传感器， GPS；ViewPager、Fragment、ExpandListView
+
+云OS平台云助手
+项目简介：云OS为阿里云发布的基于云手机的手机平台。云助手包括帐号管理以及数据同步备份两大模块体系，账号管理模块包含注册、登陆等，数据同步备份包含了对联系人、短信、图片的与Server端的同步备份操作。
+ 个人担任：参与帐号管理体系、数据同步备份中的同步安全设置， UI界面，联系人同步，账号安全设置等模块。
+      </p>
+    </div>
+
+    <div class="clearfix"></div>
+
+  </div>
+
+  <div class="empty-line visible-sm"></div>
+
+  <div class="topic-title-info col-md-4 sm-no-padding">
+    <div class="programmer-price-info link-blue">
+  <div class="price-number inline-block">
+    800
+  </div>
+  <div class="price-unit inline-block">元 / 8小时</div>
+</div>
+
+
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="hidden-xs appointment_time-region-address">
+        <p>被预约：
+          3 次
+        </p>
+      <p>可兼职时间：
+        周六、周日、工作日
+      </p>
+      <p class="region-address">可兼职地点：
+        朝阳 海淀、朝阳都可以
+      </p>
+    </div>
+
+  </div>
+
+  <div class="clearfix"></div>
+    <div class="programmer-buttons col-md-offset-9">
+          <button name="button" type="submit" class="btn btn-default btn-hundred disabled">已被预约</button>
+
+
+
+    </div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+</div>
+
+<div class="clearfix"></div>
+<div class="empty-line"></div>
+<div class="empty-small-line"></div>
+
+<div class="a-topic with-white-background-color col-md-12 xs-no-padding fix_flat programmer-card" itemscope itemtype="http://schema.org/Product">
+  <meta itemprop="name" content="亚得里亚海的红猪-前端开发工程师">
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+
+  <div class="programmer-text programmer-text-index col-md-8 programmer-link sm-no-padding" uid="9474">
+
+    <div class="username-and-base-info col-md-11 col-sm-11 xs-no-padding sm-no-padding-left">
+        <div class="topic-title-txt inline-block programmer-index-company">
+          当当网，易车网
+        </div>
+
+      <div class="topic-title-txt inline-block middle-location programmer-index-title">前端开发工程师</div>
+
+      <div class="topic-title-txt inline-block">3年工作经验</div>
+    </div>
+
+    <div class="clearfix visible-xs"></div>
+
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+
+    <div class="col-md-1 pull-right xs-no-padding xs-pull-left">
+      <a class="topic-tutor-link" href="#">
+          <img class="tiny-avatar-radius" alt="匿名用户" itemprop="image" src="img/1313.jpg" />
+</a>    </div>
+
+    <div class="clearfix"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="technical_experience col-md-12 no-padding-left xs-no-padding sm-no-padding" itemprop="description">
+      <p class="limit-line-4">
+        <strong>技术经验：</strong>
+        熟悉工作流程，抗压能力强。熟练pc，移动切图，less，原生js，jquery，backbone等，熟悉前端构建gulp等，熟悉常见的性能优化～为人和善
+      </p>
+    </div>
+
+    <div class="clearfix"></div>
+
+  </div>
+
+  <div class="empty-line visible-sm"></div>
+
+  <div class="topic-title-info col-md-4 sm-no-padding">
+    <div class="programmer-price-info link-blue">
+  <div class="price-number inline-block">
+    800
+  </div>
+  <div class="price-unit inline-block">元 / 8小时</div>
+</div>
+
+
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="hidden-xs appointment_time-region-address">
+        <p>被预约：
+          1 次
+        </p>
+      <p>可兼职时间：
+        工作日、周六、周日
+      </p>
+      <p class="region-address">可兼职地点：
+        海淀 海淀，丰台区都行😁
+      </p>
+    </div>
+
+  </div>
+
+  <div class="clearfix"></div>
+    <div class="programmer-buttons col-md-offset-9">
+          <!-- 剩下的这是 default 状态 -->
+      <form class="button_to" method="get" action="appoint_interface.html"><input class="btn btn-default btn-hundred" data-toggle="modal" data-target="#weixin_login_modal" type="submit" value="立即预约" /> </form>
+
+
+
+    </div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+</div>
+
+<div class="clearfix"></div>
+<div class="empty-line"></div>
+<div class="empty-small-line"></div>
+
+<div class="a-topic with-white-background-color col-md-12 xs-no-padding fix_flat programmer-card" itemscope itemtype="http://schema.org/Product">
+  <meta itemprop="name" content="nightfade-开发团队">
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+
+  <div class="programmer-text programmer-text-index col-md-8 programmer-link sm-no-padding" uid="9991">
+
+    <div class="username-and-base-info col-md-11 col-sm-11 xs-no-padding sm-no-padding-left">
+        <div class="topic-title-txt inline-block programmer-index-company">
+          百度、阿里
+        </div>
+
+      <div class="topic-title-txt inline-block middle-location programmer-index-title">开发团队</div>
+
+      <div class="topic-title-txt inline-block">6年工作经验</div>
+    </div>
+
+    <div class="clearfix visible-xs"></div>
+
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+
+    <div class="col-md-1 pull-right xs-no-padding xs-pull-left">
+      <a class="topic-tutor-link" href="#">
+          <img class="tiny-avatar-radius" alt="匿名用户" itemprop="image" src="img/1313.jpg" />
+</a>    </div>
+
+    <div class="clearfix"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="technical_experience col-md-12 no-padding-left xs-no-padding sm-no-padding" itemprop="description">
+      <p class="limit-line-4">
+        <strong>技术经验：</strong>
+        团队简介
+
+产品总监
+曾在P&amp;G（宝洁）担任管理职位，进入互联网行业后曾在百度、网易、知识印象担任资深产品经理。
+产品设计经验丰富，大局观强，对产品战略设定，产品逻辑梳理以及用户体验设计都有极强的掌控能力。
+
+设计总监
+毕业于中央美术学院、法国巴黎国立高等美术学院（世界四大美术学院之一）。曾任职于新浪、Papaya、作业盒子担任设计总监。
+善于创造具有感染力的用户界面，将商业目标、技术面精、情感链接融入设计，提高产品价值。
+
+技术总监
+北京大学计算机科学与技术专业硕士。曾任职于百度、网易游戏、网易有道、宜信大数据中心。
+技术全面，兼具移动开发、游戏研发、Web前端、服务端开发能力。
+
+Web端研发负责人
+曾任职于网易有道、今日头条担任高级研发工程师。ACM亚洲区银牌获得者。
+曾获得网易有道"最佳技术攻关个人"奖励。项目研发经验丰富，技术全面，擅长移动开发、Web开发等。
+
+Android端研发负责人
+曾任职于阿里巴巴担任资深研发工程师。曾参与阿里云输入法系统研发工作。擅长安卓端和Web端开发。
+
+后端研发负责人
+任职于百度、欢聚时代。专注于后端研发，擅长Python、C/C++、Redis、MySQL等技术。
+
+iOS端研发负责人
+全栈开发者，移动开发经验丰富，曾担任互联网创业公司CTO、研发负责人。
+
+QA团队负责人
+曾任职于百度、阿里巴巴担任资深测试开发工程师职位。对高并发系统、数据体系监控系统的质量保障和开发有丰富经验。
+
+      </p>
+    </div>
+
+    <div class="clearfix"></div>
+
+      <div class="empty-norm"></div>
+      <div class="empty-norm"></div>
+      <div class="empty-norm hidden-sm"></div>
+
+      <div class="hidden-xs project_experience col-md-12 no-padding-left sm-no-padding">
+        <p  class="limit-line-4">
+          <strong>项目经验：</strong>
+          ## 百度音乐
+百度音乐是百度旗下的音乐平台。产品网址：http://music.baidu.com/
+
+## 百度地图
+百度地图是百度旗下的地图软件。产品网址：http://map.baidu.com/
+
+## 百度Hi
+百度Hi是百度旗下的实时通信软件，包含Web、iOS和Android端。产品网址：http://im.baidu.com/
+
+## 百度高考
+百度高考是百度旗下面向高考的教育APP。产品网址：http://gaokao.baidu.com/
+
+## 有道云笔记
+有道云笔记是网易有道出品的类Evernote的云笔记产品，包含Web、iOS和Android端。产品网址：https://note.youdao.com/
+
+## 网易云音乐
+网易云音乐是网易旗下的音乐软件，包含Web、iOS和Android。产品网址：http://music.163.com/
+
+## 猫和老鼠官方手游
+猫和老鼠官方手游是网易游戏出品的跑酷类手游。产品网址：http://tnj.163.com/
+
+## 口袋侏罗纪
+口袋侏罗纪是网易游戏出品的类COC手游。产品网址：http://zlj.163.com/
+
+## 指旺理财
+指旺理财是宜信大数据中心出品的理财类APP，iOS和Android端。产品网址：https://zhiwang.yixin.com/
+
+        </p>
+      </div>
+  </div>
+
+  <div class="empty-line visible-sm"></div>
+
+  <div class="topic-title-info col-md-4 sm-no-padding">
+    <div class="programmer-price-info link-blue">
+  <div class="price-number inline-block">
+    2000
+  </div>
+  <div class="price-unit inline-block">元 / 8小时</div>
+</div>
+
+
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="hidden-xs appointment_time-region-address">
+      <p>可兼职时间：
+        周六、周日、工作日、自由职业者
+      </p>
+      <p class="region-address">可兼职地点：
+        海淀 中关村
+      </p>
+    </div>
+
+  </div>
+
+  <div class="clearfix"></div>
+    <div class="programmer-buttons col-md-offset-9">
+          <!-- 剩下的这是 default 状态 -->
+      <form class="button_to" method="get" action="appoint_interface.html"><input class="btn btn-default btn-hundred" data-toggle="modal" data-target="#weixin_login_modal" type="submit" value="立即预约" /></form>
+
+
+
+    </div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+</div>
+
+<div class="clearfix"></div>
+<div class="empty-line"></div>
+<div class="empty-small-line"></div>
+
+<div class="a-topic with-white-background-color col-md-12 xs-no-padding fix_flat programmer-card" itemscope itemtype="http://schema.org/Product">
+  <meta itemprop="name" content="riskers-前端开发工程师">
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+
+  <div class="programmer-text programmer-text-index col-md-8 programmer-link sm-no-padding" uid="1217">
+
+    <div class="username-and-base-info col-md-11 col-sm-11 xs-no-padding sm-no-padding-left">
+        <div class="topic-title-txt inline-block programmer-index-company">
+          360
+        </div>
+
+      <div class="topic-title-txt inline-block middle-location programmer-index-title">前端开发工程师</div>
+
+      <div class="topic-title-txt inline-block">2年工作经验</div>
+    </div>
+
+    <div class="clearfix visible-xs"></div>
+
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+
+    <div class="col-md-1 pull-right xs-no-padding xs-pull-left">
+      <a class="topic-tutor-link" href="/consultants/1217">
+          <img class="tiny-avatar-radius" alt="匿名用户" itemprop="image" src="img/1212.jpg" />
+</a>    </div>
+
+    <div class="clearfix"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="technical_experience col-md-12 no-padding-left xs-no-padding sm-no-padding" itemprop="description">
+      <p class="limit-line-4">
+        <strong>技术经验：</strong>
+        毕业后主要做 移动web开发 面精各种H5宣传页和单页面应用
+
+对技术和设计有一些自己的见解，懂一点技术、懂一点设计，仅此而已
+
+熟悉 Vue 
+熟悉css3 html5 响应式设计
+熟悉模块化开发 seajs gulp等
+熟练使用PS 并且可以做UI设计 这点非常自信
+熟悉PHP
+熟悉git
+      </p>
+    </div>
+
+    <div class="clearfix"></div>
+
+      <div class="empty-norm"></div>
+      <div class="empty-norm"></div>
+      <div class="empty-norm hidden-sm"></div>
+
+      <div class="hidden-xs project_experience col-md-12 no-padding-left sm-no-padding">
+        <p  class="limit-line-4">
+          <strong>项目经验：</strong>
+          360手机助手客户端：
+主要制作其中的单页面应用，主要运用Zepto和CSS3技术，期间运用PHP从后台提取数据；
+帮助团队整理样式库和公用脚本库；
+
+业余项目：
+自己做过Chrome插件，工具类：前端开发需要的占位图，快速得到占位图的URL；娱乐类：美女看图，点击一次获得一张美女图，工作之余娱乐一下。
+
+字数还是不够，我就随便说说吧，本人屌丝一枚，去年万幸能够毕业，在360手机助手工作一年，期间为运营、产品服务，总之他们要什么，我就做什么，仅此而已
+
+
+        </p>
+      </div>
+  </div>
+
+  <div class="empty-line visible-sm"></div>
+
+  <div class="topic-title-info col-md-4 sm-no-padding">
+    <div class="programmer-price-info link-blue">
+  <div class="price-number inline-block">
+    800
+  </div>
+  <div class="price-unit inline-block">元 / 8小时</div>
+</div>
+
+
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="hidden-xs appointment_time-region-address">
+      <p>可兼职时间：
+        周六、周日
+      </p>
+      <p class="region-address">可兼职地点：
+        朝阳 望京 三元桥等
+      </p>
+    </div>
+
+  </div>
+
+  <div class="clearfix"></div>
+    <div class="programmer-buttons col-md-offset-9">
+          <!-- 剩下的这是 default 状态 -->
+      <form class="button_to" method="get" action="javascript:void(0);"><input class="btn btn-default btn-hundred" data-toggle="modal" data-target="#weixin_login_modal" type="submit" value="立即预约" /></form>
+
+
+
+    </div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+</div>
+
+<div class="clearfix"></div>
+<div class="empty-line"></div>
+<div class="empty-small-line"></div>
+
+<div class="a-topic with-white-background-color col-md-12 xs-no-padding fix_flat programmer-card" itemscope itemtype="http://schema.org/Product">
+  <meta itemprop="name" content="一线码农-Spark研发组长">
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+
+  <div class="programmer-text programmer-text-index col-md-8 programmer-link sm-no-padding" uid="10452">
+
+    <div class="username-and-base-info col-md-11 col-sm-11 xs-no-padding sm-no-padding-left">
+        <div class="topic-title-txt inline-block programmer-index-company">
+          启明星辰
+        </div>
+
+      <div class="topic-title-txt inline-block middle-location programmer-index-title">Spark研发组长</div>
+
+      <div class="topic-title-txt inline-block">3年工作经验</div>
+    </div>
+
+    <div class="clearfix visible-xs"></div>
+
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+
+    <div class="col-md-1 pull-right xs-no-padding xs-pull-left">
+      <a class="topic-tutor-link" href="#">
+          <img class="tiny-avatar-radius" alt="匿名用户" itemprop="image" src="img/1212.jpg" />
+</a>    </div>
+
+    <div class="clearfix"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="technical_experience col-md-12 no-padding-left xs-no-padding sm-no-padding" itemprop="description">
+      <p class="limit-line-4">
+        <strong>技术经验：</strong>
+        两年大数据研发经验
+熟悉Hadoop生态相关技术
+熟悉基于Spark Streaming 实时计算平台的技术选型、平台搭建、架构设计以及性能调优
+熟悉Scala开发
+      </p>
+    </div>
+
+    <div class="clearfix"></div>
+
+  </div>
+
+  <div class="empty-line visible-sm"></div>
+
+  <div class="topic-title-info col-md-4 sm-no-padding">
+    <div class="programmer-price-info link-blue">
+  <div class="price-number inline-block">
+    1000
+  </div>
+  <div class="price-unit inline-block">元 / 8小时</div>
+</div>
+
+
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="hidden-xs appointment_time-region-address">
+      <p>可兼职时间：
+        周六、周日、工作日
+      </p>
+      <p class="region-address">可兼职地点：
+        海淀 
+      </p>
+    </div>
+
+  </div>
+
+  <div class="clearfix"></div>
+    <div class="programmer-buttons col-md-offset-9">
+          <!-- 剩下的这是 default 状态 -->
+      <form class="button_to" method="get" action="javascript:void(0);"><input class="btn btn-default btn-hundred" data-toggle="modal" data-target="#weixin_login_modal" type="submit" value="立即预约" /></form>
+
+
+
+    </div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+</div>
+
+<div class="clearfix"></div>
+<div class="empty-line"></div>
+<div class="empty-small-line"></div>
+
+<div class="a-topic with-white-background-color col-md-12 xs-no-padding fix_flat programmer-card" itemscope itemtype="http://schema.org/Product">
+  <meta itemprop="name" content="coffee_coder-高级iOS工程师">
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+
+  <div class="programmer-text programmer-text-index col-md-8 programmer-link sm-no-padding" uid="253">
+
+    <div class="username-and-base-info col-md-11 col-sm-11 xs-no-padding sm-no-padding-left">
+        <div class="topic-title-txt inline-block programmer-index-company">
+          乐视
+        </div>
+
+      <div class="topic-title-txt inline-block middle-location programmer-index-title">高级iOS工程师</div>
+
+      <div class="topic-title-txt inline-block">3年工作经验</div>
+    </div>
+
+    <div class="clearfix visible-xs"></div>
+
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+
+    <div class="col-md-1 pull-right xs-no-padding xs-pull-left">
+      <a class="topic-tutor-link" href="/consultants/253">
+          <img class="tiny-avatar-radius" alt="匿名用户" itemprop="image" src="img/1212.jpg" />
+</a>    </div>
+
+    <div class="clearfix"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="technical_experience col-md-12 no-padding-left xs-no-padding sm-no-padding" itemprop="description">
+      <p class="limit-line-4">
+        <strong>技术经验：</strong>
+        目前在乐视负责某移动产品iOS客户端的架构和代码编写。
+曾就职于某知名创业公司，了解移动开发整个工作流程。
+
+全栈工程师，iOS客户端+服务端，中等规模项目（展示、支付、留言、后台管理）急速开发，一个月搞定。
+
+熟悉iOS开发中的常用技术，并非常了解iOS相关前沿技术，持续跟进iOS8/9、Apple Watch相关技术。
+熟悉Unity3D、Cocos2D/2D-X的开发，有大型Unity3D游戏开发经验。
+      </p>
+    </div>
+
+    <div class="clearfix"></div>
+
+      <div class="empty-norm"></div>
+      <div class="empty-norm"></div>
+      <div class="empty-norm hidden-sm"></div>
+
+      <div class="hidden-xs project_experience col-md-12 no-padding-left sm-no-padding">
+        <p  class="limit-line-4">
+          <strong>项目经验：</strong>
+          工作项目：
+在创业公司期间，开发的产品最好成绩达到 App Store 社交榜第三。
+现负责乐视某核心产品的开发。
+
+业余项目：
+有两个 App Store 上架的项目，iOS客户端、服务器均是自己独立开发完成，其中一个稳定日活千人，在 App Store 社交榜排名600名左右。
+
+人脉资源：
+有若干好友，分别在知名公司担任前/后端开发、设计师、产品经理、运营等工作。
+        </p>
+      </div>
+  </div>
+
+  <div class="empty-line visible-sm"></div>
+
+  <div class="topic-title-info col-md-4 sm-no-padding">
+    <div class="programmer-price-info link-blue">
+  <div class="price-number inline-block">
+    1000
+  </div>
+  <div class="price-unit inline-block">元 / 8小时</div>
+</div>
+
+
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="hidden-xs appointment_time-region-address">
+        <p>被预约：
+          9 次
+        </p>
+      <p>可兼职时间：
+        工作日、周六、周日
+      </p>
+      <p class="region-address">可兼职地点：
+        朝阳 朝阳公园、CBD附近佳
+      </p>
+    </div>
+
+  </div>
+
+  <div class="clearfix"></div>
+    <div class="programmer-buttons col-md-offset-9">
+          <button name="button" type="submit" class="btn btn-default btn-hundred disabled">已被预约</button>
+
+
+
+    </div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+</div>
+
+<div class="clearfix"></div>
+<div class="empty-line"></div>
+<div class="empty-small-line"></div>
+
+<div class="a-topic with-white-background-color col-md-12 xs-no-padding fix_flat programmer-card" itemscope itemtype="http://schema.org/Product">
+  <meta itemprop="name" content="✨ 格格 ✨-UI设计师">
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+
+  <div class="programmer-text programmer-text-index col-md-8 programmer-link sm-no-padding" uid="49">
+
+    <div class="username-and-base-info col-md-11 col-sm-11 xs-no-padding sm-no-padding-left">
+        <div class="topic-title-txt inline-block programmer-index-company">
+          新浪
+        </div>
+
+      <div class="topic-title-txt inline-block middle-location programmer-index-title">UI设计师</div>
+
+      <div class="topic-title-txt inline-block">2年工作经验</div>
+    </div>
+
+    <div class="clearfix visible-xs"></div>
+
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+
+    <div class="col-md-1 pull-right xs-no-padding xs-pull-left">
+      <a class="topic-tutor-link" href="#">
+          <img class="tiny-avatar-radius" alt="匿名用户" itemprop="image" src="img/1212.jpg" />
+</a>    </div>
+
+    <div class="clearfix"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="technical_experience col-md-12 no-padding-left xs-no-padding sm-no-padding" itemprop="description">
+      <p class="limit-line-4">
+        <strong>技术经验：</strong>
+        毕业于985，211院校设计系，在校期间专业成绩优秀，获得一等奖学金。并保送研究生，曾多次取得设计类大赛等级奖。毕业论文获得优秀。
+
+毕业后就职于新浪微博UDC部门，参与新浪天气通app产品的设计。负责界面ui和图标设计。在职期间绩效良好，被评为优秀员工。
+
+对专业兴趣浓厚，持续学习前沿设计风格及软件，并独立完成多个兴趣项目。
+
+专业知识和技能方面，有较高的设计理论研究基础，熟练掌握PS，AI，熟悉 Sketch，AE。 
+      </p>
+    </div>
+
+    <div class="clearfix"></div>
+
+      <div class="empty-norm"></div>
+      <div class="empty-norm"></div>
+      <div class="empty-norm hidden-sm"></div>
+
+      <div class="hidden-xs project_experience col-md-12 no-padding-left sm-no-padding">
+        <p  class="limit-line-4">
+          <strong>项目经验：</strong>
+           工作项目：1.绿行棋，一款专门为上海市儿童博物馆开发的移动端游戏，主要负责其UX及UI工作，游戏逻辑梳理，游戏页面逻辑，游戏页面布局，动画人物性格，动画人物造型，以及所有页面设计，都有我独立完成，并取得了上海儿童博物馆的认，上线应用。2.天气通，主要负责其通知栏，城市管理页面，个性语音页面，天气背景页面，实景和专题等页面的设计。页面的所有操作图标以及线性和面型的图标设计，适配和广告位的banner和宣传长图。
+
+
+        </p>
+      </div>
+  </div>
+
+  <div class="empty-line visible-sm"></div>
+
+  <div class="topic-title-info col-md-4 sm-no-padding">
+    <div class="programmer-price-info link-blue">
+  <div class="price-number inline-block">
+    1500
+  </div>
+  <div class="price-unit inline-block">元 / 8小时</div>
+</div>
+
+
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="hidden-xs appointment_time-region-address">
+        <p>被预约：
+          6 次
+        </p>
+      <p>可兼职时间：
+        周六、周日
+      </p>
+      <p class="region-address">可兼职地点：
+        海淀 中关村
+      </p>
+    </div>
+
+  </div>
+
+  <div class="clearfix"></div>
+    <div class="programmer-buttons col-md-offset-9">
+          <!-- 剩下的这是 default 状态 -->
+      <form class="button_to" method="get" action="javascript:void(0);"><input class="btn btn-default btn-hundred" data-toggle="modal" data-target="#weixin_login_modal" type="submit" value="立即预约" /></form>
+
+
+
+    </div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+</div>
+
+<div class="clearfix"></div>
+<div class="empty-line"></div>
+<div class="empty-small-line"></div>
+
+<div class="a-topic with-white-background-color col-md-12 xs-no-padding fix_flat programmer-card" itemscope itemtype="http://schema.org/Product">
+  <meta itemprop="name" content="15-格物致知-006d169e-高级PHP工程师">
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+
+  <div class="programmer-text programmer-text-index col-md-8 programmer-link sm-no-padding" uid="5029">
+
+    <div class="username-and-base-info col-md-11 col-sm-11 xs-no-padding sm-no-padding-left">
+        <div class="topic-title-txt inline-block programmer-index-company">
+          虎扑体验
+        </div>
+
+      <div class="topic-title-txt inline-block middle-location programmer-index-title">高级PHP工程师</div>
+
+      <div class="topic-title-txt inline-block">5年工作经验</div>
+    </div>
+
+    <div class="clearfix visible-xs"></div>
+
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+
+    <div class="col-md-1 pull-right xs-no-padding xs-pull-left">
+      <a class="topic-tutor-link" href="#">
+          <img class="tiny-avatar-radius" alt="匿名用户" itemprop="image" src="img/1313.jpg" />
+</a>    </div>
+
+    <div class="clearfix"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="technical_experience col-md-12 no-padding-left xs-no-padding sm-no-padding" itemprop="description">
+      <p class="limit-line-4">
+        <strong>技术经验：</strong>
+        1):熟练掌握PHP编程语言；
+
+2):熟悉LAMP网站架构与开发，能运用PHP+MySQL构建Web应用；
+
+3):熟练掌握CI框架，对ThinkPHP框架有一定的了解；
+
+4):熟练掌握Laravel框架，对Syfmony框架有一定的了解；
+
+5):熟练掌握Swift编程语言；
+
+6):熟练掌握JAVA编程语言；
+
+7):熟练使用Struts、Spring、ibatis框架技术整合开发Web项目；
+
+8):熟练掌握elasticsearch；
+
+8):熟练掌握MySQL；
+
+9):熟练掌握HTML；
+
+10):熟练掌握CSS；
+
+11):熟练掌握Jquery；
+
+12):熟练掌握JavaScript；
+
+13):了解Android；
+
+12):了解linux；
+
+13):了解redis；
+
+14):了解sphinx；
+
+15):了解node.js；
+
+16):能够流畅地阅读英文技术文档,及进行简单的英语会话
+
+      </p>
+    </div>
+
+    <div class="clearfix"></div>
+
+  </div>
+
+  <div class="empty-line visible-sm"></div>
+
+  <div class="topic-title-info col-md-4 sm-no-padding">
+    <div class="programmer-price-info link-blue">
+  <div class="price-number inline-block">
+    800
+  </div>
+  <div class="price-unit inline-block">元 / 8小时</div>
+</div>
+
+
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="hidden-xs appointment_time-region-address">
+        <p>被预约：
+          1 次
+        </p>
+      <p>可兼职时间：
+        工作日、周六、周日
+      </p>
+      <p class="region-address">可兼职地点：
+        朝阳 
+      </p>
+    </div>
+
+  </div>
+
+  <div class="clearfix"></div>
+    <div class="programmer-buttons col-md-offset-9">
+          <!-- 剩下的这是 default 状态 -->
+      <form class="button_to" method="get" action="javascript:void(0);"><input class="btn btn-default btn-hundred" data-toggle="modal" data-target="#weixin_login_modal" type="submit" value="立即预约" /></form>
+
+
+
+    </div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+</div>
+
+<div class="clearfix"></div>
+<div class="empty-line"></div>
+<div class="empty-small-line"></div>
+
+<div class="a-topic with-white-background-color col-md-12 xs-no-padding fix_flat programmer-card" itemscope itemtype="http://schema.org/Product">
+  <meta itemprop="name" content="sanshi0815-php">
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+
+  <div class="programmer-text programmer-text-index col-md-8 programmer-link sm-no-padding" uid="4225">
+
+    <div class="username-and-base-info col-md-11 col-sm-11 xs-no-padding sm-no-padding-left">
+        <div class="topic-title-txt inline-block programmer-index-company">
+          知名企业及创业公司
+        </div>
+
+      <div class="topic-title-txt inline-block middle-location programmer-index-title">php</div>
+
+      <div class="topic-title-txt inline-block">10年工作经验</div>
+    </div>
+
+    <div class="clearfix visible-xs"></div>
+
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+
+    <div class="col-md-1 pull-right xs-no-padding xs-pull-left">
+      <a class="topic-tutor-link" href="/consultants/4225">
+          <img class="tiny-avatar-radius" alt="匿名用户" itemprop="image" src="img/1212.jpg" />
+</a>    </div>
+
+    <div class="clearfix"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="technical_experience col-md-12 no-padding-left xs-no-padding sm-no-padding" itemprop="description">
+      <p class="limit-line-4">
+        <strong>技术经验：</strong>
+        多年互联网开发经验，对于大数据，智能设备等方面有所了解。对于常见的网络开发模式了解。常用的php开发及各种配置理解，对于网络结构及产品形态有见解。不为兼职，能帮解决问题就好。
+      </p>
+    </div>
+
+    <div class="clearfix"></div>
+
+  </div>
+
+  <div class="empty-line visible-sm"></div>
+
+  <div class="topic-title-info col-md-4 sm-no-padding">
+    <div class="programmer-price-info link-blue">
+  <div class="price-number inline-block">
+    300
+  </div>
+  <div class="price-unit inline-block">元 / 8小时</div>
+</div>
+
+
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="hidden-xs appointment_time-region-address">
+        <p>被预约：
+          3 次
+        </p>
+      <p>可兼职时间：
+        工作日、周六、周日
+      </p>
+      <p class="region-address">可兼职地点：
+        海淀 
+      </p>
+    </div>
+
+  </div>
+
+  <div class="clearfix"></div>
+    <div class="programmer-buttons col-md-offset-9">
+          <button name="button" type="submit" class="btn btn-default btn-hundred disabled">已被预约</button>
+
+
+
+    </div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+</div>
+
+<div class="clearfix"></div>
+<div class="empty-line"></div>
+<div class="empty-small-line"></div>
+
+<div class="a-topic with-white-background-color col-md-12 xs-no-padding fix_flat programmer-card" itemscope itemtype="http://schema.org/Product">
+  <meta itemprop="name" content="草帽海贼团__团长-系统架构师/高级开发工程师">
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+
+  <div class="programmer-text programmer-text-index col-md-8 programmer-link sm-no-padding" uid="7751">
+
+    <div class="username-and-base-info col-md-11 col-sm-11 xs-no-padding sm-no-padding-left">
+        <div class="topic-title-txt inline-block programmer-index-company">
+          恒聚
+        </div>
+
+      <div class="topic-title-txt inline-block middle-location programmer-index-title">系统架构师/高级开发工程师</div>
+
+      <div class="topic-title-txt inline-block">7年工作经验</div>
+    </div>
+
+    <div class="clearfix visible-xs"></div>
+
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+
+    <div class="col-md-1 pull-right xs-no-padding xs-pull-left">
+      <a class="topic-tutor-link" href="#">
+          <img class="tiny-avatar-radius" alt="匿名用户" itemprop="image" src="img/2121.jpg" />
+</a>    </div>
+
+    <div class="clearfix"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="technical_experience col-md-12 no-padding-left xs-no-padding sm-no-padding" itemprop="description">
+      <p class="limit-line-4">
+        <strong>技术经验：</strong>
+        
+在恒聚主要负责公司的整体技术架构，主要针对电商项目，有电商项目经验。做过B2B2C项目。
+
+在英特华集团使用java 主要负责公司的ERP产品开发，对接淘宝，京东平台。利用多任务处理来分单订单压力。
+基于微信平台开发有一套现有的框架，能很快开发出基于微信平台的微商平台。
+
+在天脉使用过.net 主要负责公司PC客户端开发，基于VLC组件开发了VLC在线播放器，以及公司使用的FTP内部传输软件，对socket比较了解。期间被公司评为优秀员工。
+      </p>
+    </div>
+
+    <div class="clearfix"></div>
+
+      <div class="empty-norm"></div>
+      <div class="empty-norm"></div>
+      <div class="empty-norm hidden-sm"></div>
+
+      <div class="hidden-xs project_experience col-md-12 no-padding-left sm-no-padding">
+        <p  class="limit-line-4">
+          <strong>项目经验：</strong>
+          积分客平台：主要负责平台的整体设计，包括商品模块，订单模块，统一认证模块。包括后台服务的分布式部署。
+
+积分淘站：主要负责淘站的微信公众号开发。主要负责基于微信开发。包括微信支付。微信公众号开发。
+        </p>
+      </div>
+  </div>
+
+  <div class="empty-line visible-sm"></div>
+
+  <div class="topic-title-info col-md-4 sm-no-padding">
+    <div class="programmer-price-info link-blue">
+  <div class="price-number inline-block">
+    1200
+  </div>
+  <div class="price-unit inline-block">元 / 8小时</div>
+</div>
+
+
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="hidden-xs appointment_time-region-address">
+        <p>被预约：
+          1 次
+        </p>
+      <p>可兼职时间：
+        周六、周日、工作日、自由职业者
+      </p>
+      <p class="region-address">可兼职地点：
+        朝阳 
+      </p>
+    </div>
+
+  </div>
+
+  <div class="clearfix"></div>
+    <div class="programmer-buttons col-md-offset-9">
+          <button name="button" type="submit" class="btn btn-default btn-hundred disabled">已被预约</button>
+
+
+
+    </div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+</div>
+
+<div class="clearfix"></div>
+<div class="empty-line"></div>
+<div class="empty-small-line"></div>
+
+<div class="a-topic with-white-background-color col-md-12 xs-no-padding fix_flat programmer-card" itemscope itemtype="http://schema.org/Product">
+  <meta itemprop="name" content="Vincent-Hou-WEB 高级研发工程师">
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+
+  <div class="programmer-text programmer-text-index col-md-8 programmer-link sm-no-padding" uid="2306">
+
+    <div class="username-and-base-info col-md-11 col-sm-11 xs-no-padding sm-no-padding-left">
+        <div class="topic-title-txt inline-block programmer-index-company">
+          IBM
+        </div>
+
+      <div class="topic-title-txt inline-block middle-location programmer-index-title">WEB 高级研发工程师</div>
+
+      <div class="topic-title-txt inline-block">7年工作经验</div>
+    </div>
+
+    <div class="clearfix visible-xs"></div>
+
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+
+    <div class="col-md-1 pull-right xs-no-padding xs-pull-left">
+      <a class="topic-tutor-link" href="#">
+          <img class="tiny-avatar-radius" alt="匿名用户" itemprop="image" src="img/1313.jpg" />
+</a>    </div>
+
+    <div class="clearfix"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="technical_experience col-md-12 no-padding-left xs-no-padding sm-no-padding" itemprop="description">
+      <p class="limit-line-4">
+        <strong>技术经验：</strong>
+        Web开发 前端开发 系统设计架构
+Java JavaScript DOJO JQUERY 前端流行框架的使用以及数据库方面:
+Sql server oracle database
+Asp.net C#Web开发过北京市市级医疗行业的Web项目 以及省级医疗报销平台
+Web前后端经验均有
+      </p>
+    </div>
+
+    <div class="clearfix"></div>
+
+      <div class="empty-norm"></div>
+      <div class="empty-norm"></div>
+      <div class="empty-norm hidden-sm"></div>
+
+      <div class="hidden-xs project_experience col-md-12 no-padding-left sm-no-padding">
+        <p  class="limit-line-4">
+          <strong>项目经验：</strong>
+          毕业至今一直从事Web研发相关的项目 主要是跟Java Web相关的项目，同时也有纯前端项目也有
+熟练使用js html css
+目前兼mobile 产品的开发leader.
+2008-2010 从事医疗卫生行业的web开发职位 技术为:  ASP.NET +C#+SQL SERVER
+2010-至今 IBM操作系统WEB 产品相关的研发
+技术为: JavaScript(Dojo)+JAVA
+
+        </p>
+      </div>
+  </div>
+
+  <div class="empty-line visible-sm"></div>
+
+  <div class="topic-title-info col-md-4 sm-no-padding">
+    <div class="programmer-price-info link-blue">
+  <div class="price-number inline-block">
+    800
+  </div>
+  <div class="price-unit inline-block">元 / 8小时</div>
+</div>
+
+
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="hidden-xs appointment_time-region-address">
+      <p>可兼职时间：
+        周六、周日
+      </p>
+      <p class="region-address">可兼职地点：
+        海淀 西二旗 上地 中关村 五道口 昌平
+      </p>
+    </div>
+
+  </div>
+
+  <div class="clearfix"></div>
+    <div class="programmer-buttons col-md-offset-9">
+          <!-- 剩下的这是 default 状态 -->
+      <form class="button_to" method="get" action="javascript:void(0);"><input class="btn btn-default btn-hundred" data-toggle="modal" data-target="#weixin_login_modal" type="submit" value="立即预约" /></form>
+
+
+
+    </div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+</div>
+
+<div class="clearfix"></div>
+<div class="empty-line"></div>
+<div class="empty-small-line"></div>
+
+<div class="a-topic with-white-background-color col-md-12 xs-no-padding fix_flat programmer-card" itemscope itemtype="http://schema.org/Product">
+  <meta itemprop="name" content="Deeper--UI设计师">
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+
+  <div class="programmer-text programmer-text-index col-md-8 programmer-link sm-no-padding" uid="6509">
+
+    <div class="username-and-base-info col-md-11 col-sm-11 xs-no-padding sm-no-padding-left">
+        <div class="topic-title-txt inline-block programmer-index-company">
+          奇虎360
+        </div>
+
+      <div class="topic-title-txt inline-block middle-location programmer-index-title">UI设计师</div>
+
+      <div class="topic-title-txt inline-block">3年工作经验</div>
+    </div>
+
+    <div class="clearfix visible-xs"></div>
+
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+
+    <div class="col-md-1 pull-right xs-no-padding xs-pull-left">
+      <a class="topic-tutor-link" href="#">
+          <img class="tiny-avatar-radius" alt="匿名用户" itemprop="image" src="img/1212.jpg" />
+</a>    </div>
+
+    <div class="clearfix"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="technical_experience col-md-12 no-padding-left xs-no-padding sm-no-padding" itemprop="description">
+      <p class="limit-line-4">
+        <strong>技术经验：</strong>
+        根据产品定义快速自定整体UI框架及视觉风格！沟通能力超强，曾在创业公司担任UI负责人及部分产品工作！合作过的app多次上app store 优秀推荐！
+      </p>
+    </div>
+
+    <div class="clearfix"></div>
+
+  </div>
+
+  <div class="empty-line visible-sm"></div>
+
+  <div class="topic-title-info col-md-4 sm-no-padding">
+    <div class="programmer-price-info link-blue">
+  <div class="price-number inline-block">
+    1000
+  </div>
+  <div class="price-unit inline-block">元 / 8小时</div>
+</div>
+
+
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="hidden-xs appointment_time-region-address">
+        <p>被预约：
+          1 次
+        </p>
+      <p>可兼职时间：
+        工作日
+      </p>
+      <p class="region-address">可兼职地点：
+        朝阳 
+      </p>
+    </div>
+
+  </div>
+
+  <div class="clearfix"></div>
+    <div class="programmer-buttons col-md-offset-9">
+          <!-- 剩下的这是 default 状态 -->
+      <form class="button_to" method="get" action="javascript:void(0);"><input class="btn btn-default btn-hundred" data-toggle="modal" data-target="#weixin_login_modal" type="submit" value="立即预约" /></form>
+
+
+
+    </div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+</div>
+
+<div class="clearfix"></div>
+<div class="empty-line"></div>
+<div class="empty-small-line"></div>
+
+<div class="a-topic with-white-background-color col-md-12 xs-no-padding fix_flat programmer-card" itemscope itemtype="http://schema.org/Product">
+  <meta itemprop="name" content="elsewhere-技术经理">
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+
+  <div class="programmer-text programmer-text-index col-md-8 programmer-link sm-no-padding" uid="4005">
+
+    <div class="username-and-base-info col-md-11 col-sm-11 xs-no-padding sm-no-padding-left">
+        <div class="topic-title-txt inline-block programmer-index-company">
+          网易
+        </div>
+
+      <div class="topic-title-txt inline-block middle-location programmer-index-title">技术经理</div>
+
+      <div class="topic-title-txt inline-block">4年工作经验</div>
+    </div>
+
+    <div class="clearfix visible-xs"></div>
+
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+
+    <div class="col-md-1 pull-right xs-no-padding xs-pull-left">
+      <a class="topic-tutor-link" href="#">
+          <img class="tiny-avatar-radius" alt="匿名用户" itemprop="image" src="img/tiny_sample-user.png" />
+</a>    </div>
+    <div class="clearfix"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="technical_experience col-md-12 no-padding-left xs-no-padding sm-no-padding" itemprop="description">
+      <p class="limit-line-4">
+        <strong>技术经验：</strong>
+        北航本硕，在校从事雷达，工作后开始接触互联网。
+工作路线：测试开发【一年半】-&gt;后端开发【半年】-&gt;后台组长【一年】-&gt;技术经理【一年】
+
+擅长互联网BS, CS典型场景的业务开发
+擅长性能调优，架构优化，有较丰富的高并发性能调优经验
+
+后端语言: java&gt;python&gt;node，都有相关的web开发经验
+
+熟悉iOS及android开发，能进行相关技术点的攻关，有初步的移动app开发经验
+熟悉前端技术体系
+      </p>
+    </div>
+
+    <div class="clearfix"></div>
+
+      <div class="empty-norm"></div>
+      <div class="empty-norm"></div>
+      <div class="empty-norm hidden-sm"></div>
+
+      <div class="hidden-xs project_experience col-md-12 no-padding-left sm-no-padding">
+        <p  class="limit-line-4">
+          <strong>项目经验：</strong>
+          2012-2013.10 有道测试组——性能测试、性能调优相关工作。
+2013.10-2014.12 网易花田后台——开发、后台架构、性能调优、运维、上线等
+2015-至今 先后负责网易热及网易哒哒项目的整体技术
+        </p>
+      </div>
+  </div>
+
+  <div class="empty-line visible-sm"></div>
+
+  <div class="topic-title-info col-md-4 sm-no-padding">
+    <div class="programmer-price-info link-blue">
+  <div class="price-number inline-block">
+    1600
+  </div>
+  <div class="price-unit inline-block">元 / 8小时</div>
+</div>
+
+
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="hidden-xs appointment_time-region-address">
+      <p>可兼职时间：
+        工作日
+      </p>
+      <p class="region-address">可兼职地点：
+        海淀 五道口&amp;安贞桥
+      </p>
+    </div>
+
+  </div>
+
+  <div class="clearfix"></div>
+    <div class="programmer-buttons col-md-offset-9">
+          <!-- 剩下的这是 default 状态 -->
+      <form class="button_to" method="get" action="javascript:void(0);"><input class="btn btn-default btn-hundred" data-toggle="modal" data-target="#weixin_login_modal" type="submit" value="立即预约" /></form>
+
+
+
+    </div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+</div>
+
+<div class="clearfix"></div>
+<div class="empty-line"></div>
+<div class="empty-small-line"></div>
+
+<div class="a-topic with-white-background-color col-md-12 xs-no-padding fix_flat programmer-card" itemscope itemtype="http://schema.org/Product">
+  <meta itemprop="name" content="兽-高级前端工程师">
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+
+  <div class="programmer-text programmer-text-index col-md-8 programmer-link sm-no-padding" uid="4023">
+
+    <div class="username-and-base-info col-md-11 col-sm-11 xs-no-padding sm-no-padding-left">
+        <div class="topic-title-txt inline-block programmer-index-company">
+          百度
+        </div>
+
+      <div class="topic-title-txt inline-block middle-location programmer-index-title">高级前端工程师</div>
+
+      <div class="topic-title-txt inline-block">4年工作经验</div>
+    </div>
+
+    <div class="clearfix visible-xs"></div>
+
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+
+    <div class="col-md-1 pull-right xs-no-padding xs-pull-left">
+      <a class="topic-tutor-link" href="#">
+          <img class="tiny-avatar-radius" alt="匿名用户" itemprop="image" src="img/1313.jpg" />
+</a>    </div>
+
+    <div class="clearfix"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="technical_experience col-md-12 no-padding-left xs-no-padding sm-no-padding" itemprop="description">
+      <p class="limit-line-4">
+        <strong>技术经验：</strong>
+        毕业后就职于数家知名互联网公司做核心开发。
+
+技能：
+html5, css/css3, javascript/ES6/ES2015熟练应用
+解决各种浏览器兼容性
+移动端开发，hybrid app开发
+各种自动化工具使用，如grunt, gulp, webpack等
+git熟练使用，曾做过多次公司内技术分享
+熟悉各种前沿前端技术、框架，如：less, scss, reactjs, knockout, Angularjs, nodejs
+熟练使用Linux、Mac
+熟悉后端编程与服务器配置，可自主建站
+熟练阅读各种官方英文文档
+      </p>
+    </div>
+
+    <div class="clearfix"></div>
+
+  </div>
+
+  <div class="empty-line visible-sm"></div>
+
+  <div class="topic-title-info col-md-4 sm-no-padding">
+    <div class="programmer-price-info link-blue">
+  <div class="price-number inline-block">
+    800
+  </div>
+  <div class="price-unit inline-block">元 / 8小时</div>
+</div>
+
+
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="hidden-xs appointment_time-region-address">
+      <p>可兼职时间：
+        工作日、周六、周日
+      </p>
+      <p class="region-address">可兼职地点：
+        海淀 西二旗
+      </p>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+    <div class="programmer-buttons col-md-offset-9">
+          <!-- 剩下的这是 default 状态 -->
+      <form class="button_to" method="get" action="javascript:void(0);"><input class="btn btn-default btn-hundred" data-toggle="modal" data-target="#weixin_login_modal" type="submit" value="立即预约" /></form>
+    </div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+</div>
+<div class="clearfix"></div>
+<div class="empty-line"></div>
+<div class="empty-small-line"></div>
+<div class="a-topic with-white-background-color col-md-12 xs-no-padding fix_flat programmer-card" itemscope itemtype="http://schema.org/Product">
+  <meta itemprop="name" content="binnng-高级前端架构师">
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+
+  <div class="programmer-text programmer-text-index col-md-8 programmer-link sm-no-padding" uid="10719">
+
+    <div class="username-and-base-info col-md-11 col-sm-11 xs-no-padding sm-no-padding-left">
+        <div class="topic-title-txt inline-block programmer-index-company">
+          百度
+        </div>
+
+      <div class="topic-title-txt inline-block middle-location programmer-index-title">高级前端架构师</div>
+
+      <div class="topic-title-txt inline-block">4年工作经验</div>
+    </div>
+
+    <div class="clearfix visible-xs"></div>
+
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+
+    <div class="col-md-1 pull-right xs-no-padding xs-pull-left">
+      <a class="topic-tutor-link" href="#">
+          <img class="tiny-avatar-radius" alt="匿名用户" itemprop="image" src="img/1212.jpg" />
+</a>    </div>
+
+    <div class="clearfix"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="technical_experience col-md-12 no-padding-left xs-no-padding sm-no-padding" itemprop="description">
+      <p class="limit-line-4">
+        <strong>技术经验：</strong>
+        12年毕业，4年前端开发经验。
+
+目前就职于百度，主要负责金融事业部业务前端基础架构部分。
+
+主要工作职责，1）搭建新业务框架；2）提升原有业务性能等。15年下半年主导重构百度钱包核心收银台新版框架，性能提升20%，大大增加支付成功率。乐于技术研究及分享。
+
+过往曾在搜狐视频任职，主要负责新版移动视频H5端，以及H5和APP交互创新等。
+
+未毕业实习于北京创新工场，开启前端工程师职业生涯。
+
+对php，nodejs等都有所涉猎。
+
+
+      </p>
+    </div>
+
+    <div class="clearfix"></div>
+
+      <div class="empty-norm"></div>
+      <div class="empty-norm"></div>
+      <div class="empty-norm hidden-sm"></div>
+
+      <div class="hidden-xs project_experience col-md-12 no-padding-left sm-no-padding">
+        <p  class="limit-line-4">
+          <strong>项目经验：</strong>
+          1. 百度钱包H5收银台
+主要负责基础架构及性能升级，从而提升支付成功率。使用localstorage &amp; combo等增量更新以达到H5端前端性能最大化！
+
+2. 百度钱包H5主站
+承接百度钱包各个场景业务，包括转账，信用卡还款，话费充值，生活缴费等。采用component构建单页应用。
+
+3. 搜狐视频H5主站
+搜狐视频H5端播放器，兼容性（小米，UC。。）极好。
+        </p>
+      </div>
+  </div>
+
+  <div class="empty-line visible-sm"></div>
+
+  <div class="topic-title-info col-md-4 sm-no-padding">
+    <div class="programmer-price-info link-blue">
+  <div class="price-number inline-block">
+    2000
+  </div>
+  <div class="price-unit inline-block">元 / 8小时</div>
+</div>
+
+
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="hidden-xs appointment_time-region-address">
+        <p>被预约：
+          1 次
+        </p>
+      <p>可兼职时间：
+        周六、周日
+      </p>
+      <p class="region-address">可兼职地点：
+        朝阳 亚运村
+      </p>
+    </div>
+
+  </div>
+
+  <div class="clearfix"></div>
+    <div class="programmer-buttons col-md-offset-9">
+          <!-- 剩下的这是 default 状态 -->
+      <form class="button_to" method="get" action="javascript:void(0);"><input class="btn btn-default btn-hundred" data-toggle="modal" data-target="#weixin_login_modal" type="submit" value="立即预约" /></form>
+
+
+
+    </div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+</div>
+
+<div class="clearfix"></div>
+<div class="empty-line"></div>
+<div class="empty-small-line"></div>
+
+<div class="a-topic with-white-background-color col-md-12 xs-no-padding fix_flat programmer-card" itemscope itemtype="http://schema.org/Product">
+  <meta itemprop="name" content="哈达-高级iOS工程师">
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+
+  <div class="programmer-text programmer-text-index col-md-8 programmer-link sm-no-padding" uid="9972">
+
+    <div class="username-and-base-info col-md-11 col-sm-11 xs-no-padding sm-no-padding-left">
+        <div class="topic-title-txt inline-block programmer-index-company">
+          奇虎360
+        </div>
+
+      <div class="topic-title-txt inline-block middle-location programmer-index-title">高级iOS工程师</div>
+
+      <div class="topic-title-txt inline-block">3年工作经验</div>
+    </div>
+
+    <div class="clearfix visible-xs"></div>
+
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+
+    <div class="col-md-1 pull-right xs-no-padding xs-pull-left">
+      <a class="topic-tutor-link" href="#">
+          <img class="tiny-avatar-radius" alt="匿名用户" itemprop="image" src="img/2121.jpg" />
+</a>    </div>
+
+    <div class="clearfix"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="technical_experience col-md-12 no-padding-left xs-no-padding sm-no-padding" itemprop="description">
+      <p class="limit-line-4">
+        <strong>技术经验：</strong>
+        毕业于某985高校计算机系，在校期间专业成绩优秀。
+
+毕业后就职于某知名互联网公司核心部门，参与模块开发。
+
+熟悉以下业务：
+1）ipa逆向破解。
+2）刷榜技术解决。
+3）项目模块逆向源码。
+4）hook技术&amp;协议分析。
+      </p>
+    </div>
+
+    <div class="clearfix"></div>
+
+      <div class="empty-norm"></div>
+      <div class="empty-norm"></div>
+      <div class="empty-norm hidden-sm"></div>
+
+      <div class="hidden-xs project_experience col-md-12 no-padding-left sm-no-padding">
+        <p  class="limit-line-4">
+          <strong>项目经验：</strong>
+          1）ipa逆向破解。
+2）刷榜技术解决。
+3）项目模块逆向源码。
+4）hook技术&amp;协议分析。
+        </p>
+      </div>
+  </div>
+
+  <div class="empty-line visible-sm"></div>
+
+  <div class="topic-title-info col-md-4 sm-no-padding">
+    <div class="programmer-price-info link-blue">
+  <div class="price-number inline-block">
+    1000
+  </div>
+  <div class="price-unit inline-block">元 / 8小时</div>
+</div>
+
+
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="hidden-xs appointment_time-region-address">
+      <p>可兼职时间：
+        周六、周日
+      </p>
+      <p class="region-address">可兼职地点：
+        朝阳 朝阳
+      </p>
+    </div>
+
+  </div>
+
+  <div class="clearfix"></div>
+    <div class="programmer-buttons col-md-offset-9">
+          <!-- 剩下的这是 default 状态 -->
+      <form class="button_to" method="get" action="javascript:void(0);"><input class="btn btn-default btn-hundred" data-toggle="modal" data-target="#weixin_login_modal" type="submit" value="立即预约" /></form>
+
+
+
+    </div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+</div>
+
+<div class="clearfix"></div>
+<div class="empty-line"></div>
+<div class="empty-small-line"></div>
+
+<div class="a-topic with-white-background-color col-md-12 xs-no-padding fix_flat programmer-card" itemscope itemtype="http://schema.org/Product">
+  <meta itemprop="name" content="琳👻-国美     麦子金服      i黑马">
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+
+  <div class="programmer-text programmer-text-index col-md-8 programmer-link sm-no-padding" uid="10638">
+
+    <div class="username-and-base-info col-md-11 col-sm-11 xs-no-padding sm-no-padding-left">
+        <div class="topic-title-txt inline-block programmer-index-company">
+          踏实做事的UI设计师
+        </div>
+
+      <div class="topic-title-txt inline-block middle-location programmer-index-title">国美     麦子金服      i黑马</div>
+
+      <div class="topic-title-txt inline-block">4年工作经验</div>
+    </div>
+
+    <div class="clearfix visible-xs"></div>
+
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+
+    <div class="col-md-1 pull-right xs-no-padding xs-pull-left">
+      <a class="topic-tutor-link" href="#">
+          <img class="tiny-avatar-radius" alt="匿名用户" itemprop="image" src="img/1313.jpg" />
+</a>    </div>
+
+    <div class="clearfix"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="technical_experience col-md-12 no-padding-left xs-no-padding sm-no-padding" itemprop="description">
+      <p class="limit-line-4">
+        <strong>技术经验：</strong>
+        目前涉猎过的互联网产品有：IM产品，互联网金融产品，教育产品，运动产品，旅游产品，电商产品，餐饮产品，生活服务产品
+
+中国人民大学视觉艺术设计硕士
+
+本科就读于燕山大学，曾是大学生科学技术协会技术部部长，团支书，党员，年年获奖学金，三好学生，英语六级等。因喜欢艺术，于2012年开始做设计
+
+曾合伙创建爱典创意设计工作室
+
+合伙创业做过一款学生市场的IM互联网产品
+
+现就职于国美，负责国美+客户端设计
+
+深入研究用户体验设计、懂交互，擅长视觉设计
+
+工作中参与产品的前期视觉用户研究、设计流行趋势分析，主导设定整体视觉风格和UI设计
+
+具有优秀的设计表现力和设计沟通能力
+
+热爱设计，思维活跃，耐心细致
+
+
+
+技术经验：
+
+1. 能独立完成app、网站UI及大型专题的创意设计工作；
+
+2. 具有专业的视觉设计表现力和创意能力，运用合理的设计策略， 帮助产品提升品牌影响力；
+
+3. 精通UI设计工具软件及原型绘画软件，对产品交互、用户体验有深入理解；
+
+4. 具备良好的协作能力和项目执行能力；
+
+5. 热爱UI设计，很好的视觉设计能力，对视觉设计有激情和追求创新的精神。有很深的设计底蕴及良好的人际关系，对视觉有着敏锐的嗅觉
+
+6.有扎实的手绘基础  www.dribbble.com/Celia-Chinese
+
+
+
+
+      </p>
+    </div>
+
+    <div class="clearfix"></div>
+
+      <div class="empty-norm"></div>
+      <div class="empty-norm"></div>
+      <div class="empty-norm hidden-sm"></div>
+
+      <div class="hidden-xs project_experience col-md-12 no-padding-left sm-no-padding">
+        <p  class="limit-line-4">
+          <strong>项目经验：</strong>
+          国美+ 客户端设计  https://itunes.apple.com/us/app/guo-mei+/id1017591173?mt=8
+
+麦子金服的财神爷爷移动端全部设计  https://appsto.re/cn/hv8X4.i
+
+创业家（i黑马）的牛投众筹网页设计  http://www.niutou.com/#/
+
+U+优财：http://www.wealthbetter.com
+
+百客盈后台系统设计，VI设计  http://www.ui.cn/detail/139369.html
+
+微美客经理客户端设计
+
+约教练客户端的设计，网页设计，海报设计  http://www.dongmai365.com
+
+影音助手客户端设计
+
+
+
+
+        </p>
+      </div>
+  </div>
+
+  <div class="empty-line visible-sm"></div>
+
+  <div class="topic-title-info col-md-4 sm-no-padding">
+    <div class="programmer-price-info link-blue">
+  <div class="price-number inline-block">
+    500
+  </div>
+  <div class="price-unit inline-block">元 / 8小时</div>
+</div>
+
+
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="hidden-xs appointment_time-region-address">
+        <p>被预约：
+          2 次
+        </p>
+      <p>可兼职时间：
+        周六、周日、工作日
+      </p>
+      <p class="region-address">可兼职地点：
+        朝阳 全北京均可
+      </p>
+    </div>
+
+  </div>
+
+  <div class="clearfix"></div>
+    <div class="programmer-buttons col-md-offset-9">
+          <button name="button" type="submit" class="btn btn-default btn-hundred disabled">已被预约</button>
+
+
+
+    </div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+</div>
+
+<div class="clearfix"></div>
+<div class="empty-line"></div>
+<div class="empty-small-line"></div>
+
+<div class="a-topic with-white-background-color col-md-12 xs-no-padding fix_flat programmer-card" itemscope itemtype="http://schema.org/Product">
+  <meta itemprop="name" content="crazied-Android高级架构师">
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+
+  <div class="programmer-text programmer-text-index col-md-8 programmer-link sm-no-padding" uid="11076">
+
+    <div class="username-and-base-info col-md-11 col-sm-11 xs-no-padding sm-no-padding-left">
+        <div class="topic-title-txt inline-block programmer-index-company">
+          北京联想软件有限公司
+        </div>
+
+      <div class="topic-title-txt inline-block middle-location programmer-index-title">Android高级架构师</div>
+
+      <div class="topic-title-txt inline-block">6年工作经验</div>
+    </div>
+
+    <div class="clearfix visible-xs"></div>
+
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+
+    <div class="col-md-1 pull-right xs-no-padding xs-pull-left">
+      <a class="topic-tutor-link" href="/consultants/11076">
+          <img class="tiny-avatar-radius" alt="匿名用户" itemprop="image" src="img/2121.jpg" />
+</a>    </div>
+
+    <div class="clearfix"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="technical_experience col-md-12 no-padding-left xs-no-padding sm-no-padding" itemprop="description">
+      <p class="limit-line-4">
+        <strong>技术经验：</strong>
+        6年软件开发，架构经验，擅长于Java体系的技术架构。熟练掌握Android应用层开发，对移动端app的设计和开发有自己的心得。对用户体验和程序效率有苛刻的要求。
+
+毕业后就职于北京联想软件有限公司，做Android framework 层开发，13年就职于Yoka时尚网，高级架构师，做基于时尚电商，时尚新媒体业务的APP开发，用户量均已超过3000万。15年至今加入了一家创业公司，做互联网金融业务技术架构工作。对APP设计灵活性和程序效率优化进一步有了更系统化的积累。迄今开发6款app，用户量均在1000万以上。
+
+擅长的技术领域：Android音视频编解码，图像绘制、动画和UI特效面精，数据及图片缓存机制，APP性能优化监测，对APP的耗电，流量，ANR等有着丰富的经验。
+
+对技术开源有浓厚的兴趣，持续学习前沿技术，在github上有自己的开源项目，stackflow上也常参与技术问答讨论。
+      </p>
+    </div>
+
+    <div class="clearfix"></div>
+
+      <div class="empty-norm"></div>
+      <div class="empty-norm"></div>
+      <div class="empty-norm hidden-sm"></div>
+
+      <div class="hidden-xs project_experience col-md-12 no-padding-left sm-no-padding">
+        <p  class="limit-line-4">
+          <strong>项目经验：</strong>
+          先后参与联想乐phone项目组frameworke层开发，k歌大人，达令全球购，淘世界，服饰美容，Hot男人，街拍等APP的架构开发。熟悉电商，新闻资讯，金融业务的开发流程。
+        </p>
+      </div>
+  </div>
+
+  <div class="empty-line visible-sm"></div>
+
+  <div class="topic-title-info col-md-4 sm-no-padding">
+    <div class="programmer-price-info link-blue">
+  <div class="price-number inline-block">
+    800
+  </div>
+  <div class="price-unit inline-block">元 / 8小时</div>
+</div>
+
+
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="hidden-xs appointment_time-region-address">
+      <p>可兼职时间：
+        周六、周日、工作日
+      </p>
+      <p class="region-address">可兼职地点：
+        朝阳 北苑-大屯-北土城
+      </p>
+    </div>
+
+  </div>
+
+  <div class="clearfix"></div>
+    <div class="programmer-buttons col-md-offset-9">
+          <!-- 剩下的这是 default 状态 -->
+      <form class="button_to" method="get" action="javascript:void(0);"><input class="btn btn-default btn-hundred" data-toggle="modal" data-target="#weixin_login_modal" type="submit" value="立即预约" /></form>
+
+
+
+    </div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+</div>
+
+<div class="clearfix"></div>
+<div class="empty-line"></div>
+<div class="empty-small-line"></div>
+
+<div class="a-topic with-white-background-color col-md-12 xs-no-padding fix_flat programmer-card" itemscope itemtype="">
+  <meta itemprop="name" content="WAXTT-Java高级开发工程师">
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+
+  <div class="programmer-text programmer-text-index col-md-8 programmer-link sm-no-padding" uid="6511">
+
+    <div class="username-and-base-info col-md-11 col-sm-11 xs-no-padding sm-no-padding-left">
+        <div class="topic-title-txt inline-block programmer-index-company">
+          京东
+        </div>
+
+      <div class="topic-title-txt inline-block middle-location programmer-index-title">Java高级开发工程师</div>
+
+      <div class="topic-title-txt inline-block">4年工作经验</div>
+    </div>
+
+    <div class="clearfix visible-xs"></div>
+
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+
+    <div class="col-md-1 pull-right xs-no-padding xs-pull-left">
+      <a class="topic-tutor-link" href="#">
+          <img class="tiny-avatar-radius" alt="匿名用户" itemprop="image" src="img/1212.jpg" />
+</a>    </div>
+
+    <div class="clearfix"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="technical_experience col-md-12 no-padding-left xs-no-padding sm-no-padding" itemprop="description">
+      <p class="limit-line-4">
+        <strong>技术经验：</strong>
+        毕业后就职于某知名电商公司核心部门，生产相关核心系统负责人，负责系统的性能和吞吐量的提升，解决系统瓶颈问题，开发核心代码，搭建系统框架，应对每年店庆和双11大促，有丰富的高并发和海量数据处理经验。工作期间，因表现良好，曾获得公司级优秀员工称号。
+      </p>
+    </div>
+
+    <div class="clearfix"></div>
+
+  </div>
+
+  <div class="empty-line visible-sm"></div>
+
+  <div class="topic-title-info col-md-4 sm-no-padding">
+    <div class="programmer-price-info link-blue">
+  <div class="price-number inline-block">
+    700
+  </div>
+  <div class="price-unit inline-block">元 / 8小时</div>
+</div>
+
+
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="hidden-xs appointment_time-region-address">
+        <p>被预约：
+          1 次
+        </p>
+      <p>可兼职时间：
+        工作日、周六、周日
+      </p>
+      <p class="region-address">可兼职地点：
+        海淀 朝阳 通州
+      </p>
+    </div>
+
+  </div>
+
+  <div class="clearfix"></div>
+    <div class="programmer-buttons col-md-offset-9">
+          <!-- 剩下的这是 default 状态 -->
+      <form class="button_to" method="get" action="javascript:void(0);"><input class="btn btn-default btn-hundred" data-toggle="modal" data-target="#weixin_login_modal" type="submit" value="立即预约" /></form>
+
+
+
+    </div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+</div>
+
+<div class="clearfix"></div>
+<div class="empty-line"></div>
+<div class="empty-small-line"></div>
+
+<div class="a-topic with-white-background-color col-md-12 xs-no-padding fix_flat programmer-card" itemscope itemtype="http://schema.org/Product">
+  <meta itemprop="name" content="蓝金伟-构架师">
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+
+  <div class="programmer-text programmer-text-index col-md-8 programmer-link sm-no-padding" uid="9385">
+
+    <div class="username-and-base-info col-md-11 col-sm-11 xs-no-padding sm-no-padding-left">
+        <div class="topic-title-txt inline-block programmer-index-company">
+          新浪
+        </div>
+
+      <div class="topic-title-txt inline-block middle-location programmer-index-title">构架师</div>
+
+      <div class="topic-title-txt inline-block">10年工作经验</div>
+    </div>
+
+    <div class="clearfix visible-xs"></div>
+
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+
+    <div class="col-md-1 pull-right xs-no-padding xs-pull-left">
+      <a class="topic-tutor-link" href="#">
+          <img class="tiny-avatar-radius" alt="匿名用户" itemprop="image" src="img/1313.jpg" />
+</a>    </div>
+
+    <div class="clearfix"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="technical_experience col-md-12 no-padding-left xs-no-padding sm-no-padding" itemprop="description">
+      <p class="limit-line-4">
+        <strong>技术经验：</strong>
+        05年毕业后加入新浪网，先后参与了新浪博客、邮箱、论坛等产品的服务，同时参与了新浪云计算的创始，是这个团队的主力军。在新浪的五年从一个维护工程师迅速成长为资深架构师。擅长架构和解决团队技术难题。
+10年后自己创业，负责技术面精，跟产品，运营，技术方面还是解决各种团队内复杂难题；但是这段经历让我了解了不同阶段的企业更需要什么。也曾多次外包项目。
+
+      </p>
+    </div>
+
+    <div class="clearfix"></div>
+
+      <div class="empty-norm"></div>
+      <div class="empty-norm"></div>
+      <div class="empty-norm hidden-sm"></div>
+
+      <div class="hidden-xs project_experience col-md-12 no-padding-left sm-no-padding">
+        <p  class="limit-line-4">
+          <strong>项目经验：</strong>
+          正和岛 WE+
+合合科技 快决APP
+公交集团 公交e路通APP
+门路科技 门路APP
+雷士照明 求职顾问
+        </p>
+      </div>
+  </div>
+
+  <div class="empty-line visible-sm"></div>
+
+  <div class="topic-title-info col-md-4 sm-no-padding">
+    <div class="programmer-price-info link-blue">
+  <div class="price-number inline-block">
+    2000
+  </div>
+  <div class="price-unit inline-block">元 / 8小时</div>
+</div>
+
+
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm hidden-sm"></div>
+
+    <div class="hidden-xs appointment_time-region-address">
+      <p>可兼职时间：
+        周六、周日
+      </p>
+      <p class="region-address">可兼职地点：
+        海淀 全北京
+      </p>
+    </div>
+
+  </div>
+
+  <div class="clearfix"></div>
+    <div class="programmer-buttons col-md-offset-9">
+          <!-- 剩下的这是 default 状态 -->
+      <form class="button_to" method="get" action="javascript:void(0);"><input class="btn btn-default btn-hundred" data-toggle="modal" data-target="#weixin_login_modal" type="submit" value="立即预约" /></form>
+
+
+
+    </div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm hidden-sm"></div>
+</div>
+
+<!-- <div class="clearfix"></div>
+<div class="empty-line"></div> -->
+<div class="empty-small-line"></div>
+
+
+<br />
+
+
+<div class="text-center "><!-- no-padding-left -->
+    <ul class="pagination">
+    <li>
+  <a href="#">&laquo; 第一页</a>
+</li>
+
+    <li>
+  <a rel="prev" href="#">&lsaquo; 上一页</a>
+</li>
+
+          <li>
+    <a rel="prev" href="#">1</a>
+  </li>
+
+          <li class='active'>
+    <a remote="false">2</a>
+  </li>
+
+          <li>
+    <a rel="next" href="#">3</a>
+  </li>
+
+          <li>
+    <a href="#">4</a>
+  </li>
+
+          <li>
+    <a href="#">5</a>
+  </li>
+
+          <li>
+    <a href="#">6</a>
+  </li>
+
+        <li class='disabled'>
+  <a>...</a>
+</li>
+
+    <li>
+  <a rel="next" href="#">下一页 &rsaquo;</a>
+</li>
+
+    <li>
+  <a href="#">最后一页 &raquo;</a>
+</li>
+
+  </ul>
+
+</div>
+
+<a id="_weixin_helper_bar" class="visible-md visible-lg" href="#" style="
+position:fixed;
+bottom:88px;
+right:60px;
+">
+   <img class="bat-img full-size" style="width: 80px;height: 80px;" src="img/weixin_helper_bar-87a76290660784a92184fc8ab6845bd89d01494f4924719a1b271af548c3a419.png" alt="Weixin helper bar 87a76290660784a92184fc8ab6845bd89d01494f4924719a1b271af548c3a419" />
+</a>
+<script type="text/javascript">
+    $("#_weixin_helper_bar").popover({
+        html : true, 
+        content: function() {
+            return '<img class="sx_activity" src="img/shixian-team-qr-code-6e12ae9806057212d510f03cdc2173a00d22542669be5992b1fd926f4715e188.jpg" alt="Shixian team qr code 6e12ae9806057212d510f03cdc2173a00d22542669be5992b1fd926f4715e188" />';
+        },
+        trigger: 'hover',
+        placement: "top"
+    }); 
+</script>
+
+
+
+</div>
+<!-- 
+<div class="footer-faker-margin-row"></div>
+
+<div class="empty-row"></div> -->
+
+<style>
+     .zi{background-color: red;width: 1080px;background-color: #fff; margin: 0 auto;}
+     .zi a{ display: block;text-align: center;width: 175px;float: left;margin: 0;padding: 0;border: 0; }
+     .zi a img{margin: 0;padding: 0;border: 0; }
+     .footer .col ul a{color:#777;}
+     .fcolor{color:#f2f2f2}
+ </style>
+
+    <div class="footer jiayi" style="">
+      <div class="content-wrapper " style="background-color:#f2f2f2;">
+        
+        <div class="col">
+          <ul>
+            <li>
+              <a  href="baed_dlc.html">预约流程</a>
+            </li>
+            <li>
+             <a  href="baed_wdl.html">网站协议</a>
+            </li>
+            <li>
+              <a  href="baed_dlc.html">常见问题</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col" >
+          
+          <ul>
+            <li>
+              <a target="_blank" href="baed_wdy.html">友情链接</a>
+            </li>
+            <li>
+              <a  href="index.html#hezuo">合作伙伴</a>
+            </li>
+               <li><a target="_blank" href="#">线下活动</a></li>
+         
+          </ul>
+        </div>
+        <div class="col">
+          
+          <ul>
+          </ul>
+        </div>
+        <div class="col" style="padding-right:185px;">
+          <div >
+            <img width="108" src="img/shixian-team-qr-code-6e12ae9806057212d510f03cdc2173a00d22542669be5992b1fd926f4715e188.jpg" alt="Shixian qr code 1172ea9fd974a9901cb4ea6a5c826cb7f16aeaed0cce6f7815b292428b1ae7ca" />
+          </div> 
+        </div>
+      </div>
+    </div>
+    <div class="copyrights jia" style="bottom: 0;width:100%;background-color:#be3232">
+      <div class="fcolor">2014-2016 © 上海垚元信息科技有限公司&nbsp;&nbsp;|&nbsp;&nbsp;沪ICP备16027855号</div>
+    </div>
+
+
+ 
+<script type="text/javascript">
+  is_weixin();
+  function is_weixin(){
+    var ua = navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i)=="micromessenger") {
+      $(".wechat_login").attr("href", "http://shixian.com/users/auth/wechat");
+      $(".weibo_login").hide();
+      $(".github_login").hide();
+    } else {
+      $(".wechat_login").attr("href", "http://shixian.com/users/auth/open_wechat")
+    }
+  }
+</script>
+
+<script src="js/popover.js"></script>
+
+    
+    
+    <!-- 百度统计等 -->
+      <script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F25e3b17ddf2b132427768bfebf751a76' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+
+  <!-- growingio -->
+  <script type='text/javascript'>
+      var _vds = _vds || [];
+      window._vds = _vds;
+      (function(){
+        _vds.push(['setAccountId', 'acf6ac3446a1dcb0']);
+        (function() {
+          var vds = document.createElement('script');
+          vds.type='text/javascript';
+          vds.async = true;
+          vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(vds, s);
+        })();
+      })();
+  </script>
+
+  </body>
+</html>
+

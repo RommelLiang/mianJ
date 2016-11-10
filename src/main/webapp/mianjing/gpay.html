@@ -1,0 +1,317 @@
+﻿
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="author" content="面精网">
+    <!-- begin 参考 layouts/head -->
+    <meta charset="utf-8">
+	<script type="text/javasscript"src="js/jquery-1.11.3.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<link rel="shortcut icon" href="./img/i.png">
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="OiVpOJwI7AjTmfqMknbgELyqggpEGPwG0c/wxgGlh2YChvFnBHziApvWaiTxGfyx112qKXKSSmjcwldHKVVj2g==" />
+<link rel="shortcut icon" href="./img/i.png">
+<!-- end 参考 layouts/head -->
+
+    <!-- 面精网 shim and Respond.js for IE8 support of 面精网 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/面精网shiv/3.7.2/面精网shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- 百度站长工具验证 -->
+    <!-- 百度站长工具验证 -->
+<!-- shixian.com -->
+<meta name="baidu-site-verification" content="DxH5nP0ijn" />
+
+<!-- www.shixian.com -->
+<meta name="baidu-site-verification" content="dCeYDC5bLB" />
+
+ <script src="js/programmers.js"></script>
+
+
+      <title>社会精英辅导求职预约平台</title>
+
+<!-- <meta name="apple-itunes-app" content="app-id=949862651"> -->
+	<link rel="stylesheet" media="screen" href="css/programmers.css" />
+<link rel="stylesheet" href="css/design.css">
+    <script type="text/javascript"src="js/jquery-1.11.3.js"></script>
+<style>
+  @media (max-width: 736px) {.jia{position: relative;
+    
+  }
+  }
+  @media(min-width: 736px) {.jia{position: absolute;bottom: 0; background-color:#be3232;
+  }
+.jiayi{position: absolute;bottom: 41px;}
+
+  }
+</style>
+    
+
+  </head>
+  <body>
+
+    <div style="display: none">
+	<!-- 微信分享会取body里第一张大于等于300px的照片 -->  
+		<img src="img/shixian-qr-code-1172ea9fd974a9901cb4ea6a5c826cb7f16aeaed0cce6f7815b292428b1ae7ca.png" alt="面精网" />
+	</div>
+
+
+	<!-- Fixed navbar -->
+	 <nav class="navbar navbar-default navbar-fixed-top navbar-white" style="height: 51px">
+   <div class="container">
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+
+         <a class="logo navbar-brand text-center" href="index.html">面精网</a>
+
+       </div>
+
+       <div id="navbar" class="collapse navbar-collapse">
+         <div class="empty-10"></div>
+         <div class="empty-10"></div>
+         <div class="empty-10"></div>
+         <div class="empty-10"></div>
+         <div class="empty-10"></div>
+
+           <ul class="nav navbar-nav">
+             <li class="bai"><!-- class="active"  style="margin-left: 30px;"-->
+               <a class="programmers-jobs-link" href="gu.html">求职顾问</a>
+             </li>
+
+             <li class="">
+               <a class="programmers-jobs-link" href="require_list.html">新人求助</a>
+             </li>
+           </ul>
+
+         <ul class="nav navbar-nav navbar-right" >
+             <li class="">
+               <a href="m_appointment.html">我的预约</a>
+             </li>
+
+             <li class="">
+               <a href="notice.html">
+                 通知
+                 <label class="label label-danger" style="margin-left: 6px;display: none;position: relative;top:-2px"></label>
+               </a>
+             </li>
+
+             <li class="dropdown">
+               <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" aria-haspopup="true" aria-expanded="false" title="个人主页" href="javascript:void(0);">
+                 <img class="tiny-avatar avatar" alt="路" src="img/tiny_5e620cedfe19524579ad8009ea25db2f.jpeg" />
+                 <span class="headerTinymanName">路 <b class="caret"></b></span>
+               </a>
+               <ul class="dropdown-menu">
+                 <!-- 未申请或申请还没有通过认证(前面已判断)，都是这个 -->
+
+
+                   <li class="">
+                      <a href="gperson.html">查看顾问信息</a>
+                    </li>
+
+                    <li class="divider"></li>
+
+                  <li class="">
+                    <a href="gperson_chg.html ">修改顾问信息</a>
+                  </li>
+                  <li class="">
+                    <a href="head_chg.html">修改头像昵称</a>
+                  </li>
+
+
+
+
+                 <li class="divider"></li>
+
+                  
+
+                 <li><a href="#" data-method="delete" rel="nofollow">退出</a></li>
+               </ul>
+             </li>
+         </ul>
+       </div><!--/.nav-collapse -->
+   </div>
+ </nav>
+
+
+
+	
+	<div class="container">
+		<div class="empty-line"></div>
+		<div class="clearfix"></div>
+
+		<div class="with-white-background-color ">
+  
+			<div class="clearfix"></div>
+
+			<div class="col-md-12">
+				<div class="col-xs-4 xs-no-padding" >
+				  <div class="col-md-6 my-jobs-title xs-no-padding no-padding-left"style="font-weight:900;font-size:20px;color:#000;">
+					收支明细
+				  </div>
+					<div class="clearfix"></div>
+					<div class="empty-line"></div>
+					</div>
+				
+				<div class="empty-line"></div>
+				<div class="empty-line"></div>
+				<div class="empty-line"></div>
+				<div class="empty-line"></div>
+				<div class="empty-line"></div>
+				<div class="empty-line"></div>
+			</div>
+			<div class="col-xs-12 ">
+					<ul class="wo-de-yuys">
+						<li class="col-xs-3 nav">收支时间</li>
+						<li class="col-xs-3 nav">收支金额</li>
+						<li class="col-xs-3 nav">账户</li>
+						<li class="col-xs-3 nav">账户余额</li>
+					</ul>
+					
+			</div>
+			<div class="col-xs-12 ">
+				<div class="empty-line"></div>
+				<div class="empty-line"></div>
+					<div class="empty-line"></div>
+					<div class="empty-line"></div>
+					<ul class="wo-de-yuysh">
+						<li class="col-xs-3 nav">2016-4-12 09:26</li>
+						<li class="col-xs-3 nav"><span style="color:red">+</span>1500</li>
+						<li class="col-xs-3 nav">1234569</li>
+						<li class="col-xs-3 nav">8562</li>
+					</ul>
+			</div>
+			<div class="col-xs-12 ">
+				<div class="empty-line"></div>
+				<div class="empty-line"></div>
+					<div class="empty-line"></div>
+					<div class="empty-line"></div>
+					<ul class="wo-de-yuysh">
+						<li class="col-xs-3 nav">2016-4-12 09:26</li>
+						<li class="col-xs-3 nav"><span style="color:red">-</span>1500</li>
+						<li class="col-xs-3 nav">1234569</li>
+						<li class="col-xs-3 nav">8562</li>
+					</ul>
+			</div>
+				
+		</div>
+	</div>
+	<style>.col-xs-1,.col-sm-1,.col-md-1,.col-lg-1,.col-xs-2,.col-sm-2,.col-md-2,.col-lg-2,.col-xs-3,.col-sm-3,.col-md-3,.col-lg-3,.col-xs-4,.col-sm-4,.col-md-4,.col-lg-4,.col-xs-5,.col-sm-5,.col-md-5,.col-lg-5,.col-xs-6,.col-sm-6,.col-md-6,.col-lg-6,.col-xs-7,.col-sm-7,.col-md-7,.col-lg-7,.col-xs-8,.col-sm-8,.col-md-8,.col-lg-8,.col-xs-9,.col-sm-9,.col-md-9,.col-lg-9,.col-xs-10,.col-sm-10,.col-md-10,.col-lg-10,.col-xs-11,.col-sm-11,.col-md-11,.col-lg-11,.col-xs-12,.col-sm-12,.col-md-12,.col-lg-12 {
+	position:relative;
+	min-height:1px;
+	padding-right:0px;
+	padding-left:0px
+}</style>
+
+		</div>
+	</div>
+	
+
+
+  <!-- 已登录，消息提醒 -->
+  <script type="text/javascript" src="js/pull_notices.js"></script>
+
+<script type="text/javascript">
+  is_weixin();
+  function is_weixin(){
+    var ua = navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i)=="micromessenger") {
+      $(".wechat_login").attr("href", "http://shixian.com/users/auth/wechat");
+      $(".weibo_login").hide();
+      $(".github_login").hide();
+    } else {
+      $(".wechat_login").attr("href", "http://shixian.com/users/auth/open_wechat")
+    }
+  }
+</script>
+
+<script type="text/javascript"src="js/wx-activity.js"></script>
+
+    
+    
+    <!-- 百度统计等 -->
+      <script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F25e3b17ddf2b132427768bfebf751a76' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+
+  <!-- growingio -->
+  <script type='text/javascript'>
+      var _vds = _vds || [];
+      window._vds = _vds;
+      (function(){
+        _vds.push(['setAccountId', 'acf6ac3446a1dcb0']);
+        (function() {
+          var vds = document.createElement('script');
+          vds.type='text/javascript';
+          vds.async = true;
+          vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(vds, s);
+        })();
+      })();
+  </script>
+ <style>
+     .zi{background-color: red;width: 1080px;background-color: #fff; margin: 0 auto;}
+     .zi a{ display: block;text-align: center;width: 175px;float: left;margin: 0;padding: 0;border: 0; }
+     .zi a img{margin: 0;padding: 0;border: 0; }
+     .footer .col ul a{color:#777;}
+     .fcolor{color:#f2f2f2}
+ </style>
+
+    <div class="footer jiayi" style="">
+      <div class="content-wrapper " style="background-color:#f2f2f2;">
+        
+        <div class="col">
+          <ul>
+            <li>
+              <a  href="baed_dlc.html">预约流程</a>
+            </li>
+            <li>
+             <a  href="baed_wdl.html">网站协议</a>
+            </li>
+            <li>
+              <a  href="baed_dlc.html">常见问题</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col" >
+          
+          <ul>
+            <li>
+              <a target="_blank" href="baed_wdy.html">友情链接</a>
+            </li>
+            <li>
+              <a  href="index.html#hezuo">合作伙伴</a>
+            </li>
+               <li><a target="_blank" href="#">线下活动</a></li>
+         
+          </ul>
+        </div>
+        <div class="col">
+          
+          <ul>
+          </ul>
+        </div>
+        <div class="col" style="padding-right:185px;">
+          <div >
+            <img width="108" src="img/shixian-team-qr-code-6e12ae9806057212d510f03cdc2173a00d22542669be5992b1fd926f4715e188.jpg" alt="Shixian qr code 1172ea9fd974a9901cb4ea6a5c826cb7f16aeaed0cce6f7815b292428b1ae7ca" />
+          </div> 
+        </div>
+      </div>
+    </div>
+    <div class="copyrights jia" style="bottom: 0;width:100%;background-color:#be3232">
+      <div class="fcolor">2014-2016 © 上海垚元信息科技有限公司&nbsp;&nbsp;|&nbsp;&nbsp;沪ICP备16027855号</div>
+    </div>
+</body>
+</html>
+

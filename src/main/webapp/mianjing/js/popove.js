@@ -1,0 +1,1 @@
+﻿$("#wx-activity-popover").popover({html:!0,content:function(){return'<img alt="Sx activity" class="sx_activity" src="/images/shixian-qr-code.png" />'},trigger:"hover",placement:"top"});
