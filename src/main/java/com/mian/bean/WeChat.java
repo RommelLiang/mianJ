@@ -1,17 +1,17 @@
 package com.mian.bean;
 
 /**
- * Created by Nazi on 2016/11/10.
+ * Created by Reinhard Tristan Eugen Heydrich 2016/11/10.
  */
-public class WeChatBean {
+public class WeChat {
     private String openId;
     private String accessToken;
 
-    public WeChatBean(String openId, String accessToken) {
+    public WeChat(String openId, String accessToken) {
         this.openId = openId;
         this.accessToken = accessToken;
     }
-    public WeChatBean() {
+    public WeChat() {
 
     }
 
