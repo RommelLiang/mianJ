@@ -8,10 +8,19 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @CrossOrigin
+@RequestMapping(value = "/consultant")
 public class ConsultationController {
-    @RequestMapping(value = "/ConsultantInfoForm",method = RequestMethod.POST)
+    @RequestMapping(value = "/information",method = RequestMethod.POST)
     public @ResponseBody
-    String privateInfoForm(@RequestBody Consultant consultant){
+    String information(@RequestBody Consultant consultant){
+        String success= "";
+
+        return success;
+    }
+
+    @RequestMapping(value = "/getRequirments",method = RequestMethod.GET)
+    public @ResponseBody
+    String getRequirments(@RequestParam("")String value){
         String success= "";
 
         return success;
