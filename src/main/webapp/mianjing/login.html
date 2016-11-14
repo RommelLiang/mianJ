@@ -19,7 +19,9 @@
                         QC.Login.getMe(function(openId, accessToken){
                             var json = {
                                 "openId": openId,
-                                "accessToken": accessToken
+                                "accessToken": accessToken,
+                                "nickname": s.data.nickname,
+                                "profilePhoto": s.data.profilePhoto
                             };
                             $.ajax({
                                 type: "post",
