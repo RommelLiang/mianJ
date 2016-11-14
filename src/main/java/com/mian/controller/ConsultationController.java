@@ -1,6 +1,8 @@
 package com.mian.controller;
 
 import com.mian.bean.Consultant;
+import com.mian.request.ConsultationRequest;
+import com.mian.response.ConsultationResponse;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -20,9 +22,16 @@ public class ConsultationController {
 
     @RequestMapping(value = "/getRequirments",method = RequestMethod.GET)
     public @ResponseBody
-    String getRequirments(@RequestParam("")String value){
-        String success= "";
+    ConsultationResponse getRequirments(@RequestParam("")String value){
+        ConsultationResponse success= null;
 
+        return success;
+    }
+
+    @RequestMapping(value = "/refineReuirments",method = RequestMethod.POST)
+    public @ResponseBody
+    ConsultationResponse refineReuirments(@RequestBody ConsultationRequest consultationRequest){
+        ConsultationResponse success = null;
         return success;
     }
 }
