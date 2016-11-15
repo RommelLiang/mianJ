@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @RequestMapping("employee")
-public class EnployeeController {
+public class EmployeeController {
     @RequestMapping(value = "/postJobPostion",method = RequestMethod.GET)//投递职位
     @ResponseBody
     String postJobPostion(@RequestParam("uuid")String uuid){
