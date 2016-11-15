@@ -1,6 +1,6 @@
 package com.mian.controller;
 
-import com.mian.bean.WeChat;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -51,10 +51,10 @@ public class QQLoginController {
         return modelAndView;
     }*/
 
-    @RequestMapping(value = "qqlogin",method = RequestMethod.POST)
+   /* @RequestMapping(value = "qqlogin",method = RequestMethod.POST)
     public @ResponseBody String stringTest(@RequestBody WeChat weChatBean) {
         System.out.println(weChatBean.getOpenId());
         System.out.println(weChatBean.getAccessToken());
         return "jsp";
-    }
+    }*/
 }

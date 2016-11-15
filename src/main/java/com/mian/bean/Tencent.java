@@ -3,15 +3,17 @@ package com.mian.bean;
 /**
  * Created by Reinhard Tristan Eugen Heydrich 2016/11/10.
  */
-public class WeChat {
+public class Tencent {
     private String openId;
     private String accessToken;
+    private String nickname;
+    private String profilePhoto;
 
-    public WeChat(String openId, String accessToken) {
+    public Tencent(String openId, String accessToken) {
         this.openId = openId;
         this.accessToken = accessToken;
     }
-    public WeChat() {
+    public Tencent() {
 
     }
 
@@ -29,5 +31,21 @@ public class WeChat {
 
     public void setAccessToken(String accessToken) {
         this.accessToken = accessToken;
+    }
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
+
+    public String getProfilePhoto() {
+        return profilePhoto;
+    }
+
+    public void setProfilePhoto(String profilePhoto) {
+        this.profilePhoto = profilePhoto;
     }
 }

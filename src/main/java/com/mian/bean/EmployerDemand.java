@@ -12,6 +12,7 @@ public class EmployerDemand {
     private String demandType;
     private String demandName;
     private String description;
+    /*赏金*/
     private Double Bonti;
     private Integer totalHours;
     private Date expectingStartTime;
