@@ -6,14 +6,4 @@ package com.mian.bean;
  * 2016/11/11.
  */
 public enum ConsultantType {
-    IT("IT"),
-    ;
-    private String description;
-    ConsultantType(String description) {
-        this.description = description;
-    }
-    @Override
-    public String toString() {
-        return this.description;
-    }
 }

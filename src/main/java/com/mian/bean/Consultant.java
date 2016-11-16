@@ -1,8 +1,6 @@
 package com.mian.bean;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  * Created by Nazi on 2016/11/11.
@@ -12,6 +10,7 @@ import javax.persistence.Table;
 @Table(name = "consultant")
 public class Consultant {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String accountUuid;
     private String realName;

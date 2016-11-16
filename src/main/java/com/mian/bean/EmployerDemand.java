@@ -1,8 +1,6 @@
 package com.mian.bean;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Date;
 
 /**
@@ -15,6 +13,7 @@ import java.util.Date;
 @Table(name = "employerDemand")
 public class EmployerDemand {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String demandType;
     private String demandName;

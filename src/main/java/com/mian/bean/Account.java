@@ -1,8 +1,6 @@
 package com.mian.bean;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  * mianjing
@@ -15,6 +13,7 @@ import javax.persistence.Table;
 @Table(name = "account")
 public class Account {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String accountUuid;
     private String openId;

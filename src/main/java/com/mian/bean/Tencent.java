@@ -7,11 +7,8 @@ import javax.persistence.Table;
 /**
  * Created by Reinhard Tristan Eugen Heydrich 2016/11/10.
  */
-@Entity
-@Table(name = "tencent")
+
 public class Tencent {
-    @Id
-    private Long id;
     private String openId;
     private String accessToken;
     private String nickname;
