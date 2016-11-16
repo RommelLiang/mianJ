@@ -12,8 +12,12 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
+import javax.persistence.*;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by xiaoxiong on 2016/11/14.
@@ -22,6 +26,9 @@ import java.util.ArrayList;
 public class EmployerDemandController{
     @Autowired
     private EmployerDemandRepository employerDemand;
+
+    @PersistenceContext
+    private EntityManager entityManager;
 
     @RequestMapping(value = "/publishPosition",method = RequestMethod.POST)
     public
@@ -81,10 +88,25 @@ public class EmployerDemandController{
 
     @RequestMapping(value = "/findByCondition",method = RequestMethod.POST)
     public @ResponseBody
-    ArrayList<EmployerDemand> findByCondition(@RequestParam("location") String location, @RequestParam("type") String type) {
+    List<EmployerDemand> findByCondition(@RequestParam("location") String location, @RequestParam("type") String type) {
+        /*
         if (location.equals("")) location = "*";
         if (type.equals("")) type = "*";
         ArrayList<EmployerDemand> employerDemands = employerDemand.findByCondition(location, type);
-        return employerDemands;
+        return employerDemands;*/
+
+        StringBuffer sql = new StringBuffer();
+        sql.append("select ed from EmployerDemand ed where ")
+
+        if(!location.equals("")){
+            sql.append(" and ed.location =" + location);
+        }
+
+        if(!type.equals("")){
+            sql.append(" and ed.type" + type);
+        }
+
+        Query query = entityManager.createQuery(sql.toString());
+        return query.getResultList();
     }
 }
