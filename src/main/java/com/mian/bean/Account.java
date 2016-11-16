@@ -1,5 +1,9 @@
 package com.mian.bean;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 /**
  * mianjing
  * Created by Reinhard Tristan Eugen Heydrich
@@ -7,8 +11,11 @@ package com.mian.bean;
  * 普通用户
  * 用户账号
  */
+@Entity
+@Table(name = "account")
 public class Account {
-    private long id;
+    @Id
+    private Long id;
     private String accountUuid;
     private String openId;
     private String accessToken;

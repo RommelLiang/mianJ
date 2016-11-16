@@ -5,10 +5,7 @@ import com.mian.bean.Tencent;
 import com.mian.repository.AccountRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
 
@@ -17,7 +14,7 @@ import java.util.UUID;
  * Created by Reinhard Tristan Eugen Heydrich
  * On 2016/11/4.
  */
-@Controller
+@RestController
 @CrossOrigin
 @RequestMapping(value = "/login")
 public class TencentLoginController {

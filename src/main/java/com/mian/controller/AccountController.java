@@ -7,13 +7,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * com.mian.controller
  * Created by Reinhard Tristan Eugen Heydrich
  * 2016/11/14.
  */
-@Controller
+@RestController
 @CrossOrigin
 @RequestMapping(value = "/account")
 public class AccountController {
@@ -30,7 +31,7 @@ public class AccountController {
         return account;
     }
 
-    @RequestMapping(value = "/findByOpenId")
+    @RequestMapping(value = "/findByUuid")
     public Account findByAccountUuid (@RequestBody String uuid){
         account = accountRepository.findByOpenId(uuid);
         if (account == null) {

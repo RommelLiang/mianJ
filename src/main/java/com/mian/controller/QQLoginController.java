@@ -15,7 +15,7 @@ import java.util.Map;
  * Created by Reinhard Tristan Eugen Heydrich
  * On 2016/11/4.
  */
-@Controller
+@RestController
 @CrossOrigin
 public class QQLoginController {
     @Value("${application.message:Hello World}")

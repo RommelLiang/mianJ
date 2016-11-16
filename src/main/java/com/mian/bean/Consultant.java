@@ -1,11 +1,18 @@
 package com.mian.bean;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 /**
  * Created by Nazi on 2016/11/11.
  * 求职顾问信息
  */
+@Entity
+@Table(name = "consultant")
 public class Consultant {
-    private long id;
+    @Id
+    private Long id;
     private String accountUuid;
     private String realName;
     private String phoneNumber;

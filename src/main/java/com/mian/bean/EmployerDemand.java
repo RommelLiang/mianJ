@@ -1,5 +1,8 @@
 package com.mian.bean;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.Date;
 
 /**
@@ -8,7 +11,11 @@ import java.util.Date;
  * 2016/11/11.
  * 顾问发布的需求信息
  */
+@Entity
+@Table(name = "employerDemand")
 public class EmployerDemand {
+    @Id
+    private Long id;
     private String demandType;
     private String demandName;
     private String description;
