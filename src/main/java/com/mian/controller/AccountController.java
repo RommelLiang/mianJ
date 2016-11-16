@@ -25,7 +25,6 @@ public class AccountController {
     @RequestMapping(value = "/findByOpenId")
     public Account findByOpenId(@RequestBody String openId){
         account = accountRepository.findByOpenId(openId);
-
         if (account == null) {
             account = new Account();
         }
