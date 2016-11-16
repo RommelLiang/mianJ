@@ -10,6 +10,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 /**
  * Created by victor on 12/11/2016.
@@ -18,5 +19,6 @@ import java.io.Serializable;
 @Component
 public interface ConsultantRepository extends PagingAndSortingRepository<Consultant,Long> {
     Consultant findByAccountUuid(String accountUuid);
-
+    @Override
+    Page<Consultant> findAll(Pageable pageable);
 }

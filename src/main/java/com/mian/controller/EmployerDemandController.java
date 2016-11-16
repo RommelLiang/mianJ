@@ -1,17 +1,28 @@
 package com.mian.controller;
 
+import com.mian.bean.Consultant;
 import com.mian.bean.EmployerDemand;
+import com.mian.repository.EmployerDemandRepository;
 import com.mian.request.DemondRequest;
 import com.mian.request.SeekersListRequest;
 import com.mian.response.PublishedResponse;
 import com.mian.response.SeekersListResponose;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
 
 /**
  * Created by xiaoxiong on 2016/11/14.
  */
 @RequestMapping("/employer")
-public class EmployerController {
+public class EmployerDemandController{
+    @Autowired
+    private EmployerDemandRepository employerDemand;
+
     @RequestMapping(value = "/publishPosition",method = RequestMethod.POST)
     public
     @ResponseBody
@@ -58,5 +69,22 @@ public class EmployerController {
     String arrangeWithSeekers(@RequestParam("value")String value){
         String success = null;
         return success;
+    }
+
+    @RequestMapping(value = "/findAllConsultant",method = RequestMethod.POST)
+    public @ResponseBody
+    Page<EmployerDemand> findAllConsultant(@RequestParam("pageNow") int pageNow, @RequestParam("pageSize") int pageSize) {
+        Pageable pageable = new PageRequest(pageNow - 1,pageSize);
+        Page<EmployerDemand> pages = employerDemand.findAll(pageable);
+        return pages;
+    }
+
+    @RequestMapping(value = "/findByCondition",method = RequestMethod.POST)
+    public @ResponseBody
+    ArrayList<EmployerDemand> findByCondition(@RequestParam("location") String location, @RequestParam("type") String type) {
+        if (location.equals("")) location = "*";
+        if (type.equals("")) type = "*";
+        ArrayList<EmployerDemand> employerDemands = employerDemand.findByCondition(location, type);
+        return employerDemands;
     }
 }

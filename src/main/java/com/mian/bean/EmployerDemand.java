@@ -15,6 +15,7 @@ public class EmployerDemand {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    private Account account;
     private String demandType;
     private String demandName;
     private String description;
@@ -25,6 +26,14 @@ public class EmployerDemand {
     private String location;
     private String realName;
     private String contactPhoneNumber;
+
+    public Account getAccount() {
+        return account;
+    }
+
+    public void setAccount(Account account) {
+        this.account = account;
+    }
 
     public String getDemandType() {
         return demandType;
