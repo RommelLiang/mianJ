@@ -12,8 +12,10 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class IndexController {
     @RequestMapping(value="/",method = RequestMethod.GET)
-    public String index(){
-        return "你好用户这是面筋，你可以在这找工作";
+    public ModelAndView index(){
+        ModelAndView modelAndView = new ModelAndView("index");
+        System.out.println("Hello should be");
+        return modelAndView;
     }
 
     @RequestMapping(value = "/hello",method = RequestMethod.GET)
