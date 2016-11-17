@@ -42,7 +42,7 @@
 
     
     
-      <link rel="stylesheet" media="screen" href="css/programmers.css" />
+      <link rel="stylesheet" media="screen" href="css/programmers.css"/>
 
     
 
@@ -348,8 +348,8 @@
 
             <script>
               $(document).on('change', "#order_number_of_day", function(){
-                var order_number_of_day = $("#order_number_of_day").val()
-                var order_number_of_hour = $("#order_number_of_hour").val()
+                var order_number_of_day = $("#order_number_of_day").val();
+                var order_number_of_hour = $("#order_number_of_hour").val();
 
                 $.ajax({
                   method: "GET",
@@ -359,8 +359,8 @@
               });
 
               $(document).on("change", "#order_number_of_hour", function(){
-                var order_number_of_day = $("#order_number_of_day").val()
-                var order_number_of_hour = $("#order_number_of_hour").val()
+                var order_number_of_day = $("#order_number_of_day").val();
+                var order_number_of_hour = $("#order_number_of_hour").val();
 
                 $.ajax({
                   url: "/consultants/9502/change_number_of_hour" + "?order_number_of_day=" + order_number_of_day + "&order_number_of_hour=" + order_number_of_hour,
