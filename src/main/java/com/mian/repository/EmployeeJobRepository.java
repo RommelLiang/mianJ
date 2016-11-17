@@ -15,5 +15,5 @@ import java.util.ArrayList;
 @Transactional
 @Component
 public interface EmployeeJobRepository extends PagingAndSortingRepository<EmployeeJob,Long> {
-    ArrayList<EmployeeJob> findByAccountUuid(String accountUuid);
+    EmployeeJob findByAccountUuid(String accountUuid);
 }

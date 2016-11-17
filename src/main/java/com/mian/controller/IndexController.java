@@ -1,9 +1,6 @@
 package com.mian.controller;
 
 import org.omg.CORBA.Request;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,8 +17,9 @@ public class IndexController {
     }
 
     @RequestMapping(value = "/hello",method = RequestMethod.GET)
-    public String hello(Model model){
-        //ModelAndView mv = new ModelAndView("index");
-        return "index";
+    public ModelAndView hello(){
+        ModelAndView modelAndView = new ModelAndView("hello");
+        System.out.println("Hello should be");
+        return modelAndView;
     }
 }

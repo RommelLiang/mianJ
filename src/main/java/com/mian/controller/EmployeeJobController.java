@@ -1,22 +1,32 @@
 package com.mian.controller;
 
+import com.mian.bean.EmployeeJob;
+import com.mian.repository.EmployeeJobRepository;
 import com.mian.request.PostionOrderRequest;
 import com.mian.response.PaymentListResponse;
 import com.mian.response.PositionOrderResponse;
 import javafx.geometry.Pos;
 import org.aspectj.weaver.Position;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
 
 /**
  * Created by xiaoxiong on 2016/11/14.
  */
 @RestController
 @RequestMapping("employee")
-public class EmployeeController {
+public class EmployeeJobController {
+    @Autowired
+    EmployeeJobRepository employeeJobRepository;
+
     @RequestMapping(value = "/postJobPostion",method = RequestMethod.GET)//投递职位
     @ResponseBody
-    String postJobPostion(@RequestParam("uuid")String uuid){
-        String success = "";
+    String postJobPostion(@RequestBody EmployeeJob employeeJob){
+        EmployeeJob save = employeeJobRepository.save(employeeJob);
+        String success = "fail";
+        if (save != null) success = "success";
         return success;
     }
 
@@ -62,5 +72,12 @@ public class EmployeeController {
     String ratingConsultant(@RequestParam("employeeUuid")String employeeUuid,@RequestParam("Uuid")String Uuid){
         String success = "";
         return success;
+    }
+
+    @RequestMapping(value = "/findByEmployeeJobAccountUuid",method = RequestMethod.POST)
+    @ResponseBody
+    EmployeeJob findByAccountUuid(@RequestParam("accountUUid") String accouontUuid) {
+        EmployeeJob employeeJobs = employeeJobRepository.findByAccountUuid(accouontUuid);
+        return employeeJobs;
     }
 }

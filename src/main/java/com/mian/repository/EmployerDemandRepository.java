@@ -23,7 +23,4 @@ public interface EmployerDemandRepository extends PagingAndSortingRepository<Emp
 
     @Override
     Page<EmployerDemand> findAll(Pageable pageable);
-
-    @Query("select ed from EmployerDemand ed where ed.location = :location and ed.demandType = :demandType")
-    ArrayList<EmployerDemand> findByCondition(String location,String type);
 }
