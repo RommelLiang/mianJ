@@ -20,7 +20,7 @@ public class IndexController {
 
     @RequestMapping(value = "/hello",method = RequestMethod.GET)
     public ModelAndView hello(){
-        ModelAndView modelAndView = new ModelAndView("hello");
+        ModelAndView modelAndView = new ModelAndView("index");
         System.out.println("Hello should be");
         return modelAndView;
     }

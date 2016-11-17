@@ -1,6 +1,8 @@
 /**
  * Created by victor on 12/11/2016.
  */
+var url = ""
+
 function submitConsultInfo(){
     var json = {};
     var params = $("#becomeconsultant").serialize().split("&");
