@@ -1,0 +1,625 @@
+﻿
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="author" content="面精，面精网，面精社区">
+    <!-- begin 参考 layouts/head -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="MMRVR7mY5Puh4Vq4+uufO5I873mgFmBSs6iwkUTauigIZ80YIezq8emuyhCZhIOa+cvHWpac1jy+pRcQbCpelA==" />
+<link rel="shortcut icon" href="./img/i.png">
+    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+    
+    <!-- end 参考 layouts/head -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- 百度站长工具验证 -->
+    <!-- 百度站长工具验证 -->
+<!-- shixian.com -->
+<meta name="baidu-site-verification" content="DxH5nP0ijn" />
+
+<!-- www.shixian.com -->
+<meta name="baidu-site-verification" content="dCeYDC5bLB" />
+
+
+
+
+      <title>社会精英辅导求职预约平台</title>
+<meta name="description" content="05年毕业于华中科技大学计算机学院。 精通HTML5 精通CSS3 精通Javascript 精通NodeJS, ECMA2015 精通AngularJS ReactJS" />
+
+<!-- <meta name="apple-itunes-app" content="app-id=949862651"> -->
+
+      <script src="js/programmers.js"></script>
+
+    
+    
+      <link rel="stylesheet" media="screen" href="css/programmers.css" />
+<link rel="stylesheet" href="css/design.css">
+    
+
+    
+
+  </head>
+    <body>
+
+    <div style="display: none">
+  <!-- 微信分享会取body里第一张大于等于300px的照片 -->  
+  <img src="/images/logo-300.jpg" alt="面精网" />
+</div>
+
+ <nav class="navbar navbar-default navbar-fixed-top navbar-white" style="height: 51px">
+   <div class="container">
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+
+         <a class="logo navbar-brand text-center" href="index.html">面精网</a>
+
+       </div>
+
+       <div id="navbar" class="collapse navbar-collapse">
+         <div class="empty-10"></div>
+         <div class="empty-10"></div>
+         <div class="empty-10"></div>
+         <div class="empty-10"></div>
+         <div class="empty-10"></div>
+
+           <ul class="nav navbar-nav">
+             <li class="bai"><!-- class="active"  style="margin-left: 30px;"-->
+               <a class="programmers-jobs-link" href="gu.html">求职顾问</a>
+             </li>
+
+             <li class="">
+               <a class="programmers-jobs-link" href="require_list.html">新人求助</a>
+             </li>
+           </ul>
+
+         <ul class="nav navbar-nav navbar-right" >
+             <li class="">
+               <a href="m_appointment.html">我的预约</a>
+             </li>
+
+             <li class="">
+               <a href="notice.html">
+                 通知
+                 <label class="label label-danger" style="margin-left: 6px;display: none;position: relative;top:-2px"></label>
+               </a>
+             </li>
+
+             <li class="dropdown">
+               <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" aria-haspopup="true" aria-expanded="false" title="个人主页" href="javascript:void(0);">
+                 <img class="tiny-avatar avatar" alt="路" src="img/tiny_5e620cedfe19524579ad8009ea25db2f.jpeg" />
+                 <span class="headerTinymanName">路 <b class="caret"></b></span>
+               </a>
+               <ul class="dropdown-menu">
+                 <!-- 未申请或申请还没有通过认证(前面已判断)，都是这个 -->
+
+
+                   <li class="">
+                      <a href="gperson.html">查看顾问信息</a>
+                    </li>
+
+                    <li class="divider"></li>
+
+                  <li class="">
+                    <a href="gperson_chg.html ">修改顾问信息</a>
+                  </li>
+                  <li class="">
+                    <a href="head_chg.html">修改头像昵称</a>
+                  </li>
+
+
+
+
+                 <li class="divider"></li>
+
+                  
+
+                 <li><a href="#" data-method="delete" rel="nofollow">退出</a></li>
+               </ul>
+             </li>
+         </ul>
+       </div><!--/.nav-collapse -->
+   </div>
+ </nav>
+
+<!-- Begin page content -->
+<div class="container" >
+  
+
+
+<div class="clearfix"></div>
+<div class="empty-line"></div>
+
+
+
+
+<div class="well-sm pull-right no-padding-right">
+  被浏览 182 次，
+    被预约
+        0
+     次，
+  被收藏
+  <span id="programmer-collect_times">
+      <a id="tiny-avatar-popover" href="javascript:void(0);">
+        1
+</a>  </span> 次
+
+  <div id="tiny-avatar-popover-content" class="hide">
+      <img class="tiny-avatar" src="img/tiny_e0f7814031cb37761ca057d137b6aa12.jpeg" alt="Tiny e0f7814031cb37761ca057d137b6aa12" />
+  </div>
+
+
+      <form class="inc-programmer-collect_times" id="inc-programmer-collect_times" action="/consultants/4333/inc_collect_times" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" />
+    <button name="button" type="submit" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="bottom" data-title="加入收藏">
+      <i class="fa fa-heart"></i>
+</button></form>
+</div>
+<div class="empty-line visible-xs"></div>
+
+<div class="clearfix"></div>
+
+<div class="a-topic with-white-background-color col-md-12 show xs-no-padding fix_flat" itemscope itemtype="http://schema.org/Product"   >
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+  <div class="empty-norm"></div>
+
+  <div class="col-md-1 avatar-div">
+    <span class="topic-tutor-pic">
+        <img alt="AJC" itemprop="image" src="img/359ddda5ef2626a254e3210976e5010f.jpeg" />
+    </span>
+  </div>
+
+  <div class="empty-norm visible-sm"></div>
+  <div class="empty-line visible-xs"></div>
+  <div class="empty-line visible-xs"></div>
+
+  <div class="programmer-text col-md-8">
+    <h2 class="username-and-base-info" style="font-size: 16px;padding: 0px;margin: 0px">
+        <meta itemprop="name" content="湖北-兼职求职顾问-AJC-前端工程师">
+      <a href="">
+        <span class="topic-title-txt link-blue programmer-username">
+            AJC
+        </span>
+</a>
+      <span class="topic-title-txt">腾讯</span>&nbsp;&nbsp;
+      <span class="topic-title-txt">前端工程师</span>&nbsp;&nbsp;
+      <span class="topic-title-txt">10年工作经验</span>
+    </h2>
+
+      <div class="empty-norm"></div>
+      <div class="empty-norm visible-xs"></div>
+      <div class="empty-norm visible-xs"></div>
+
+      <div class="programmer-profile-tags">
+        <a href="">湖北</a>
+          ・
+        <a href="">
+          <span itemprop='category'>前端工程师</span>
+</a>      </div>
+
+    <div class="empty-norm"></div>
+    <div class="empty-norm visible-xs"></div>
+    <div class="empty-norm visible-xs"></div>
+
+    <div class="technical_experience-show" itemprop="description">
+      <p>
+        <strong>技术经验：</strong><p>05年毕业于华中科技大学计算机学院。
+<br>精通HTML5
+<br>精通CSS3
+<br>精通Javascript
+<br>精通NodeJS, ECMA2015
+<br>精通AngularJS ReactJS</p>
+      </p>
+    </div>
+
+    
+
+        <div class="hidden-xs">
+          <div class="empty-norm"></div>
+          <!-- JiaThis Button BEGIN -->
+          <div class="jiathis_style">
+            <span class="jiathis_txt">让更多人看到：</span>
+
+            <a class="jiathis_button_weixin"></a>
+            <a class="jiathis_button_tsina"></a>
+            <a class="jiathis_button_cqq"></a>
+          </div>
+
+          <script type="text/javascript" >
+            var jiathis_config={
+              data_track_clickback:true,
+              siteNum:5,
+              summary:"",
+              shortUrl:false,
+              hideMore:true,
+              pic: "img/359ddda5ef2626a254e3210976e5010f.jpeg",
+              appkey:{
+                "tsina": "3028473062"
+              }
+            }
+          </script>
+
+          <script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=2090986" charset="utf-8"></script>
+          <!-- JiaThis Button END -->
+        </div>
+  </div>
+
+  <div class="empty-norm visible-sm"></div>
+  <div class="empty-norm visible-xs"></div>
+  <div class="empty-norm visible-xs"></div>
+
+  <div class="col-md-3" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    <div class="price price-left">
+      <meta itemprop="priceCurrency" content="RMB">
+      <span class="link-blue" itemprop="price" content="1000">
+        1000元 / 8小时
+      </span>
+    </div>
+
+    <div class="empty-line"></div>
+    <div class="empty-small-line"></div>
+
+    <div class="appointment_time-region-address">
+  <p>可兼职时间：</p>
+  <p>
+        周六全天、周六半天
+        <br/>
+        周日全天、周日半天
+        <br/>
+  </p>
+  <p>最大可兼职：
+    30天
+  </p>
+  <p class="region-address">可兼职地点：<br />
+    <div itemprop="areaServed">
+        湖北 武汉
+    </div>
+  </p>
+</div>
+
+
+
+    <div class="empty-line"></div>
+
+    <div>
+        
+  <form class="button_to" method="post" action="javascript:void(0);"><input class="btn btn-default btn-lg btn-hundred programmer-btn no_shadow fix_flat" id="weixin_helper_btn" type="submit" value="沟通需求" /><input type="hidden" name="authenticity_token" value="tK2ibJ7P0dtJ2ZmadTBdivvlFN7pGeU971qZsbeFLRuMDjozBrvf0QGWCTIWX0ErkBI8/d+TU1PiVz4wn3XJpw==" /></form>
+
+  <div class="clearfix"></div>
+  <div class="empty-line"></div>
+
+    <!-- 剩下的这是 default 状态 -->
+        <a class="btn btn-lg btn-primary btn-hundred programmer-btn no_shadow fix_flat" href="">立即预约</a>
+
+
+
+
+<script type="text/javascript">
+    $("#weixin_helper_btn").popover({
+        html : true, 
+        content: function() {
+            return '<img class="sx_activity"  src="img/shixian-team-qr-code-6e12ae9806057212d510f03cdc2173a00d22542669be5992b1fd926f4715e188.jpg" alt="Helper guoyan 124a0032018917469d3d86c77e3da78ce97fce066ab71dc42aeee76fb014cf8f" /><br/><p>添加客服微信立即对接</p>';
+        },
+        trigger: 'hover',
+        placement: "top"
+    }); 
+</script>
+
+    </div>
+
+    <div class="clearfix"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+    <div class="empty-norm"></div>
+  </div>
+
+    <div class="clearfix"></div>
+  <div class="empty-line"></div>
+
+    <hr>
+    <div class="profile">
+      <div class="panel panel-profile">
+        
+  <div class="panel-heading overflow-h">
+
+    <h2 class="panel-title heading-sm pull-left col-md-2 xs-no-padding">
+      聘用方评价&nbsp;
+      <span class="placeholder-hint">(2)</span>
+    </h2>
+
+    <div class="clearfix visible-xs"></div>
+    <div class="empty-line visible-xs"></div>
+
+    <div class="pull-right text-right col-xs-12 col-md-4 xs-no-padding panel-title hidden-xs">
+      <a id="average-rating" href="javascript:void(0);">评价数目不足，暂不显示平均分</a>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+
+        <div class="panel-body margin-bottom-50">
+            <div class="media media-v2" itemprop="review" itemscope itemtype="http://schema.org/Review">
+  <div class="col-md-1 col-xs-12 xs-no-padding">
+    <a class="pull-left" href="/employers/35009">
+      <img alt="吴磊" class="media-object rounded-x small-avatar-radius" src="./img/1313.jpg" />
+</a>  </div>
+  <div class="media-body">
+    <h4 class="media-heading">
+      <strong itemprop="author" content="吴磊">
+      <a href="/employers/35009">吴磊</a>
+      <span class="placeholder-hint small-font">预约开始工作日期 2016-02-22，确认完工于 2016-03-02</span>
+      </strong>
+      <small class="hidden-xs">
+        <meta itemprop="datePublished" content="2016-03-02">
+        4 个月前
+      </small>
+    </h4>
+
+
+
+    <div class="empty-line visible-xs"></div>
+
+      <div class="content" itemprop="description">
+          <p>暂无评价，或聘用方设置不公开展示</p>
+      </div>
+  </div>
+</div>
+
+<div class="media media-v2" itemprop="review" itemscope itemtype="http://schema.org/Review">
+  <div class="col-md-1 col-xs-12 xs-no-padding">
+    <a class="pull-left" href="/employers/35009">
+      <img alt="吴磊" class="media-object rounded-x small-avatar-radius" src="./img/1212.jpg" />
+</a>  </div>
+  <div class="media-body">
+    <h4 class="media-heading">
+      <strong itemprop="author" content="吴磊">
+      <a href="/employers/35009">吴磊</a>
+      <span class="placeholder-hint small-font">预约开始工作日期 2016-02-23，确认完工于 2016-03-02</span>
+      </strong>
+      <small class="hidden-xs">
+        <meta itemprop="datePublished" content="2016-03-02">
+        4 个月前
+      </small>
+    </h4>
+
+
+
+    <div class="empty-line visible-xs"></div>
+
+      <div class="content" itemprop="description">
+          <p>暂无评价，或聘用方设置不公开展示</p>
+      </div>
+  </div>
+</div>
+
+
+            <div class="clearfix"></div>
+
+        </div>
+      </div>
+    </div>
+
+</div>
+<!-- END programmer show  -->
+
+<script>
+  $('#tiny-avatar-popover').popover({
+      html : true,
+      placement: 'bottom',
+      content: function() {
+        return $("#tiny-avatar-popover-content").html();
+      }
+  });
+
+  $('#programmer-orders_size').popover({
+      html : true,
+      placement: 'bottom',
+      content: function() {
+        return $("#tiny-orders-size-content").html();
+      }
+  });
+</script>
+
+
+<!-- for weixin share start-->
+<script src="js/jweixin.js"></script>
+<script>
+
+  $(function(){
+
+    wx.config({
+        debug: false,
+        appId: 'wx5ac5f7474e2eb37b',
+        timestamp: 1467267713,
+        nonceStr: 'zaivkwyljhubtngr',
+        signature: 'f701e77728e8fe6b858c3633994eb5db390cafdb',
+        jsApiList: ['onMenuShareTimeline','onMenuShareAppMessage','onMenuShareQQ','onMenuShareQZone']
+    });
+
+    wx.ready(function () {
+      // 分享到朋友圈
+      wx.onMenuShareTimeline({
+        title: 'AJC，腾讯，10年前端工程师，武汉附近可约',
+        link: 'http://shixian.com/consultants/4333', 
+        imgUrl: 'http://shixian.comimg/33813/359ddda5ef2626a254e3210976e5010f.jpeg',
+        success: function () {},
+        cancel: function () {}
+      });
+
+      // 分享给朋友
+      wx.onMenuShareAppMessage({
+        title: 'AJC 腾讯 10年前端工程师 湖北兼职前端工程师',
+        desc: '腾讯,1000¥/天\n，武汉附近可约',
+        link: 'http://shixian.com/consultants/4333',
+        imgUrl: 'http://shixian.comimg/33813/359ddda5ef2626a254e3210976e5010f.jpeg',
+        type: 'link',
+        dataUrl: '',
+        success: function () {},
+        cancel: function () {}
+      });
+
+      // 分享到QQ
+      wx.onMenuShareQQ({
+        title: 'AJC 腾讯 10年前端工程师 湖北兼职前端工程师',
+        desc: '腾讯\n1000¥/天\n，武汉附近可约',
+        link: 'http://shixian.com/consultants/4333',
+        imgUrl: 'http://shixian.comimg/33813/359ddda5ef2626a254e3210976e5010f.jpeg',
+        success: function () {},
+        cancel: function () {}
+      });
+
+      // 分享到QQ空间
+      wx.onMenuShareQZone({
+          title: 'AJC 腾讯 10年前端工程师 湖北兼职前端工程师',
+          desc: '腾讯\n1000¥/天\n，武汉附近可约',
+          link: 'http://shixian.com/consultants/4333',
+          imgUrl: 'http://shixian.comimg/33813/359ddda5ef2626a254e3210976e5010f.jpeg',
+          success: function () {},
+          cancel: function () {}
+      });
+
+    });
+
+    
+  });
+
+  $("#review_is_public_false").on("click", function(){
+    $("#review_content").attr("placeholder", "计算评分，但评价内容不公开展示，仅面精网后台可见。")
+  });
+
+  $("#review_is_public_true").on("click", function(){
+    $("#review_content").attr("placeholder", "真实详细的评价有利于我们筛选人才，只推荐真正优秀的，隐藏能力不足的。")
+  });
+
+  $('#average-rating').popover({
+    html: true,
+    content: "平均分为聘用方评价的平均成绩，每增加 3 个评价更新一次",
+    trigger: 'hover',
+    placement: 'top'
+  });
+
+
+</script>
+<!-- for weixin share end-->
+
+</div>
+
+<!-- <div class="footer-faker-margin-row"></div>
+
+<div class="empty-row"></div> -->
+
+
+
+  <!-- 已登录，消息提醒 -->
+  <script src="js/pull_notices.js"></script>
+
+<script type="text/javascript">
+  is_weixin();
+  function is_weixin(){
+    var ua = navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i)=="micromessenger") {
+      $(".wechat_login").attr("href", "http://shixian.com/users/auth/wechat");
+      $(".weibo_login").hide();
+      $(".github_login").hide();
+    } else {
+      $(".wechat_login").attr("href", "http://shixian.com/users/auth/open_wechat")
+    }
+  }
+</script>
+
+<script src="js/wx-activity.js"></script>
+
+    
+    
+    <!-- 百度统计等 -->
+      <script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F25e3b17ddf2b132427768bfebf751a76' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+
+  <!-- growingio -->
+  <script type='text/javascript'>
+      var _vds = _vds || [];
+      window._vds = _vds;
+      (function(){
+        _vds.push(['setAccountId', 'acf6ac3446a1dcb0']);
+        (function() {
+          var vds = document.createElement('script');
+          vds.type='text/javascript';
+          vds.async = true;
+          vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(vds, s);
+        })();
+      })();
+  </script>
+<style>
+     .zi{background-color: red;width: 1080px;background-color: #fff; margin: 0 auto;}
+     .zi a{ display: block;text-align: center;width: 175px;float: left;margin: 0;padding: 0;border: 0; }
+     .zi a img{margin: 0;padding: 0;border: 0; }
+     .footer .col ul a{color:#777;}
+     .fcolor{color:#f2f2f2}
+ </style>
+
+    <div class="footer jiayi" style="">
+      <div class="content-wrapper " style="background-color:#f2f2f2;">
+        
+        <div class="col">
+          <ul>
+            <li>
+              <a  href="baed_dlc.html">预约流程</a>
+            </li>
+            <li>
+             <a  href="baed_wdl.html">网站协议</a>
+            </li>
+            <li>
+              <a  href="baed_dlc.html">常见问题</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col" >
+          
+          <ul>
+            <li>
+              <a target="_blank" href="baed_wdy.html">友情链接</a>
+            </li>
+            <li>
+              <a  href="index.html#hezuo">合作伙伴</a>
+            </li>
+               <li><a target="_blank" href="#">线下活动</a></li>
+         
+          </ul>
+        </div>
+        <div class="col">
+          
+          <ul>
+          </ul>
+        </div>
+        <div class="col" style="padding-right:185px;">
+          <div >
+            <img width="108" src="img/shixian-team-qr-code-6e12ae9806057212d510f03cdc2173a00d22542669be5992b1fd926f4715e188.jpg" alt="Shixian qr code 1172ea9fd974a9901cb4ea6a5c826cb7f16aeaed0cce6f7815b292428b1ae7ca" />
+          </div> 
+        </div>
+      </div>
+    </div>
+    <div class="copyrights jia" style="bottom: 0;width:100%;background-color:#be3232">
+      <div class="fcolor">2014-2016 © 上海垚元信息科技有限公司&nbsp;&nbsp;|&nbsp;&nbsp;沪ICP备16027855号</div>
+    </div>
+</body>
+</html>
+

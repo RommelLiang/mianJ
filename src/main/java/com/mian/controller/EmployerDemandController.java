@@ -96,7 +96,7 @@ public class EmployerDemandController{
         return employerDemands;*/
 
         StringBuffer sql = new StringBuffer();
-        sql.append("select ed from EmployerDemand ed where ")
+        sql.append("select ed from EmployerDemand ed where ");
 
         if(!location.equals("")){
             sql.append(" and ed.location =" + location);
