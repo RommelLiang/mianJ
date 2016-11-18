@@ -255,7 +255,7 @@
 </div>
 
 
-          <hr>
+          <hr/>
 
           <form class="form-inline" id="edit_order_6804" action="/orders/6804/update_base_info" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="VanbaQaIB7K10ORgF6jp2QMKgy++61N9Z6aqSU9u1ottCkM2nvwJuP2fdMh0x/V4aP2rDIhh5RNqqw3IZ54yNw==" />
             <div class="">
@@ -353,7 +353,7 @@
 
                 $.ajax({
                   method: "GET",
-                  url: "/consultants/9502/change_number_of_day" + "?order_number_of_day=" + order_number_of_day + "&order_number_of_hour=" + order_number_of_hour,
+                  url: "/consultants/9502/change_number_of_day" + "?order_number_of_day=" + order_number_of_day + "&;=" + order_number_of_hour,
                   dataType: "script"
                 });
               });
@@ -363,7 +363,7 @@
                 var order_number_of_hour = $("#order_number_of_hour").val();
 
                 $.ajax({
-                  url: "/consultants/9502/change_number_of_hour" + "?order_number_of_day=" + order_number_of_day + "&order_number_of_hour=" + order_number_of_hour,
+                  url: "/consultants/9502/change_number_of_hour" + "?order_number_of_day=" + order_number_of_day + "&;order_number_of_hour=" + order_number_of_hour,
                   dataType: 'script',
                   type: "GET"
                 });
@@ -397,7 +397,7 @@
             </div>
 
             <div class="clearfix"></div>
-            <hr>
+            <hr/>
 
             <div class="detail-item">
               <div class="col-md-2">
@@ -484,7 +484,7 @@
   <!-- <hr> -->
    <style type="text/css">
    .span1{text-align: center;}</style>
-  <br class="hidden-xs hidden-sm">
+  <br class="hidden-xs hidden-sm"/>
   <div class="container " >
       <div class="col-md-1 span1">
         </div> 
@@ -521,12 +521,12 @@
       
   </div>
 
-  <br>
+  <br/>
   <div class="container">
     <p class="text-center">
       <span class="footer-text">2014-2016 © 上海垚元信息科技有限公司  |  沪ICP备16027855号</span>
       &nbsp;&nbsp;&nbsp;&nbsp;
-      <br class="visible-xs">
+      <br class="visible-xs"/>
       <!-- <a href="http://www.miibeian.gov.cn" rel="nofollow" class="footer-link footer-text" target="_blank">沪ICP备16027855号</a> -->
      
     </p>
