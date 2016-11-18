@@ -94,7 +94,7 @@
              </li>
 
              <li class="dropdown">
-               <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" aria-haspopup="true" aria-expanded="false" title="个人主页" href="javascript:void(0);">
+               <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" aria-haspopup="true" aria-expanded="false" title="个人主页" href="javascript:void(0);"/>
                  <img class="tiny-avatar avatar" alt="路" src="img/tiny_5e620cedfe19524579ad8009ea25db2f.jpeg" />
                  <span class="headerTinymanName">路 <b class="caret"></b></span>
                </a>
@@ -104,7 +104,7 @@
 
                    <li class="">
                       <a href="/gperson">查看顾问信息</a>
-                    </li>
+				   </li>
 
                     <li class="divider"></li>
 
@@ -143,7 +143,7 @@
 
 			<div class="col-md-12">
 				<div class="col-md-8 xs-no-padding" style="margin:0 auto;float:none;">
-				  <div class=" col-sm-12 xs-no-padding no-padding-left"style="float:none;">
+				  <div class=" col-sm-12 xs-no-padding no-padding-left" style="float:none;">
 					面精网提供支付中间担保，只有经过您确认之后，报酬才会支付给求职顾问。
 <br/>
 					确认完成之前，可随时申请退款。退款或其他问题请联系客服。<br/>
@@ -152,12 +152,11 @@
 					<div class="clearfix"></div>
 					<div class="empty-line"></div>
 					<form class="form" action="/consultants/search" accept-charset="UTF-8" method="get">
-						<div class="form-group inline-block search-form-group"style="width:70%;">
-						
-						  <input type="text" name="query" id="query" value="" placeholder="搜索订单号、真实姓名、联系电话" class="form-control search-query" />
+						<div class="form-group inline-block search-form-group" style="width:70%;">
+						  <input type="text" name="query" id="query" value="" placeholder="搜索订单号、真实姓名、联系电话" class="form-control search-query"/>
 						</div>
 
-						<input type="submit" name="commit" value="搜索" class="btn btn-primary redesign-btn-primary search-button" style="margin-left:-5px;margin-top:-2px;"/>
+						<input type="submit" name="commit" value="搜索" class="btn btn-primary redesign-btn-primary search-button" style="margin-left:-5px;margin-top:-2px"/>
 		  
 					</form>
 					<div class="empty-line visible-xs"></div>
@@ -169,11 +168,11 @@
 				<div class="empty-line"></div>
 				<div class="col-xs-12 ">
 					<ul class="wo-de-yuy">
-						<li onClick="num('tui',1,5)" onclick="show();" class="active col-xs-3 nav">所有订单</li>
-						<li onClick="num('tui',2,5)" onclick="show();" class="col-xs-2 nav ">已取消</li>
-						<li onClick="num('tui',3,5)" onclick="show();"  class="col-xs-2 nav ">待支付</li>
-						<li onClick="num('tui',4,5)" onclick="show();" class="col-xs-2 nav ">待确认</li>
-						<li onClick="num('tui',5,5)" onclick="show();" class="col-xs-3 nav ">待评价</li>
+						<li onClick="num('tui',1,5)" onclick="show()" class="active col-xs-3 nav">所有订单</li>
+						<li onClick="num('tui',2,5)" onclick="show()" class="col-xs-2 nav ">已取消</li>
+						<li onClick="num('tui',3,5)" onclick="show()"  class="col-xs-2 nav ">待支付</li>
+						<li onClick="num('tui',4,5)" onclick="show()" class="col-xs-2 nav ">待确认</li>
+						<li onClick="num('tui',5,5)" onclick="show()" class="col-xs-3 nav ">待评价</li>
 					</ul>
 				</div>
 	
@@ -269,14 +268,19 @@
 					<div class="empty-line"></div>
 					<ul class="wo-de-yuysh">
 						<li class="active col-sm-2 nav col-xs-3">#slkdgld</li>
-						<li class="col-sm-1 nav hidden-xs ">it</li>
+						<li class="col-sm-1 nav hidden-xs">it</li>
 						<li class="col-sm-2 nav hidden-xs">王浩</li>
-						<li class="col-sm-1 nav hidden-xs ">2个小时</li>
+						<li class="col-sm-1 nav hidden-xs">2个小时</li>
 						<li class="col-sm-1 nav col-xs-2">8000元</li>
 						<li class="col-sm-1 nav col-xs-3"> 2016-4-12</li>
 						<li class="col-xs-2 nav ">待支付</li>
-						<li class="col-xs-2 nav "><form  method="get" action="/orderpay"><input type="submit" value="支付"></form><input type="submit" value="取消"></li>
-					<a href="/orderpay">zhif<a>
+						<li class="col-xs-2 nav ">
+							<form method="get" action="/orderpay">
+								<input type="submit" value="支付"/>
+								<input type="submit" value="取消"/>
+							</form>
+						</li>
+					<a href="/orderpay">zhif</a>
 					</ul>
 				</div>
 	
@@ -287,7 +291,7 @@
 						<li class="active col-sm-2 nav col-xs-3">订单号</li>
 						<li class="col-sm-1 nav hidden-xs ">顾问角色</li>
 						<li class="col-sm-2 nav hidden-xs">求职顾问</li>
-						<li class="col-sm-1 nav hidden-xs ">预约时长</li>
+						<li class="col-sm-1 nav hidden-xs">预约时长</li>
 						<li class="col-sm-1 nav col-xs-2">订单金额</li>
 						<li class="col-sm-1 nav col-xs-3">创建日期</li>
 						<li class="col-xs-2 nav ">订单状态</li>
@@ -304,8 +308,10 @@
 						<li class="col-sm-1 nav col-xs-2">8000元</li>
 						<li class="col-sm-1 nav col-xs-3">2016-4-12</li>
 						<li class="col-xs-2 nav ">待确认</li>
-						<li class="col-xs-2 nav "><input type="submit" value="确认"/><input type="submit" value="退款"/></li>
-					
+						<li class="col-xs-2 nav ">
+							<input type="submit" value="确认"/>
+							<input type="submit" value="退款"/>
+						</li>
 					</ul>
 				</div>
 	
@@ -333,7 +339,9 @@
 						<li class="col-sm-1 nav col-xs-2">8000元</li>
 						<li class="col-sm-1 nav col-xs-3">2016-4-12</li>
 						<li class="col-xs-2 nav">待评价</li>
-						<li class="col-xs-2 nav"><input type="submit" value="评价"/></li>
+						<li class="col-xs-2 nav">
+							<input type="submit" value="评价"/>
+						</li>
 						<a href="/evaluate">评价</a>
 					</ul>
 				</div>
@@ -404,7 +412,7 @@
         })();
       })();
   </script>
-</a></a></ul></div></div></div></div>
+
 <style>
   @media (max-width: 736px) {.jia{position: relative;
     
@@ -454,9 +462,6 @@
           </ul>
         </div>
         <div class="col">
-          
-          <ul>
-          </ul>
         </div>
         <div class="col" style="padding-right:185px;">
           <div >

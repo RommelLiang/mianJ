@@ -43,7 +43,7 @@ public class PageController {
         ModelAndView modelAndView = new ModelAndView("demand_admin");
         return modelAndView;
     }
-    //元素类型 "div" 必须后跟属性规范 ">" 或 "/>"
+    //ok
     @RequestMapping(value = "/demand_admin_close",method = RequestMethod.GET)
     public ModelAndView demand_admin_close() {
         ModelAndView modelAndView = new ModelAndView("demand_admin_close");
@@ -67,7 +67,7 @@ public class PageController {
         ModelAndView modelAndView = new ModelAndView("demand_serch");
         return modelAndView;
     }
-    //元素类型 "div" 必须后跟属性规范 ">" 或 "/>"
+    //ok
     @RequestMapping(value = "/evaluate",method = RequestMethod.GET)
     public ModelAndView evaluate() {
         ModelAndView modelAndView = new ModelAndView("evaluate");
@@ -79,7 +79,7 @@ public class PageController {
         ModelAndView modelAndView = new ModelAndView("gappointment");
         return modelAndView;
     }
-    // 元素类型 "div" 必须后跟属性规范 ">" 或 "/>"。
+    //ok
     @RequestMapping(value = "/gpay",method = RequestMethod.GET)
     public ModelAndView gpay() {
         ModelAndView modelAndView = new ModelAndView("gpay");
@@ -103,7 +103,7 @@ public class PageController {
         ModelAndView modelAndView = new ModelAndView("gu");
         return modelAndView;
     }
-    //元素类型 "div" 必须后跟属性规范 ">" 或 "/>
+    //ok
     @RequestMapping(value = "/gwith",method = RequestMethod.GET)
     public ModelAndView gwith() {
         ModelAndView modelAndView = new ModelAndView("gwith");
@@ -127,19 +127,19 @@ public class PageController {
         ModelAndView modelAndView = new ModelAndView("login");
         return modelAndView;
     }
-    //元素类型 "div" 必须后跟属性规范 ">" 或 "/>"
+    //元素类型 "li" 必须由匹配的结束标记 "</li>" 终止。
     @RequestMapping(value = "/m_appointment",method = RequestMethod.GET)
     public ModelAndView m_appointment() {
         ModelAndView modelAndView = new ModelAndView("m_appointment");
         return modelAndView;
     }
-    //元素类型 "div" 必须后跟属性规范 ">" 或 "/>"
+    //元素内容必须由格式正确的字符数据或标记组成。
     @RequestMapping(value = "/m_appointment_j",method = RequestMethod.GET)
     public ModelAndView m_appointment_j() {
         ModelAndView modelAndView = new ModelAndView("m_appointment_j");
         return modelAndView;
     }
-    //元素类型 "div" 必须后跟属性规范 ">" 或 "/>"
+    //ok
     @RequestMapping(value = "/m_appointment_shouzhi",method = RequestMethod.GET)
     public ModelAndView m_appointment_shouzhi() {
         ModelAndView modelAndView = new ModelAndView("m_appointment_shouzhi");
@@ -181,7 +181,7 @@ public class PageController {
         ModelAndView modelAndView = new ModelAndView("require_list");
         return modelAndView;
     }
-    //元素类型 "div" 必须后跟属性规范 ">" 或 "/>"
+    //ok
     @RequestMapping(value = "/withdrawals",method = RequestMethod.GET)
     public ModelAndView withdrawals() {
         ModelAndView modelAndView = new ModelAndView("withdrawals");
