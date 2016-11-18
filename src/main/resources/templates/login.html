@@ -8,9 +8,6 @@
         QC.Login({
             btnId:"qqLoginBtn"	//插入按钮的节点id
         });
-
-    </script>
-    <script type="text/javascript">
         var paras = {};
         QC.api("get_user_info", paras)
                 .success(function(s){//成功回调

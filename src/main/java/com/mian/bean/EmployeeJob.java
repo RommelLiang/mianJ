@@ -19,9 +19,9 @@ public class EmployeeJob {
     /*职务*/
     private String position;
     /*工作年限*/
-    private double workYears;
+    private Double workYears;
     /*薪资 元/小时*/
-    private double payroll;
+    private Double payroll;
     /*工作时间*/
     private AdvisoryTime advisoryTime;
     /*工作地点*/
@@ -55,19 +55,19 @@ public class EmployeeJob {
         this.position = position;
     }
 
-    public double getWorkYears() {
+    public Double getWorkYears() {
         return workYears;
     }
 
-    public void setWorkYears(double workYears) {
+    public void setWorkYears(Double workYears) {
         this.workYears = workYears;
     }
 
-    public double getPayroll() {
+    public Double getPayroll() {
         return payroll;
     }
 
-    public void setPayroll(double payroll) {
+    public void setPayroll(Double payroll) {
         this.payroll = payroll;
     }
 

@@ -51,7 +51,7 @@ public class QQLoginController {
         return modelAndView;
     }*/
 
-   /* @RequestMapping(value = "qqlogin",method = RequestMethod.POST)
+   /*@RequestMapping(value = "qqlogin",method = RequestMethod.POST)
     public @ResponseBody String stringTest(@RequestBody WeChat weChatBean) {
         System.out.println(weChatBean.getOpenId());
         System.out.println(weChatBean.getAccessToken());

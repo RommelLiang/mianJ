@@ -1,6 +1,7 @@
 package com.mian.bean;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 /**
  * mianjing
@@ -12,10 +13,9 @@ import javax.persistence.*;
 @Entity
 @Table(name = "account")
 public class Account {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    @NotNull
     private String accountUuid;
+    @Id
     private String openId;
     private String accessToken;
     private String userName;
@@ -25,14 +25,6 @@ public class Account {
     /**
      * 登陆类型（QQ:0/WeChat:1）*/
     private int loginType;
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
 
     public String getOpenId() {
         return openId;

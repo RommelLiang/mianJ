@@ -1,6 +1,8 @@
 ﻿<!DOCTYPE html>
 <html>
     <head>
+        <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="100229030" charset="utf-8"></script>
+        <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
         <meta name="author" content="面精，面精网，面精社区"/>
         <meta property="qc:admins" content="202637634161670766526375"/>
 
@@ -45,7 +47,47 @@
 
 
         <link rel="stylesheet" media="screen" href="css/design.css"/>
+        <script type="text/javascript">
+            QC.Login({
+                btnId:"qqLoginBtn"	//插入按钮的节点id
+            });
+            var paras = {};
+            QC.api("get_user_info", paras)
+                    .success(function(s){//成功回调
+                        /*alert("获取用户信息成功！当前用户昵称为："+s.data.nickname);*/
+                        if(QC.Login.check()){//如果已登录
+                            QC.Login.getMe(function(openId, accessToken){
+                                var json = {
+                                    "openId": openId,
+                                    "accessToken": accessToken,
+                                    "userName": s.data.nickname,
+                                    "profilePhoto": s.data.profilePhoto,
+                                    "accountUuid":"",
+                                };
+                                $.ajax({
+                                    type: "post",
+                                    //url: "http://127.0.0.1:8080/login/qq",
+                                    url: "http://182.254.137.14/login/qq",
+                                    data: JSON.stringify(json),
+                                    dataType: "json",
+                                    contentType: "application/json",
+                                    success: function (dat) {
+                                        alert(dat)
+                                    }
+                                });
+                            });
+                            //这里可以调用自己的保存接口
+                            //...
+                        }
+                    })
+                    .error(function(f){//失败回调
+                        alert("获取用户信息失败！");
+                    })
+                    .complete(function(c){//完成请求回调
+                        alert("caonima！");
 
+                    });
+        </script>
         <style>
             a.logo.navbar-brand {
                 font-size: 34px;
@@ -132,6 +174,7 @@
                 })();
             })();
         </script>
+
     </head>
 <body>
 
@@ -182,15 +225,15 @@
                     </li>
 
                     <li class="dropdown">
+
                         <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" aria-haspopup="true"
                            aria-expanded="false" title="个人主页" href="javascript:void(0);">
-                            <img class="tiny-avatar avatar" alt="路"
-                                 src="img/tiny_5e620cedfe19524579ad8009ea25db2f.jpeg"/>
+                            <!--<img class="tiny-avatar avatar" alt="路"
+                                 src="img/tiny_5e620cedfe19524579ad8009ea25db2f.jpeg"/>-->
                             <span class="headerTinymanName">路 <b class="caret"></b></span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- 未申请或申请还没有通过认证(前面已判断)，都是这个 -->
-
 
                             <li class="">
                                 <a href="/gperson">查看顾问信息</a>
@@ -211,6 +254,9 @@
 
                             <li><a href="#" data-method="delete" rel="nofollow">退出</a></li>
                         </ul>
+                    </li>
+                    <li class="nav navbar-nav">
+                        <span id="qqLoginBtn"></span>
                     </li>
                 </ul>
             </div><!--/.nav-collapse -->

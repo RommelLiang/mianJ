@@ -22,9 +22,9 @@ public class Consultant {
     /*职务*/
     private String position;
     /*工作年限*/
-    private double workYears;
+    private Double workYears;
     /*薪资 元/小时*/
-    private double payroll;
+    private Double payroll;
     /*咨询时间*/
     private AdvisoryTime advisoryTime;
     /*顾问类型*/
@@ -32,11 +32,11 @@ public class Consultant {
     /*工作经历*/
     private String workExperience;
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -96,19 +96,19 @@ public class Consultant {
         this.position = position;
     }
 
-    public double getWorkYears() {
+    public Double getWorkYears() {
         return workYears;
     }
 
-    public void setWorkYears(double workYears) {
+    public void setWorkYears(Double workYears) {
         this.workYears = workYears;
     }
 
-    public double getPayroll() {
+    public Double getPayroll() {
         return payroll;
     }
 
-    public void setPayroll(double payroll) {
+    public void setPayroll(Double payroll) {
         this.payroll = payroll;
     }
 
