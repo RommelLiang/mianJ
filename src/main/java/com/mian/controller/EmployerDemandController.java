@@ -1,7 +1,9 @@
 package com.mian.controller;
 
+import com.mian.bean.Account;
 import com.mian.bean.Consultant;
 import com.mian.bean.EmployerDemand;
+import com.mian.repository.AccountRepository;
 import com.mian.repository.EmployerDemandRepository;
 import com.mian.request.DemondRequest;
 import com.mian.request.SeekersListRequest;
@@ -18,6 +20,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 /**
  * Created by xiaoxiong on 2016/11/14.
@@ -25,7 +28,9 @@ import java.util.List;
 @RequestMapping("/employer")
 public class EmployerDemandController{
     @Autowired
-    private EmployerDemandRepository employerDemand;
+    private EmployerDemandRepository employerDemandRepository;
+    @Autowired
+    private AccountRepository accountRepository;
 
     @PersistenceContext
     private EntityManager entityManager;
@@ -34,7 +39,15 @@ public class EmployerDemandController{
     public
     @ResponseBody
     String publishPosition(@RequestBody EmployerDemand employerDemand){
-        String success = null;
+        String success = "success";
+        Account byAccountUuid = accountRepository.findByAccountUuid(employerDemand.getAccountUuid());
+        if (!byAccountUuid.isConsultant()) {
+            return success;
+        }
+        employerDemand.setAccountUuid(UUID.randomUUID().toString());
+        employerDemandRepository.save(employerDemand);
+        byAccountUuid.setConsultant(true);
+        accountRepository.save(byAccountUuid);
         return success;
     }
 
@@ -82,7 +95,7 @@ public class EmployerDemandController{
     public @ResponseBody
     Page<EmployerDemand> findAllConsultant(@RequestParam("pageNow") int pageNow, @RequestParam("pageSize") int pageSize) {
         Pageable pageable = new PageRequest(pageNow - 1,pageSize);
-        Page<EmployerDemand> pages = employerDemand.findAll(pageable);
+        Page<EmployerDemand> pages = employerDemandRepository.findAll(pageable);
         return pages;
     }
 

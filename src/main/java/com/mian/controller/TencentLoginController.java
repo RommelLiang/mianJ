@@ -20,7 +20,6 @@ import java.util.UUID;
 public class TencentLoginController {
     @Autowired
     private AccountRepository accountRepository;
-
     private Account account;
     @RequestMapping(value = "/qq",method = RequestMethod.POST)
     public @ResponseBody boolean qqLogin(@RequestBody Account account){
@@ -43,6 +42,23 @@ public class TencentLoginController {
             account.setLoginType(0);*/
             account.setAccountUuid(UUID.randomUUID().toString());
             account.setLoginType(0);
+            Account save = accountRepository.save(account);
+            return true;
+        }
+    }
+
+    @RequestMapping(value = "/weChat",method = RequestMethod.POST)
+    public @ResponseBody boolean weChatLogin(@RequestBody Account account){
+
+        System.out.print(account.getOpenId());
+        if (accountRepository.findByOpenId(account.getOpenId()) != null) {
+            //已经注册过的用户，更新头像用户名等信息
+            account.setAccountUuid(accountRepository.findByOpenId(account.getOpenId()).getAccountUuid());
+            accountRepository.save(account);
+            return true;
+        } else {
+            account.setAccountUuid(UUID.randomUUID().toString());
+            account.setLoginType(1);
             Account save = accountRepository.save(account);
             return true;
         }
