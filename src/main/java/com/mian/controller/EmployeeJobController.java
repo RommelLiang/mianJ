@@ -27,9 +27,9 @@ public class EmployeeJobController {
     @Autowired
     EmployerDemandRepository employerDemandRepository;
 
-    @RequestMapping(value = "/postJobPostion",method = RequestMethod.GET)//投递职位
+    @RequestMapping(value = "/getJobPostion",method = RequestMethod.GET)//投递职位
     @ResponseBody
-    String postJobPostion(@RequestParam("userUuid")String userUuid,@RequestParam("positionUuid")String positionUuid){
+    String getJobPostion(@RequestParam("userUuid")String userUuid,@RequestParam("positionUuid")String positionUuid){
         String success = "fail";
         EmployerDemand employerDemand = employerDemandRepository.findByDemandUuid(positionUuid);
         ArrayList<String> alreadyExist = employerDemand.getEmployeeUuid();

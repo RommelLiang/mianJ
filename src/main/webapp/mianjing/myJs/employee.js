@@ -54,3 +54,37 @@ function postSeekInfo(){//发布求助信息
         }
     });
 }
+
+function checkJobProcess(option){//查看工作进度
+    $.ajax({
+        url: url + "/",
+        dataType: 'json',
+        type:"post",
+        success: function (data) {
+            console.log("success");
+        }
+    });
+}
+
+function checkTradeProcess(option){//检查交易进度
+    $.ajax({
+        url: url + "/",
+        dataType: 'json',
+        data: json.stringify(json),
+        type:"post",
+        success: function (data) {
+            console.log("success");
+        }
+    });
+}
+
+function manageSeekInfo(option) {//管理求助信息
+    $.ajax({
+        url: url + "/",
+        dataType: 'json',
+        type:"post",
+        success: function (data) {
+            console.log("success");
+        }
+    });
+}
