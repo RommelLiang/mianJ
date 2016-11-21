@@ -90,7 +90,14 @@ public class EmployerDemandController{
         String success = null;
         return success;
     }
-
+    //返回全部需求
+    @RequestMapping(value = "/findallcomsiltant",method = RequestMethod.POST)
+    public @ResponseBody
+    List<EmployerDemand> findallcomsiltant(){
+        List<EmployerDemand> all = employerDemandRepository.findAll();
+        return all;
+    }
+    //分页返回需求
     @RequestMapping(value = "/findAllConsultant",method = RequestMethod.POST)
     public @ResponseBody
     Page<EmployerDemand> findAllConsultant(@RequestParam("pageNow") int pageNow, @RequestParam("pageSize") int pageSize) {

@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -23,4 +24,5 @@ public interface EmployerDemandRepository extends PagingAndSortingRepository<Emp
 
     @Override
     Page<EmployerDemand> findAll(Pageable pageable);
+    List<EmployerDemand> findAll();
 }
