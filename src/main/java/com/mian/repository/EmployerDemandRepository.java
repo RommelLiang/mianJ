@@ -22,6 +22,8 @@ import java.util.List;
 public interface EmployerDemandRepository extends PagingAndSortingRepository<EmployerDemand,Long> {
     ArrayList<EmployerDemand> findByAccountUuid(String accountUuid);
 
+    EmployerDemand findByEmployerDemandUuid(String uuid);
+
     @Override
     Page<EmployerDemand> findAll(Pageable pageable);
     List<EmployerDemand> findAll();

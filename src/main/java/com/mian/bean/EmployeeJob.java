@@ -1,6 +1,7 @@
 package com.mian.bean;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 
 /**
  * com.mian.bean

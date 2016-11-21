@@ -1,6 +1,7 @@
 package com.mian.bean;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -16,6 +17,7 @@ public class EmployerDemand {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String accountUuid;
+    private String demandUuid;
     private String demandType;
     private String demandName;
     private String description;
@@ -26,6 +28,24 @@ public class EmployerDemand {
     private String location;
     private String realName;
     private String contactPhoneNumber;
+
+    private ArrayList<String> employeeUuid;
+
+    public String getDemandUuid() {
+        return demandUuid;
+    }
+
+    public void setDemandUuid(String demandUuid) {
+        this.demandUuid = demandUuid;
+    }
+
+    public ArrayList<String> getEmployeeUuid() {
+        return employeeUuid;
+    }
+
+    public void setEmployeeUuid(ArrayList<String> employeeUuid) {
+        this.employeeUuid = employeeUuid;
+    }
 
     public String getAccountUuid() {
         return accountUuid;

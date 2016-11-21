@@ -1,7 +1,9 @@
 package com.mian.controller;
 
 import com.mian.bean.EmployeeJob;
+import com.mian.bean.EmployerDemand;
 import com.mian.repository.EmployeeJobRepository;
+import com.mian.repository.EmployerDemandRepository;
 import com.mian.request.PostionOrderRequest;
 import com.mian.response.PaymentListResponse;
 import com.mian.response.PositionOrderResponse;
@@ -11,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by xiaoxiong on 2016/11/14.
@@ -21,13 +24,30 @@ public class EmployeeJobController {
     @Autowired
     EmployeeJobRepository employeeJobRepository;
 
+    @Autowired
+    EmployerDemandRepository employerDemandRepository;
+
     @RequestMapping(value = "/postJobPostion",method = RequestMethod.GET)//投递职位
     @ResponseBody
-    String postJobPostion(@RequestBody EmployeeJob employeeJob){
-        EmployeeJob save = employeeJobRepository.save(employeeJob);
+    String postJobPostion(@RequestParam("userUuid")String userUuid,@RequestParam("positionUuid")String positionUuid){
         String success = "fail";
-        if (save != null) success = "success";
-        return success;
+        EmployerDemand employerDemand = employerDemandRepository.findByEmployerDemandUuid(positionUuid);
+        ArrayList<String> alreadyExist = employerDemand.getEmployeeUuid();
+
+        if(alreadyExist.contains(userUuid)){
+            success = "已投递过此职位";
+            return success;
+        }
+        else {
+            alreadyExist.add(userUuid);
+            employerDemand.setEmployeeUuid(alreadyExist);
+
+            EmployerDemand save = employerDemandRepository.save(employerDemand);
+
+
+            if (save != null) success = "success";
+            return success;
+        }
     }
 
     @RequestMapping(value = "/postionOrderList",method = RequestMethod.POST)//投递职位订单列表
