@@ -31,7 +31,7 @@ public class EmployeeJobController {
     @ResponseBody
     String postJobPostion(@RequestParam("userUuid")String userUuid,@RequestParam("positionUuid")String positionUuid){
         String success = "fail";
-        EmployerDemand employerDemand = employerDemandRepository.findByEmployerDemandUuid(positionUuid);
+        EmployerDemand employerDemand = employerDemandRepository.findByDemandUuid(positionUuid);
         ArrayList<String> alreadyExist = employerDemand.getEmployeeUuid();
 
         if(alreadyExist.contains(userUuid)){
