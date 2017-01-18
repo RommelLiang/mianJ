@@ -1,6 +1,7 @@
 package com.mian.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -93,8 +94,12 @@ public class PageController {
     }
     // 元素内容必须由格式正确的字符数据或标记组成。
     @RequestMapping(value = "/gperson_chg",method = RequestMethod.GET)
-    public ModelAndView gperson_chg() {
-        ModelAndView modelAndView = new ModelAndView("gperson_chg");
+    /*public ModelAndView gperson_chg() {
+        ModelAndView modelAndView = new ModelAndView("/gperson_chg");
+        return modelAndView;
+    }*/
+    public ModelAndView gperson_chg(Model model) {
+        ModelAndView modelAndView = new ModelAndView("/gperson_chg");
         return modelAndView;
     }
     //ok

@@ -17,5 +17,5 @@ import org.springframework.transaction.annotation.Transactional;
 @Component
 public interface AccountRepository extends PagingAndSortingRepository<Account,Long> {
     Account findByOpenId(String openId);
-    Account findByAccountUuid(String accoundUuid);
+    Account findByAccountId(String accountId);
 }

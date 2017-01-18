@@ -1,7 +1,10 @@
 package com.mian.bean;
 
+import org.springframework.context.annotation.Primary;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.Set;
 
 /**
  * mianjing
@@ -13,33 +16,29 @@ import javax.validation.constraints.NotNull;
 @Entity
 @Table(name = "account")
 public class Account {
-    @NotNull
-    private String accountUuid;
     @Id
+    @NotNull
     private String openId;
-    private String accessToken;
+    @NotNull
+    private String accountId;
+    @NotNull
     private String userName;
     private String password;
+    @NotNull
     private String headPortrait;
+    //是否为顾问
     private boolean isConsultant;
     /**
      * 登陆类型（QQ:0/WeChat:1）*/
     private int loginType;
-
+    //是否已经完善个人资料
+    private boolean isConsummate;
     public String getOpenId() {
         return openId;
     }
 
     public void setOpenId(String openId) {
         this.openId = openId;
-    }
-
-    public String getAccessToken() {
-        return accessToken;
-    }
-
-    public void setAccessToken(String accessToken) {
-        this.accessToken = accessToken;
     }
 
     public String getUserName() {
@@ -74,15 +73,6 @@ public class Account {
         this.loginType = loginType;
     }
 
-
-    public String getAccountUuid() {
-        return accountUuid;
-    }
-
-    public void setAccountUuid(String accountUuid) {
-        this.accountUuid = accountUuid;
-    }
-
     public boolean isConsultant() {
         return isConsultant;
     }
@@ -90,4 +80,21 @@ public class Account {
     public void setConsultant(boolean consultant) {
         isConsultant = consultant;
     }
+
+    public boolean isConsummate() {
+        return isConsummate;
+    }
+
+    public void setConsummate(boolean consummate) {
+        isConsummate = consummate;
+    }
+
+    public String getAccountId() {
+        return accountId;
+    }
+
+    public void setAccountId(String accountId) {
+        this.accountId = accountId;
+    }
+
 }

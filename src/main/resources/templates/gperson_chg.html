@@ -1,598 +1,552 @@
-﻿
+﻿<html>
+<head>
+	<meta name="author" content="面精，面精网，面精社区"/><!-- begin 参考 layouts/head -->
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/>
+	<meta name="csrf-param" content="authenticity_token"/>
+	<meta name="csrf-token" content="4Kyci8QOsoaXGP3BotHiVvMqZcEMTFfZJATvulY0hm3YDwTUXHq8jN9XbWnBvv73mN1N4jrG4bcpCUg7fsRi0Q=="/>
+	<link rel="shortcut icon" href="./img/i.png"/><!-- end 参考 layouts/head -->
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<!-- 百度站长工具验证 -->
+	<!-- 百度站长工具验证 -->
+	<!-- shixian.com -->
+	<meta name="baidu-site-verification" content="DxH5nP0ijn"/><!-- www.shixian.com -->
+	<meta name="baidu-site-verification" content="dCeYDC5bLB"/>
+	<title>
+		社会精英辅导求职预约平台
+	</title><!-- <meta name="apple-itunes-app" content="app-id=949862651"> -->
 
+	<script src="js/programmers.js" type="text/javascript">
+	</script>
+	<link rel="stylesheet" media="screen" href="css/programmers.css" type="text/css"/>
+	<link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css" type="text/css"/>
+	<link rel="stylesheet" media="screen" href="css/design.css" type="text/css"/>
+	<style type="text/css">
+		.zi {
+			background-color: red;
+			width: 1080px;
+			background-color: #fff;
+			margin: 0 auto;
+		}
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="author" content="面精，面精网，面精社区"/>
-    <!-- begin 参考 layouts/head -->
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+		.zi a {
+			display: block;
+			text-align: center;
+			width: 175px;
+			float: left;
+			margin: 0;
+			padding: 0;
+			border: 0;
+		}
 
-    <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="4Kyci8QOsoaXGP3BotHiVvMqZcEMTFfZJATvulY0hm3YDwTUXHq8jN9XbWnBvv73mN1N4jrG4bcpCUg7fsRi0Q==" />
+		.zi a img {
+			margin: 0;
+			padding: 0;
+			border: 0;
+		}
 
-   <link rel="shortcut icon" href="./img/i.png"/>
-    
-    <!-- end 参考 layouts/head -->
+		.footer .col ul a {
+			color: #777;
+		}
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- 百度站长工具验证 -->
-    <!-- 百度站长工具验证 -->
-<!-- shixian.com -->
-<meta name="baidu-site-verification" content="DxH5nP0ijn" />
-
-<!-- www.shixian.com -->
-<meta name="baidu-site-verification" content="dCeYDC5bLB" />
-
-
-
-
-      <title>社会精英辅导求职预约平台</title>
-
-<!-- <meta name="apple-itunes-app" content="app-id=949862651"> -->
-
-      <script src="js/programmers.js"></script>
-
-    
-    
-      <link rel="stylesheet" media="screen" href="css/programmers.css" />
-      <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css"/>
-  <link rel="stylesheet" media="screen" href="css/design.css" />
-    
-
-    
-
-  </head>
-    <body style="overflow-x: hidden;height: auto">
-
-    <div style="display: none">
-  <!-- 微信分享会取body里第一张大于等于300px的照片 -->  
-  <img src="/images/logo-300.jpg" alt="面精网" />
+		.fcolor {
+			color: #f2f2f2
+		}
+	</style>
+</head>
+<body style="overflow-x: hidden;height: auto">
+<div style="display: none">
+	<!-- 微信分享会取body里第一张大于等于300px的照片 -->
+	<img src="/images/logo-300.jpg" alt="面精网"/>
 </div>
-
-
- <nav class="navbar navbar-default navbar-fixed-top navbar-white" style="height: 51px">
-   <div class="container">
-       <div class="navbar-header">
-         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-           <span class="sr-only">Toggle navigation</span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-         </button>
-
-         <a class="logo navbar-brand text-center" href="/">面精网</a>
-
-       </div>
-
-       <div id="navbar" class="collapse navbar-collapse">
-         <div class="empty-10"></div>
-         <div class="empty-10"></div>
-         <div class="empty-10"></div>
-         <div class="empty-10"></div>
-         <div class="empty-10"></div>
-
-           <ul class="nav navbar-nav">
-             <li class="bai xian" ><!-- class="active"  style="margin-left: 30px;"-->
-               <a class="programmers-jobs-link" href="/gu">求职顾问</a>
-             </li>
-
-             <li class="">
-               <a class="programmers-jobs-link" href="/require_list">新人求助</a>
-             </li>
-           </ul>
-
-         <ul class="nav navbar-nav navbar-right" >
-             <li class="">
-               <a href="/m_appointment">我的预约</a>
-             </li>
-
-             <li class="">
-               <a href="/notice">
-                 通知
-                 <label class="label label-danger" style="margin-left: 6px;display: none;position: relative;top:-2px"></label>
-               </a>
-             </li>
-
-             <li class="dropdown">
-               <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" aria-haspopup="true" aria-expanded="false" title="个人主页" href="javascript:void(0);">
-                 <img class="tiny-avatar avatar" alt="路" src="img/tiny_5e620cedfe19524579ad8009ea25db2f.jpeg" />
-                 <span class="headerTinymanName">路 <b class="caret"></b></span>
-               </a>
-               <ul class="dropdown-menu">
-                 <!-- 未申请或申请还没有通过认证(前面已判断)，都是这个 -->
-
-
-                   <li class="">
-                      <a href="/gperson">查看顾问信息</a>
-                    </li>
-
-                    <li class="divider"></li>
-
-                  <li class="">
-                    <a href="/gperson_chg">修改顾问信息</a>
-                  </li>
-                  <li class="">
-                    <a href="/head_chg">修改头像昵称</a>
-                  </li>
-
-
-
-
-                 <li class="divider"></li>
-
-                  
-
-                 <li><a href="#" data-method="delete" rel="nofollow">退出</a></li>
-               </ul>
-             </li>
-         </ul>
-       </div><!--/.nav-collapse -->
-   </div>
- </nav>
-
-<!-- Begin page content -->
+<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span></button> <a class="logo navbar-brand text-center" href="/">面精网</a>
+	</div>
+	<div id="navbar" class="collapse navbar-collapse">
+		<div class="empty-10"></div>
+		<div class="empty-10"></div>
+		<div class="empty-10"></div>
+		<div class="empty-10"></div>
+		<div class="empty-10"></div>
+		<ul class="nav navbar-nav">
+			<li class="bai xian">
+				<!-- class="active"  style="margin-left: 30px;"-->
+				<a class="programmers-jobs-link" href="/gu">求职顾问</a>
+			</li>
+			<li class="">
+				<a class="programmers-jobs-link" href="/require_list">新人求助</a>
+			</li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li class="">
+				<a href="/m_appointment">我的预约</a>
+			</li>
+			<li class="">
+				<a href="/notice">通知 </a>
+			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" aria-haspopup="true" aria-expanded="false" title="个人主页" href="javascript:void(0);"><img class="tiny-avatar avatar" alt="路" src="img/tiny_5e620cedfe19524579ad8009ea25db2f.jpeg"/> <span class="headerTinymanName">路 </span></a>
+				<ul class="dropdown-menu">
+					<!-- 未申请或申请还没有通过认证(前面已判断)，都是这个 -->
+					<li class="">
+						<a href="/gperson">查看顾问信息</a>
+					</li>
+					<li class="">
+						<a href="/gperson_chg">修改顾问信息</a>
+					</li>
+					<li class="">
+						<a href="/head_chg">修改头像昵称</a>
+					</li>
+					<li>
+						<a href="#" data-method="delete" rel="nofollow">退出</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div><!--/.nav-collapse -->
+</div><!-- Begin page content -->
 <div class="container" style="margin-top: 88px;">
-  
-<div class="empty-line"></div>
+	<div class="empty-line"></div>
+	<div class="programmer-settings-content">
+		<div class="col-md-offset-1">
+			<div class="empty-line"></div>
+			<div class="empty-line"></div>
+			<div class="form-horizontal">
+				<div class="control-group">
+					<label class="col-md-2 control-label bigger-col1 xs-no-padding">设置状态&nbsp;&nbsp;&nbsp;&nbsp;</label> <!-- Button -->
+					<div class="controls set-status" id="set-status">
+						<span class="current-status">当前状态为“接受预约”，你可以</span>
+						<div class="empty-small-line visible-xs"></div>
+						<form class="block-inline" method="post" action="/consultants/11848/set_status_rest" data-remote="true">
+							<input type="hidden" name="_method" value="put"/><input class="btn btn-warning block-inline" type="submit" value="暂停接受预约"/><input type="hidden" name="authenticity_token" value=""/>
+						</form>
+					</div>
+				</div>
+				<div class="empty-small-line"></div>
+				<div>
+					<p class="help-block placeholder-hint col-md-12 col-md-offset-1 placeholder-hint bigger-offset1 xs-no-padding">
+						为了保证平台的即时性，请在您近期不能接受预约的时候，暂停接受预约。<br/>
+						开始接受预约，即表示您近期的可兼职时间都可以兼职工作。
+					</p>
+				</div>
+			</div>
+			<form class="form-horizontal" id="form-set_privacy_protection" action="/consultants/11848/set_privacy_protection" accept-charset="UTF-8" data-remote="true" method="post">
+				<input name="utf8" type="hidden" value="✓"/><input type="hidden" name="_method" value="put"/>
+				<div class="control-group">
+					<label class="col-md-2 control-label bigger-col1 xs-no-padding">隐私保护&nbsp;&nbsp;&nbsp;&nbsp;</label> <label class="checkbox-inline form-control-static"><input name="programmer[privacy_protection]" type="hidden" value="0"/><input type="checkbox" value="1" name="programmer[privacy_protection]" id="programmer_privacy_protection"/> <span>只有已认证的聘用方，才可以查看我的个人信息。</span></label>
+				</div>
+			</form>
+			<div class="clearfix"></div>
+			<div class="empty-line hidden-xs"></div>
+			<hr/>
+			<!-- <div class="empty-line"></div> -->
+			<div class="programmer-public-info col-md-12 xs-no-padding">
+				<h2 style="font-size: 22px;">
+					顾问信息（将公开展示，是吸引客户预约的信息）
+				</h2>
+				<div class="empty-small-line"></div>
+			</div>
+			<div id="apply_programmer_second_step" class="tab-pane">
+				<div class="programmer-public-info col-md-offset-1 col-md-12">
+					<strong>顾问信息（将公开展示，是吸引客户预约的信息）</strong>
+				</div>
+				<form class="form-horizontal edit_programmer col-md-offset-1" id="edit_programmer_11848" action="/gperson" accept-charset="UTF-8" data-remote="true" method="post">
+					<input name="utf8" type="hidden" value="✓"/><input type="hidden" name="_method" value="put"/>
+					<div class="form-group form-group-md">
+						<label class="col-md-1 control-label bigger-col1" for="programmer_company">公司</label>
+						<div class="col-md-3">
+							<input placeholder="曾就职的最知名的公司简称" class=" form-control" type="text" name="programmer[company]" id="programmer_company"/>
+						</div>
+					</div>
+					<div class="form-group form-group-md">
+						<label class="col-md-1 control-label bigger-col1" for="programmer_title">职位</label>
+						<div class="col-md-3">
+							<input required="required" placeholder="HR，资深工程师，招聘经理" class=" form-control" type="text" name="programmer[title]" id="programmer_title"/>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-md-1 control-label bigger-col1" for="programmer_seniority">工作年限<span class="hidden-sm hidden-md hidden-lg">(年)</span></label>
+						<div class="col-md-1">
+							<select required="required" class=" col-md-2 col-sm-8 form-control" name="programmer[seniority]" id="programmer_seniority">
+								<option value="1">
+									1
+								</option>
+								<option value="2">
+									2
+								</option>
+								<option value="3">
+									3
+								</option>
+								<option value="4">
+									4
+								</option>
+								<option value="5">
+									5
+								</option>
+								<option value="6">
+									6
+								</option>
+								<option value="7">
+									7
+								</option>
+								<option value="8">
+									8
+								</option>
+								<option value="9">
+									9
+								</option>
+								<option value="10">
+									10
+								</option>
+								<option value="11">
+									11
+								</option>
+								<option value="12">
+									12
+								</option>
+								<option value="13">
+									13
+								</option>
+								<option value="14">
+									14
+								</option>
+								<option value="15">
+									15
+								</option>
+							</select>
+						</div>
+						<div class="col-md-1 programmer-seniority-hint hidden-xs">
+							年
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-md-1 control-label bigger-col1" for="programmer_how_money">时薪<span class="hidden-sm hidden-md hidden-lg">(/45分钟，单选)</span></label>
+						<div class="col-md-1 col-lg-2">
+							<select name="programmer[how_money]" id="programmer_how_money" required="required" class="col-md-2 form-control">
+								<option value="100">
+									100（默认）
+								</option>
+								<option value="200">
+									200
+								</option>
+								<option value="300">
+									300（经理）
+								</option>
+								<option value="400">
+									400
+								</option>
+								<option value="500">
+									500
+								</option>
+								<option value="600">
+									600（高级经理，HR经理）
+								</option>
+								<option value="800">
+									800
+								</option>
+								<option value="1000">
+									1000（总监，HRBP）
+								</option>
+							</select>
+						</div>
+						<div class="col-md-1 programmer-how-money-hint form-control-static hidden-xs">
+							/时
+						</div>
+						<div class="col-md-6 programmer-how-money-hint form-control-static">
+							据此日薪，单月最高可获&nbsp;<i id="programmer_how_money_hint">0</i>&nbsp;元报酬。面精网不会收取任何费用。
+						</div>
+					</div>
+					<div class="empty-line visible-xs"></div>
+					<div class="col-md-12 col-md-offset-1 placeholder-hint bigger-offset1 container">
+						建议刚开始不要设置较高的价格，等获得好评后再调高价格。<br/>
+						推荐先和您现在工作的日薪（税前月薪除以22天）持平。
+					</div>
+					<div class="clearfix"></div>
+					<div class="margin-top-ten form-group programmer-appointment-time">
+						<!--<label class="col-md-1 control-label bigger-col1" for="programmer_appointment_time">咨询时间</label>-->
+						<label class="col-md-1 control-label bigger-col1">咨询时间</label>
+						<div class="col-md-offset-1 appointment-time_check-box">
+							<div class="col-md-2 col-xs-6 programmer-appointment_time">
+								<label class="checkbox-inline"><input type="checkbox" name="programmer[appointment_time][]" id="programmer_appointment_time_" value="saturday" class="programmer_appointment_time"/> 周六</label>
+							</div>
+						</div>
+						<div class="col-md-offset-1 appointment-time_check-box">
+							<div class="col-md-2 col-xs-6 programmer-appointment_time">
+								<label class="checkbox-inline"><input type="checkbox" name="programmer[appointment_time][]" id="programmer_appointment_time_" value="sunday" class="programmer_appointment_time"/> 周日</label>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="col-md-offset-1 appointment-time_check-box">
+							<div class="col-md-2 col-xs-6 programmer-appointment_time">
+								<label class="checkbox-inline"><input type="checkbox" name="programmer[appointment_time][]" id="programmer_appointment_time_" value="working_days_after_work" class="programmer_appointment_time"/> 工作日下班后</label>
+							</div>
+						</div>
+						<div class="col-md-offset-1 appointment-time_check-box">
+							<div class="col-md-2 col-xs-6 programmer-appointment_time">
+								<label class="checkbox-inline"><input type="checkbox" name="programmer[appointment_time][]" id="programmer_appointment_time_" value="soho" class="programmer_appointment_time"/> 自由职业者</label>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="margin-top-ten form-group">
+						<label class="col-md-1 control-label bigger-col1" for="programmer_territory">顾问角色</label>
+						<div class="col-md-2">
+							<select class="col-md-6 form-control" name="programmer[territory]" id="programmer_territory" required="required">
+								<option value="IT">
+									IT
+								</option>
+								<option value="四大">
+									四大
+								</option>
+								<option value="医疗">
+									医疗
+								</option>
+								<option value="销售">
+									销售
+								</option>
+								<option value="快消">
+									快消
+								</option>
+								<option value="设计">
+									设计
+								</option>
+								<option value="国企、事业单位">
+									国企、事业单位
+								</option>
+							</select>
+						</div>
+						<div class="col-md-4 placeholder-hint"></div>
+					</div>
+					<div class="col-md-12 col-md-offset-1 placeholder-hint bigger-offset1">
+						请选择您在现供职企业的岗位对应的角色。
+					</div>
+					<div class="clearfix"></div>
+					<div class="empty-line"></div>
+					<div class="empty-line visible-xs"></div>
+					<div id="apply_programmer_third_step">
+						<div class="form-group form-group-md">
+							<label class="col-md-1 control-label bigger-col1" for="programmer_technical_experience">工作经历</label>
+							<div class="col-md-7">
+                                        <textarea required="required" placeholder="请详细填写您的工作经历，同时列出您参与的招聘工作内容，请不要少于50字。" class="form-control fix_flat" rows="11" name="programmer[technical_experience]" id="programmer_technical_experience"></textarea>
+							</div>
+							<div class="col-md-4 smaller-col4 hidden-xs hidden-sm disable-copy">
+								<span>示例：</span><br/>
+								<p>
+									硕士学历，计算机专业，曾任职于百度、阿里及网页，现任微软开发经理。参与公司简历筛选及招聘面试，可以提供技术面试、开发问题面试等的辅导
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-offset-1 col-sm-2 col-xs-6">
+							<input type="submit" name="commit" value="保存修改" data-disable-with="正在保存..." class="btn sx_btn" id="submit-nest-step"/>
+						</div>
+					</div>
+				</form>
+				<div class="empty-row"></div>
+				<div class="empty-row visible-xs"></div><!--  <div class="clearfix"></div>
 
+                 <div class="empty-row"></div>
+                 <div class="empty-row"></div>
+                 <div class="empty-row visible-xs"></div>
+                 <div class="empty-row visible-xs"></div>
+                 <div class="clearfix"></div> -->
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="empty-line"></div>
+		<div id="for-set-self-status"></div><!-- 保存技术经验和项目经验到浏览器本地存储 -->
+		<script type="text/javascript">
+			// 单月最高可获12500元报酬
+			$(document).on("change", "#programmer_how_money", function () {
+				var value = $(this).val();
 
+				$("#programmer_how_money_hint").text(value * 25);
+			});
 
+			$(document).ready(function () {
+				var technical_experience = $("#programmer_technical_experience");
+				if (technical_experience.length > 0) {
+					var technical_experience_key = "11848/programmer_technical_experience"
+					var technical_experience_value = technical_experience.val();
 
+					var technical_experience_local = localStorage.getItem(technical_experience_key);
 
+					if (technical_experience_value.length <= 0 && technical_experience_local != null) {
+						technical_experience.text(technical_experience_local);
+					}
 
-<div class="programmer-settings-content">
-  <div class="col-md-offset-1">
-    <div class="empty-line"></div>
+					// 需要重新计算
+					if (technical_experience.val().length <= 0) {
+						$("#pte-hint").hide();
+					} else {
+						$("#pte-hint span").text(technical_experience.val().length);
+					}
+					;
+				}
+				;
 
+				var project_experience = $("#programmer_project_experience");
+				if (project_experience.length > 0) {
+					var project_experience_value = project_experience.val();
+					var project_experience_key = "11848/programmer_project_experience"
 
-    <div class="empty-line"></div>
+					var project_experience_local = localStorage.getItem(project_experience_key);
 
-    <div class="form-horizontal">
-      <div class="control-group">
-        <label class="col-md-2 control-label bigger-col1 xs-no-padding">
-          设置状态&nbsp;&nbsp;&nbsp;&nbsp;
-        </label>
-        <!-- Button -->
-        <div class="controls set-status" id="set-status">
-            <span class="current-status">当前状态为“接受预约”，你可以</span>
+					if (project_experience_value.length <= 0 && project_experience_local != null) {
+						project_experience.text(project_experience_local);
+					}
 
-<div class="empty-small-line visible-xs"></div>
+					// 需要重新计算
+					if (project_experience.val().length <= 0) {
+						$("#ppe-hint").hide();
+					} else {
+						$("#ppe-hint span").text(project_experience.val().length);
+					}
+					;
+				}
+				;
+			});
 
-<form class="block-inline" method="post" action="/consultants/11848/set_status_rest" data-remote="true"><input type="hidden" name="_method" value="put" /><input class="btn btn-warning block-inline" type="submit" value="暂停接受预约" /><input type="hidden" name="authenticity_token" value="" /></form>
+			$(document).on('input propertychange', '#programmer_technical_experience', function () {
+				var technical_experience_key = "11848/programmer_technical_experience"
 
-        </div>
-      </div>
+				localStorage.setItem(technical_experience_key, $(this).val());
 
-      <div class="empty-small-line"></div>
+				var pte_length = $(this).val().length;
 
-      <div>
-        <p class="help-block placeholder-hint col-md-12 col-md-offset-1 placeholder-hint bigger-offset1 xs-no-padding">为了保证平台的即时性，请在您近期不能接受预约的时候，暂停接受预约。<br />
-        开始接受预约，即表示您近期的可兼职时间都可以兼职工作。</p>
-      </div>
-    </div>
+				if (pte_length <= 0) {
+					$("#pte-hint").hide();
+				} else {
+					$("#pte-hint").show();
+					$("#pte-hint span").text(pte_length);
+				}
+				;
+			});
 
-    <form class="form-horizontal" id="form-set_privacy_protection" action="/consultants/11848/set_privacy_protection" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" />
-      <div class="control-group">
-        <label class="col-md-2 control-label bigger-col1 xs-no-padding">隐私保护&nbsp;&nbsp;&nbsp;&nbsp;</label>
+			$(document).on('input propertychange', '#programmer_project_experience', function () {
+				var project_experience_key = "11848/programmer_project_experience"
 
-        <label class="checkbox-inline form-control-static">
-          <input name="programmer[privacy_protection]" type="hidden" value="0" /><input type="checkbox" value="1" name="programmer[privacy_protection]" id="programmer_privacy_protection" />
-          <span>只有已认证的聘用方，才可以查看我的个人信息。</span>
-        </label>
+				localStorage.setItem(project_experience_key, $(this).val());
 
-      </div>
-</form>
-    <div class="clearfix"></div>
+				var ppe_length = $(this).val().length;
 
-    <div class="empty-line hidden-xs"></div>
-    <hr/>
-    <!-- <div class="empty-line"></div> -->
+				if (ppe_length <= 0) {
+					$("#ppe-hint").hide();
+				} else {
+					$("#ppe-hint").show();
+					$("#ppe-hint span").text(ppe_length);
+				}
+				;
+			});
 
-    <div class="programmer-public-info col-md-12 xs-no-padding">
-      <h2 style="font-size: 22px;">顾问信息（将公开展示，是吸引客户预约的信息）</h2>
-      <div class="empty-small-line"></div>
-    </div>
+			$(document).on("change", "#programmer_city", function () {
+				var value = $(this).val();
+				var url = "/programmers/get_its_regions/" + value
 
-    <div id="apply_programmer_second_step" class="tab-pane ">
-                   <div class="programmer-public-info col-md-offset-1 col-md-12">
-                     <strong>顾问信息（将公开展示，是吸引客户预约的信息）</strong>
-                   </div>
+				$.ajax({
+					url: url,
+					dataType: "text"
+				}).done(function (data) {
+					$("#programmer_region").html(data);
+				});
 
+				$("#programmer_address").val("");
+			});
 
-         <form class="form-horizontal edit_programmer col-md-offset-1" id="edit_programmer_11848" action="/gperson" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" />
-           <div class="form-group form-group-md">
-             <label class="col-md-1 control-label bigger-col1" for="programmer_company">公司</label>
-             <div class="col-md-3">
-               <input placeholder="曾就职的最知名的公司简称" class=" form-control" type="text" name="programmer[company]" id="programmer_company" />
-             </div>
-            </div>
+			$(document).on("change", "#programmer_region", function () {
+				var value = $(this).val();
 
-           <div class="form-group form-group-md">
-             <label class="col-md-1 control-label bigger-col1" for="programmer_title">职位</label>
-             <div class="col-md-3">
-               <input required="required" placeholder="HR，资深工程师，招聘经理" class=" form-control" type="text" name="programmer[title]" id="programmer_title" />
-             </div>
-           </div>
+				$("#programmer_address").attr("required", true);
+			});
 
-           <div class="form-group">
-             <label class="col-md-1 control-label bigger-col1" for="programmer_seniority">
-               工作年限<span class="hidden-sm hidden-md hidden-lg">(年)</span>
-              </label>
-             <div class="col-md-1">
-               <select required="required" class=" col-md-2 col-sm-8 form-control" name="programmer[seniority]" id="programmer_seniority"><option value=""></option>
-               <option value="1">1</option>
-               <option value="2">2</option>
-               <option value="3">3</option>
-               <option value="4">4</option>
-               <option value="5">5</option>
-               <option value="6">6</option>
-               <option value="7">7</option>
-               <option value="8">8</option>
-               <option value="9">9</option>
-               <option value="10">10</option>
-               <option value="11">11</option>
-               <option value="12">12</option>
-               <option value="13">13</option>
-               <option value="14">14</option>
-               <option value="15">15</option></select>
-                   </div>
-             <div class="col-md-1 programmer-seniority-hint hidden-xs">年</div>
-             </div>
-             <div class="form-group">
-             <label class="col-md-1 control-label bigger-col1" for="programmer_how_money">
-               时薪<span class="hidden-sm hidden-md hidden-lg">(/45分钟，单选)</span>
-            </label>    <div class="col-md-1 col-lg-2">
-               <select name="programmer[how_money]" id="programmer_how_money" required="required" class="col-md-2 form-control"><option value=""></option><option value="100">100（默认）</option>
-                 <option value="200">200</option>
-                 <option value="300">300（经理）</option>
-                 <option value="400">400</option>
-                 <option value="500">500</option>
-                 <option value="600">600（高级经理，HR经理）</option>
-                 <option value="800">800</option>
-                 <option value="1000">1000（总监，HRBP）</option>
-                 </select>
-             </div>
-             <div class="col-md-1 programmer-how-money-hint form-control-static hidden-xs">/时</div>
-             
-             <div class="col-md-6 programmer-how-money-hint form-control-static">
-               据此日薪，单月最高可获&nbsp;<i id="programmer_how_money_hint">0</i>&nbsp;元报酬。面精网不会收取任何费用。
-             </div>
-           </div>
+			soho_smart_checked()
+		</script>
+	</div><!--
+    <div class="footer-faker-margin-row"></div>
 
-           <div class="empty-line visible-xs"></div>
-
-           <div class="col-md-12 col-md-offset-1 placeholder-hint bigger-offset1 container">
-             建议刚开始不要设置较高的价格，等获得好评后再调高价格。<br />
-             推荐先和您现在工作的日薪（税前月薪除以22天）持平。
-           </div>
-
-           <div class="clearfix"></div>
-
-           <div class="margin-top-ten form-group programmer-appointment-time">
-           <label class="col-md-1 control-label bigger-col1" for="programmer_appointment_time">咨询时间</label>
-               <div class="col-md-offset-1 appointment-time_check-box">
-                 <div class="col-md-2 col-xs-6 programmer-appointment_time">
-                   <label class="checkbox-inline">
-                     <input type="checkbox" name="programmer[appointment_time][]" id="programmer_appointment_time_" value="saturday" class="programmer_appointment_time" />
-
-                     周六
-                   </label>
-                 </div>
-               </div>
-               <div class="col-md-offset-1 appointment-time_check-box">
-                 <div class="col-md-2 col-xs-6 programmer-appointment_time">
-                   <label class="checkbox-inline">
-                     <input type="checkbox" name="programmer[appointment_time][]" id="programmer_appointment_time_" value="sunday" class="programmer_appointment_time" />
-
-                     周日
-                   </label>
-                 </div>
-               </div>
-             <div class="clearfix"></div>
-               <div class="col-md-offset-1 appointment-time_check-box">
-                 <div class="col-md-2 col-xs-6 programmer-appointment_time">
-                   <label class="checkbox-inline">
-                     <input type="checkbox" name="programmer[appointment_time][]" id="programmer_appointment_time_" value="working_days_after_work" class="programmer_appointment_time" />
-
-                     工作日下班后
-                   </label>
-                 </div>
-               </div>
-               <div class="col-md-offset-1 appointment-time_check-box">
-                 <div class="col-md-2 col-xs-6 programmer-appointment_time">
-                   <label class="checkbox-inline">
-                     <input type="checkbox" name="programmer[appointment_time][]" id="programmer_appointment_time_" value="soho" class="programmer_appointment_time" />
-
-                     自由职业者
-                   </label>
-                 </div>
-               </div>
-             <div class="clearfix"></div>
-           </div>
-
-
-
-           <div class="clearfix"></div>
-
-           <div class="margin-top-ten form-group">
-             <label class="col-md-1 control-label bigger-col1" for="programmer_territory">顾问角色</label>
-             <div class="col-md-2">
-              <select  class="col-md-6 form-control" name="programmer[territory]" id="programmer_territory" required="required"><option value=""></option>
-             <option value="IT">IT</option>
-             <option value="四大">四大</option>
-             <option value="医疗">医疗</option>
-             <option value="销售">销售</option>
-             <option value="快消">快消</option>
-             <option value="设计">设计</option>
-             <option value="国企、事业单位">国企、事业单位</option></select>
-             </div>
-
-
-             <div class="col-md-4 placeholder-hint"></div>
-           </div>
-
-           <div class="col-md-12 col-md-offset-1 placeholder-hint bigger-offset1">
-             请选择您在现供职企业的岗位对应的角色。
-           </div>
-
-           <div class="clearfix"></div>
-           <div class="empty-line"></div>
-           <div class="empty-line visible-xs"></div>
-            <div id="apply_programmer_third_step">
-              
-             <div class="form-group form-group-md">
-             <label class="col-md-1 control-label bigger-col1" for="programmer_technical_experience">工作经历</label>
-             <div class="col-md-7">
-               <textarea required="required" placeholder="请详细填写您的工作经历，同时列出您参与的招聘工作内容，请不要少于50字。" class="form-control fix_flat" rows="11" name="programmer[technical_experience]" id="programmer_technical_experience">
-            </textarea>
-              
-             </div>
-
-             <div class="col-md-4 smaller-col4 hidden-xs hidden-sm disable-copy">
-               <span>示例：</span><br />
-               <p>硕士学历，计算机专业，曾任职于百度、阿里及网页，现任微软开发经理。参与公司简历筛选及招聘面试，可以提供技术面试、开发问题面试等的辅导</p>
-             </div>
-           </div>
-           <div class="col-sm-offset-1 col-sm-2 col-xs-6">
-               <input type="submit" name="commit" value="保存修改" data-disable-with="正在保存..." class="btn sx_btn"  id="submit-nest-step"/>
-            
-             </div>
-
-
-</div></form>
-           <div class="empty-row"></div>
-           
-
-           <div class="empty-row visible-xs"></div>
-   <!--  <div class="clearfix"></div>
-
-    <div class="empty-row"></div>
-    <div class="empty-row"></div>
-    <div class="empty-row visible-xs"></div>
-    <div class="empty-row visible-xs"></div>
-    <div class="clearfix"></div> -->
-  </div>
+    <div class="empty-row"></div> -->
+	<!-- 已登录，消息提醒 -->
+	<script src="js/pull_notices.js" type="text/javascript">
+	</script> <script type="text/javascript">
+	is_weixin();
+	function is_weixin() {
+		var ua = navigator.userAgent.toLowerCase();
+		if (ua.match(/MicroMessenger/i) == "micromessenger") {
+			$(".wechat_login").attr("href", "http://shixian.com/users/auth/wechat");
+			$(".weibo_login").hide();
+			$(".github_login").hide();
+		} else {
+			$(".wechat_login").attr("href", "http://shixian.com/users/auth/open_wechat")
+		}
+	}
+</script> <script src="js/wx-activity.js" type="text/javascript">
+</script> <!-- 百度统计等 -->
+	<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F25e3b17ddf2b132427768bfebf751a76' type='text/javascript'%3E%3C/script%3E"));
+	</script> <!-- growingio -->
+	<script type='text/javascript'>
+		var _vds = _vds || [];
+		window._vds = _vds;
+		(function () {
+			_vds.push(['setAccountId', 'acf6ac3446a1dcb0']);
+			(function () {
+				var vds = document.createElement('script');
+				vds.type = 'text/javascript';
+				vds.async = true;
+				vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(vds, s);
+			})();
+		})();
+	</script>
 </div>
-
-<div class="clearfix"></div>
-<div class="empty-line"></div>
-
-<div id="for-set-self-status"></div>
-
-<!-- 保存技术经验和项目经验到浏览器本地存储 -->
-<script type="text/javascript">
-  // 单月最高可获12500元报酬
-  $(document).on("change", "#programmer_how_money", function(){
-    var value = $(this).val();
-
-    $("#programmer_how_money_hint").text(value * 25);
-  });
-
-  $(document).ready(function() {
-    var technical_experience = $("#programmer_technical_experience");
-    if(technical_experience.length > 0){
-      var technical_experience_key = "11848/programmer_technical_experience"
-      var technical_experience_value = technical_experience.val();
-
-      var technical_experience_local = localStorage.getItem(technical_experience_key);
-
-      if(technical_experience_value.length <= 0 && technical_experience_local != null){
-       technical_experience.text(technical_experience_local);
-      }
-
-      // 需要重新计算
-      if (technical_experience.val().length <= 0) {
-       $("#pte-hint").hide();
-      } else{
-       $("#pte-hint span").text(technical_experience.val().length);
-      };
-    };
-
-    var project_experience = $("#programmer_project_experience");
-    if (project_experience.length > 0) {
-      var project_experience_value = project_experience.val();
-      var project_experience_key = "11848/programmer_project_experience"
-
-      var project_experience_local = localStorage.getItem(project_experience_key);
-
-      if(project_experience_value.length <= 0 && project_experience_local != null){
-       project_experience.text(project_experience_local);
-      }
-
-      // 需要重新计算
-      if (project_experience.val().length <= 0) {
-       $("#ppe-hint").hide();
-      } else{
-       $("#ppe-hint span").text(project_experience.val().length);
-      };
-    };
-  });
-
-  $(document).on('input propertychange', '#programmer_technical_experience', function() {
-    var technical_experience_key = "11848/programmer_technical_experience"
-
-    localStorage.setItem(technical_experience_key, $(this).val());
-
-    var pte_length = $(this).val().length;
-
-    if (pte_length <= 0) {
-     $("#pte-hint").hide();
-    } else{
-     $("#pte-hint").show();
-     $("#pte-hint span").text(pte_length);
-    };
-  });
-
-  $(document).on('input propertychange', '#programmer_project_experience', function() {
-    var project_experience_key = "11848/programmer_project_experience"
-
-    localStorage.setItem(project_experience_key, $(this).val());
-
-    var ppe_length = $(this).val().length;
-
-    if (ppe_length <= 0) {
-      $("#ppe-hint").hide();
-    } else{
-      $("#ppe-hint").show();
-      $("#ppe-hint span").text(ppe_length);
-    };
-  });
-
-  $(document).on("change", "#programmer_city", function(){
-    var value = $(this).val();
-    var url = "/programmers/get_its_regions/" + value
-
-    $.ajax({
-      url: url,
-      dataType: "text"
-    }).done(function( data ) {
-      $("#programmer_region").html(data);
-    });
-
-    $("#programmer_address").val("");
-  });
-
-  $(document).on("change", "#programmer_region", function(){
-    var value = $(this).val();
-
-    $("#programmer_address").attr("required", true);
-  });
-
-  soho_smart_checked()
-</script>
-
-
+<div class="footer jiayi" style="">
+	<div class="content-wrapper" style="background-color:#f2f2f2;">
+		<div class="col">
+			<ul>
+				<li>
+					<a href="/baed_dlc">预约流程</a>
+				</li>
+				<li>
+					<a href="/baed_wdl">网站协议</a>
+				</li>
+				<li>
+					<a href="/baed_dlc">常见问题</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col">
+			<ul>
+				<li>
+					<a target="_blank" href="/baed_wdy">友情链接</a>
+				</li>
+				<li>
+					<a href="/#hezuo">合作伙伴</a>
+				</li>
+				<li>
+					<a target="_blank" href="#">线下活动</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col"></div>
+		<div class="col" style="padding-right:185px;">
+			<div>
+				<img width="108" src="img/shixian-team-qr-code-6e12ae9806057212d510f03cdc2173a00d22542669be5992b1fd926f4715e188.jpg" alt="Shixian qr code 1172ea9fd974a9901cb4ea6a5c826cb7f16aeaed0cce6f7815b292428b1ae7ca"/>
+			</div>
+		</div>
+	</div>
 </div>
-<!-- 
-<div class="footer-faker-margin-row"></div>
-
-<div class="empty-row"></div> -->
-
-
-
-  <!-- 已登录，消息提醒 -->
-  <script src="js/pull_notices.js"></script>
-
-<script type="text/javascript">
-  is_weixin();
-  function is_weixin(){
-    var ua = navigator.userAgent.toLowerCase();
-    if(ua.match(/MicroMessenger/i)=="micromessenger") {
-      $(".wechat_login").attr("href", "http://shixian.com/users/auth/wechat");
-      $(".weibo_login").hide();
-      $(".github_login").hide();
-    } else {
-      $(".wechat_login").attr("href", "http://shixian.com/users/auth/open_wechat")
-    }
-  }
-</script>
-
-<script src="js/wx-activity.js"></script>
-
-    
-    
-    <!-- 百度统计等 -->
-      <script type="text/javascript">
-    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F25e3b17ddf2b132427768bfebf751a76' type='text/javascript'%3E%3C/script%3E"));
-  </script>
-
-  <!-- growingio -->
-  <script type='text/javascript'>
-      var _vds = _vds || [];
-      window._vds = _vds;
-      (function(){
-        _vds.push(['setAccountId', 'acf6ac3446a1dcb0']);
-        (function() {
-          var vds = document.createElement('script');
-          vds.type='text/javascript';
-          vds.async = true;
-          vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
-          var s = document.getElementsByTagName('script')[0];
-          s.parentNode.insertBefore(vds, s);
-        })();
-      })();
-  </script></div>
-<style>
-     .zi{background-color: red;width: 1080px;background-color: #fff; margin: 0 auto;}
-     .zi a{ display: block;text-align: center;width: 175px;float: left;margin: 0;padding: 0;border: 0; }
-     .zi a img{margin: 0;padding: 0;border: 0; }
-     .footer .col ul a{color:#777;}
-     .fcolor{color:#f2f2f2}
- </style>
-
-    <div class="footer jiayi" style="">
-      <div class="content-wrapper " style="background-color:#f2f2f2;">
-        
-        <div class="col">
-          <ul>
-            <li>
-              <a  href="/baed_dlc">预约流程</a>
-            </li>
-            <li>
-             <a  href="/baed_wdl">网站协议</a>
-            </li>
-            <li>
-              <a  href="/baed_dlc">常见问题</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col" >
-          
-          <ul>
-            <li>
-              <a target="_blank" href="/baed_wdy">友情链接</a>
-            </li>
-            <li>
-              <a  href="/#hezuo">合作伙伴</a>
-            </li>
-               <li><a target="_blank" href="#">线下活动</a></li>
-         
-          </ul>
-        </div>
-        <div class="col">
-          
-          <ul>
-          </ul>
-        </div>
-        <div class="col" style="padding-right:185px;">
-          <div >
-            <img width="108" src="img/shixian-team-qr-code-6e12ae9806057212d510f03cdc2173a00d22542669be5992b1fd926f4715e188.jpg" alt="Shixian qr code 1172ea9fd974a9901cb4ea6a5c826cb7f16aeaed0cce6f7815b292428b1ae7ca" />
-          </div> 
-        </div>
-      </div>
-    </div>
-    <div class="copyrights jia" style="bottom: 0;width:100%;background-color:#be3232">
-      <div class="fcolor">2014-2016 © 上海垚元信息科技有限公司&nbsp;&nbsp;|&nbsp;&nbsp;沪ICP备16027855号</div>
-    </div>
-  </body>
+<div class="copyrights jia" style="bottom: 0;width:100%;background-color:#be3232">
+	<div class="fcolor">
+		2014-2016 © 上海垚元信息科技有限公司&nbsp;&nbsp;|&nbsp;&nbsp;沪ICP备16027855号
+	</div>
+</div>
+</body>
 </html>
-
